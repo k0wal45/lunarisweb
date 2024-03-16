@@ -1,6 +1,6 @@
 import { SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
-import { TypewriterEffectDemo } from "@/components/Hero";
+import Hero  from "@/components/Hero/Hero";
 
 
 const EVENTS_QUERY = `*[_type == "post"]`;
@@ -14,7 +14,7 @@ export default async function Home() {
 
   return (
     <main className=" h-screen overflow-x-hidden max-w-screen">
-      <TypewriterEffectDemo /> 
+      <Hero />
       <div className="h-[400vh] bg-red-200"></div>
     </main> 
   );
