@@ -1,0 +1,7 @@
+.post h1 {
+  @apply text-2xl font-bold;
+}
+
+.post blockquote {
+  @apply p-4 border-l-2 border-neutral-400 font-serif;
+}

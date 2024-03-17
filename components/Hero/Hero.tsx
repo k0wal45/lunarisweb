@@ -5,7 +5,17 @@ import './hero.css'
 import Link from "next/link";
 import { ThreeDCardDemo } from "./3dCard";
 
-const EVENTS_QUERY = `*[_type == "post"]`;
+const EVENTS_QUERY = `*[
+  _type == "post"
+  ] {
+  title,
+  slug,
+  publishedAt,
+  excerpt,
+  _id,
+  tags[]->,
+  
+  }`;
 
 
 async function Hero() {
@@ -14,7 +24,7 @@ async function Hero() {
 
 
   return (
-    <div className='h-[50rem] w-full relative flex bg-grid items-center justify-center'>
+    <div className='h-[50rem] w-full relative flex bg-grid items-center justify-center gap-8'>
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-overlay z-0"></div>
 
@@ -23,11 +33,14 @@ async function Hero() {
           <span>Tworzymy</span><br />
           <TyperWriter /> 
         </h1>
+        <div className="flex gap-4 flex-wrap">
         {
           events.map((event) => (
-            <Link key={event._id} href={event.slug.current} className="z-10 bg-blue-400 p-4 rounded-xl text-xl text-white">{event.title}</Link>
+            <Link key={event.slug.current} href={event.slug.current} className="z-10 bg-blue-400 p-4 rounded-xl text-xl text-white">{event.title}</Link>
           ))
         }
+        </div>
+        
       </div>
       <ThreeDCardDemo />
     </div>
