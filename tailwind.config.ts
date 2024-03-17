@@ -14,7 +14,12 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    
+    extend: {
+      colors: {
+        primary: "#ff0000",
+      },
+    },
   },
   plugins: [addVariablesForColors],
 };
