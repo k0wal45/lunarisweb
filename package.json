@@ -14,7 +14,7 @@
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.33.0",
     "clsx": "^2.1.0",
-    "framer-motion": "^11.0.14",
+    "framer-motion": "^11.0.18",
     "headlessui": "^0.0.0",
     "install": "^0.13.0",
     "next": "14.1.3",
