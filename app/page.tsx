@@ -1,5 +1,5 @@
+import { ThreeDCardDemo } from "@/components/Hero/3dCard";
 import Hero  from "@/components/Hero/Hero";
-import { LayoutGridDemo } from "@/components/portfolio/grid";
 
 export default async function Home() {
 
@@ -7,7 +7,9 @@ export default async function Home() {
   return (
     <main className="overflow-x-hidden max-w-screen">
       <Hero />
-      <LayoutGridDemo />
+      <section className="bg-neutral-200 flex items-center justify-center h-screen w-screen">
+        <ThreeDCardDemo />
+      </section>
       <div className="h-[400vh] bg-red-200"></div>
     </main> 
   );
