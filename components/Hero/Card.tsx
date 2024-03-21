@@ -1,7 +1,8 @@
 
-const Card = () => {
+const Card = ({span}: any) => {
+
   return (
-    <div className="p-24 bg-white rounded-xl z-20">
+    <div className={` ${span} p-24 bg-white rounded-xl z-20 hover:scale-110 transition-transform duration-100`}>
       <h1>hello world</h1>
     </div>
   )
