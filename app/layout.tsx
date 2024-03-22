@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/Footer";
 
 // const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   description: "Tworzymy innowacyjne i błyskawiczne strony internetowe, bezpieczne oraz dostosowane do potrzeb klienta. Wejdź do świata internetu już teraz!",
   openGraph: {
     title: 'Lunaris Web - Strony Internetowe',
-    description: 'The React Framework for the Web',
+    description: 'Tworzymy innowacyjne i błyskawiczne strony internetowe, bezpieczne oraz dostosowane do potrzeb klienta. Wejdź do świata internetu już teraz!',
     siteName: 'Lunaris Web',
     images: [
       {
@@ -39,11 +40,9 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body className={montserrat.className}>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
-        <footer>
-          hello
-        </footer>
+        <Footer />
       </body>
     </html>
   );

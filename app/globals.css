@@ -25,3 +25,7 @@
   @apply bg-primary;
 
 }
+
+body, html {
+  @apply bg-black;
+}

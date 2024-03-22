@@ -4,7 +4,16 @@
   background-size: 35px 35px;
 }
 
+.bgMask {
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 55%);
+  background: -webkit-linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 55%);
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 55%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+
 .bgOverlay {
-  background: rgb(2,0,36);
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(1,0,27,0) 0%, rgba(0,0,0,1) 100%);
+  background: rgb(0,72,255);
+  background: linear-gradient(137deg, rgba(0,72,255,0) 22%, rgba(0,72,255,1) 52%, rgba(189,0,255,1) 72%, rgba(255,255,255,1) 94%);
+  @apply opacity-70;
 }

@@ -8,8 +8,8 @@ import { Popover, Transition } from '@headlessui/react'
 export default function Pop() {
   return (
     <Popover>
-      <Popover.Button className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 outline-none">
-        <span className='text-lg font-normal flex items-center justify-center gap-2'>Solutions <SlArrowDown /></span>
+      <Popover.Button className="flex items-center gap-x-2 text-lg font-normal leading-6 outline-none hover:underline">
+        Blog <SlArrowDown />
 
       </Popover.Button>
 
