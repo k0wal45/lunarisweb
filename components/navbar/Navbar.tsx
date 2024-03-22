@@ -12,7 +12,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="fixed border-b-2 border-white bg-black w-full p-8 z-40 text-white flex justify-between lg:px-20">
+    <nav className="absolute top-0 left-0 rounded-t-xl w-full p-8 z-40 text-white flex justify-between lg:px-20">
       <Link href='/' className='text-3xl font-[700]'>LunarisWeb</Link>
       
       <label className='flex lg:hidden z-50'>
@@ -23,7 +23,8 @@ const Navbar = () => {
       </label>
 
       
-      <div className={`absolute top-0 right-0 h-screen w-screen bg-black pt-32 bg-opacity-90 border-l-2 border-white transition-all duration-1000 origin-right ease-in-out
+      <div
+      className={`fixed top-0 right-0 h-screen w-screen bg-black pt-32 bg-opacity-90 border-l-2 border-white transition-all duration-1000 origin-right ease-in-out
         ${
           visible
           ? 'scale-x-1'
@@ -79,6 +80,8 @@ const Navbar = () => {
             <Link href='/kontakt' className='p-4 px-6 bg-white text-black rounded-lg font-bold'>Kontakt</Link>
           </li>
       </ul>
+
+      <div className="absolute bottom-0 left-0 bg-gradient-to-r from-transparent via-[#555] to-transparent w-full h-[1px]"></div>
     </nav>
   )
 }

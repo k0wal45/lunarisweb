@@ -4,10 +4,11 @@ import { TypeAnimation } from 'react-type-animation';
 const TyperWriter = () => {
   return (
     <TypeAnimation
+      className='w-full text-center'
       sequence={[
         // Same substring at the start will only be typed out once, initially
-        'Nowoczesne Strony Internetowe',
-        3000, // wait 1s before replacing "Mice" with "Hamsters"
+        'Strony Internetowe',
+        3000, // wait 3s before replacing 
         'Logotypy',
         3000,
         'Banery Reklamowe',
