@@ -1,10 +1,11 @@
 "use client"
 import { TypeAnimation } from 'react-type-animation';
 
+
 const TyperWriter = () => {
   return (
     <TypeAnimation
-      className='w-full text-center'
+
       sequence={[
         // Same substring at the start will only be typed out once, initially
         'Strony Internetowe',

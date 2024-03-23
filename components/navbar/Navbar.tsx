@@ -49,7 +49,7 @@ const Navbar = () => {
             <Link href='/blog'>Blog</Link>
           </li>
           <li>
-            <Link href='/kontakt' className='p-4 px-6 bg-white text-black rounded-lg font-bold'>Kontakt</Link>
+            <Link href='/kontakt' className='p-4 px-6 bg-white text-black rounded-lg font-bold'>Porozmawiajmy!</Link>
           </li>
           <div className="w-48 border-b-2 border-white my-6"></div>
           <li className='flex gap-8'>
@@ -77,7 +77,7 @@ const Navbar = () => {
           <Pop />
         </li>
           <li>
-            <Link href='/kontakt' className='p-4 px-6 bg-white text-black rounded-lg font-bold'>Kontakt</Link>
+            <Link href='/kontakt' className='p-4 px-6 bg-white text-black rounded-lg font-bold'>Porozmawiajmy!</Link>
           </li>
       </ul>
 
