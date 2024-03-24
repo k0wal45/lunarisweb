@@ -81,7 +81,7 @@ const Navbar = () => {
           </li>
       </ul>
 
-      <div className="absolute bottom-0 left-0 bg-gradient-to-r from-transparent via-[#555] to-transparent w-full h-[1px]"></div>
+      <div className="absolute bottom-0 left-0 bg-gradient-to-r from-transparent via-base to-transparent w-full h-[1px]"></div>
     </nav>
   )
 }
