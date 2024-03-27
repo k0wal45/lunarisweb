@@ -5,6 +5,8 @@ import { cn } from "@/utils/cn";
 import Image from "next/image";
 import cards from "./dummyData";
 import Link from "next/link";
+import OnClickCard from "./OnClickCard";
+import { FaXmark } from "react-icons/fa6";
 
 
 type Card = {
@@ -19,17 +21,17 @@ type Card = {
 const PortfolioGrid = () => {
     const [selected, setSelected] = useState<Card | null>(null);
     const [lastSelected, setLastSelected] = useState<Card | null>(null);
-   
+  
     const handleClick = (card: Card) => {
       setLastSelected(selected);
       setSelected(card);
     };
-   
+  
     const handleOutsideClick = () => {
       setLastSelected(selected);
       setSelected(null);
     };
-   
+  
     return (
       <div className="w-full h-full grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto gap-4 m-4">
         {cards.map((card, i) => (
@@ -101,7 +103,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         }}
         className="relative h-full px-8 pb-4 z-[70] rounded-lg"
       >
-        <SkeletonOne selected={selected}/>
+        <OnClickCard selected={selected}/>
 
         <motion.div
         initial={{
@@ -128,17 +130,6 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
   );
 }   
 
-
-
-const SkeletonOne = ({ selected }: { selected: Card | null }) => {
-  return (
-    <div className="w-full h-full flex flex-col items-start justify-end p-4">
-      <p className="font-bold text-4xl text-white">{selected?.title}</p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">{selected?.text}</p>
-      <Link href={`/oferta/${selected?.link}`}>Sprawdź Teraz</Link>
-    </div>
-  );
-};
 
 
 export default PortfolioGrid

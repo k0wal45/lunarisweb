@@ -25,13 +25,13 @@ const About = () => {
       p-4 text-white 
     ">
       <div className="flex flex-col justify-center items-center gap-2  w-full lg:max-w-[25rem] *:w-full" >
-        <Image src='/img/me.jpg' alt='Daniel Kowalski Lunaris Web' width={600} height={500} className='rounded-xl h-[25rem] object-cover'/>
+        <Image src='/img/me.jpg' alt='Daniel Kowalski Lunaris Web' width={600} height={500} className='rounded-xl h-[25rem] max-w-[30rem] object-cover'/>
         <BtnLink link='https://daniel-kowalski.com/'>Sprawdź Moją Stronę</BtnLink>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:max-w-[38rem]">
-        <h3 className={`${border} text-3xl font-bold`}>
-          Kim Jestem?
+        <h3 className={`${border} text-xl font-bold`}>
+          Wszystko w 1 miejscu
           <span className="text-neutral-400 w-full text-lg font-normal whitespace-nowrap">
             <TyperWriter
               sequence={sequence}
@@ -40,10 +40,10 @@ const About = () => {
         </h3>
         
         <BtnLink link='kontakt'>Skontaktuj sie ze mną</BtnLink>
-        <p className={`${border} sm:col-span-2`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae quod laborum nisi. Ea repellat nostrum, ipsum autem voluptates fugiat ipsa a quaerat? Nihil mollitia necessitatibus nostrum nesciunt distinctio nisi, nam voluptates quidem neque tempora. Dolorum cum autem id sunt!</p>
+        <p className={`${border} sm:col-span-2`}>Od pierwszego kontaktu z klientem po finalną realizację projektu, jestem z Tobą na każdym etapie. Lunaris Web to jedna osoba, która specjalizuje się w kompleksowej tworzeniu stron internetowych, logotypów i innych materiałów reklamowych.</p>
         <ul className={border}>
           <span className='whitespace-nowrap text-xl font-bold'>Czym sie zajmuje?</span>
-          <li className='flex gap-4 flex-nowrap items-center pt-2'><FaArrowRight className='text-primary text-sm' /> Strony Internetowe</li>
+          <li className='flex gap-4 flex-nowrap items-center pt-2'><FaArrowRight className='text-primary text-sm' />Strony Internetowe</li>
           <li className='flex gap-4 flex-nowrap items-center pt-2'><FaArrowRight className='text-primary text-sm' />Grafika Komputerowa</li>
           <li className='flex gap-4 flex-nowrap items-center pt-2'><FaArrowRight className='text-primary text-sm' />Cyberbezpieczeństwo</li>
           <li className='flex gap-4 flex-nowrap items-center pt-2'><FaArrowRight className='text-primary text-sm' />Studia Informatyczne</li>

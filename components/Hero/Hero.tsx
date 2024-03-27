@@ -36,7 +36,7 @@ async function Hero() {
                 particleColor="#FFFFFF"
               />
             </div>
-            <div className={`${classes.bgOverlay} absolute pointer-events-none inset-0 flex items-center justify-center z-10 rounded-xl`}></div>
+            <div className={`${classes.bgOverlay} opacity-70 absolute pointer-events-none inset-0 flex items-center justify-center z-10 rounded-xl`}></div>
     
     <div className="flex flex-col justify-between items-center z-10 text-white gap-4 w-full">
       <h1 className="mt-0
