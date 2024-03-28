@@ -2,10 +2,11 @@ import OfferCard from "./Card"
 import { MdOutlineWeb } from "react-icons/md"
 import { PiPencilCircle } from "react-icons/pi"
 import { FaAddressCard } from "react-icons/fa"
+import classes from './bg.module.css'
 
 const Offers = () => {
   return (
-    <section className="flex flex-col items-center justift-center gap-8 mx-auto text-white p-4 my-12">
+    <section className={` ${classes.bg} bg-cover lg:bg-contain flex flex-col items-center justift-center gap-8 mx-auto text-white p-4 my-12`}>
       <div className="flex flex-col gap-2 items-center justify-center text-center">
         <h6 className="text-4xl font-bold">Jakie usługi oferuje?</h6>
         <p className="lg:w-2/3">Świadcze usługi tworzenia kompelksowych stron internetowycyh, logotypów i wszelkiego rodzaju materiałów reklamowych takich jak wizytówki czy banery</p>

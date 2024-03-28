@@ -1,10 +1,12 @@
 'use client'
 import React, { useState } from 'react'
-import Toast from '../reusable/Toast'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 const Form = () => {
 
-  const [validated, setValidated] = useState(null)
+
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -30,11 +32,22 @@ const Form = () => {
     
   }
 
+
+
   const handleSubmit = (e: any) => {
     e.preventDefault()
 
     if (e.target.validate.checked) {
-      alert('Coś poszło nie tak, zresetuj stronę lub skontaktuj się mailowo: lunarisweb.pl@gmail.com')
+      toast.error('Cos poszło nie tak, Skontaktuj się mailowo: lunarisweb.pl@gmail.com', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
       return
 
     }
@@ -46,16 +59,26 @@ const Form = () => {
       message: '',
     })
 
-    
+    toast.success('Sukces', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      });
 
-    
+
   }
 
   
   return (
-    <form action="" className="p-4 border-2 border-base rounded-xl text-white w-full flex-1 h-min" onSubmit={handleSubmit}>
+    <form action="" className="p-4 border-2 border-base rounded-xl text-white w-full flex-1 h-min max-w-[40rem] bg-black" onSubmit={handleSubmit}>
 
-      <p className="text-3xl font-bold">Masz pytania?</p>
+      <p className="text-lg font-bold text-secondary">Masz pytania?</p>
+      <p className="text-4xl font-bold">Napisz tutaj!</p>
       
       <label htmlFor="name" className='translate-y-[50%] translate-x-[1rem] p-2 bg-black w-min whitespace-nowrap rounded-lg'>Imię i Nazwisko</label>
       <input 
@@ -99,7 +122,7 @@ const Form = () => {
       <button type='submit' className='p-4 px-8 bg-gradient-to-r from-secondary to-primary rounded-xl text-white font-bold grid place-items-center text-xl w-full my-4' > Prześlij</button>
 
 
-      <Toast message='Dziekujemy za przesłanie' status="success" show={validated}/>
+      <ToastContainer />
 
       
     </form>

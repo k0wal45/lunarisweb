@@ -7,14 +7,24 @@ const Review = ({img, name, opinion, rate, link}: any) => {
     
   for (let i = 1; i <= rate; i++) {
       rating.push(
-        <FaStar />
+        <FaStar key={generateRandomString()}/>
       );
     }
   
+    function generateRandomString() {
+      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      let result = '';
+      const charactersLength = characters.length;
+      for (let i = 0; i < 12; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
+      return result;
+  
+    }
 
   return (
     
-    <a key={name} href={link} target='_blank' rel='noreferer' className="flex flex-col gap-4 p-4 border-2 border-neutral-200 max-w-[20rem] lg:max-w-[30rem] max-h-min mx-auto rounded-xl flex-1">
+    <a href={link} target='_blank' rel='noreferer' className="flex flex-col gap-4 p-4 border-2 border-neutral-200 max-w-[20rem] lg:max-w-[30rem] max-h-min mx-auto rounded-xl flex-1">
       <div className="flex justify-start items-center gap-4">
         <Image width={200} height={200} src={img} alt="Zdjęcie użytkownika który wystawił opinię" className='aspect-square rounded-full w-16'/>
     

@@ -15,7 +15,16 @@ import BtnLink from '../reusable/btn-link';
 
 const Reviews = () => {
 
+  function generateRandomString() {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result = '';
+    const charactersLength = characters.length;
+    for (let i = 0; i < 12; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
 
+  }
 
   return (
     <section className='flex flex-col gap-8 p-4 py-12 text-white'>
@@ -31,15 +40,15 @@ const Reviews = () => {
       >
         {
           data.map((review) => (
-            <SwiperSlide >
-              <Review
-                img={review.img}
-                name={review.name}
-                opinion={review.opinion}
-                rate={review.rate}
-                link={review.link}
-              />
-            </SwiperSlide>
+              <SwiperSlide key={generateRandomString()}>
+                <Review
+                  img={review.img}
+                  name={review.name}
+                  opinion={review.opinion}
+                  rate={review.rate}
+                  link={review.link}
+                />
+              </SwiperSlide>
           ))
         }
         

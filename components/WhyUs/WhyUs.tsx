@@ -9,7 +9,7 @@ const WhyUs = () => {
     <section className="flex flex-col gap-8 p-4 my-4 text-center text-white">
       <div className="flex flex-col gap-2 justify-center items-center text-center">
         <h5 className="font-bold text-4xl">Czemu my?</h5>
-        <p>Ale jakie właściwie są powody abyś właśnie ty rozpoczął z nami współpracę?</p>
+        <p>Ale jakie właściwie są powody abyś właśnie ze mną powinieneś rozpocząć współpracę?</p>
       </div>
       <div className="flex gap-8 flex-wrap items-center justify-center">
         <WhyCard 

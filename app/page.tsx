@@ -7,12 +7,13 @@ import Portfolio from "@/components/portfolio/Portfolio";
 import Panel from "@/components/reusable/Panel";
 import Reviews from "@/components/reviews/Reviews";
 import ContactSec from "@/components/ContactForm/ContactSec";
+import FaqSection from "@/components/FAQ/FaqSection";
 
 export default async function Home() {
 
 
   return (
-    <main className="overflow-x-hidden max-w-screen">
+      <main className="overflow-x-hidden max-w-screen">
       <Hero />
       <About />
       <Offers />
@@ -25,7 +26,7 @@ export default async function Home() {
       <WhyUs />
       <Reviews />
       <ContactSec />
-      <div className="h-[100vh] bg-red-950"></div>
+      <FaqSection />
     </main> 
   );
 }

@@ -6,7 +6,7 @@ import BtnLink from '../reusable/btn-link'
 
 const OfferCard = ({title, text, link, img, icon}: any) => {
   return (
-    <div className={` relative h-[27rem] min-w-[20rem] lg:even:scale-125 rounded-xl flex-1 p-4 z-10 group border-2 border-base group`}>
+    <div className={`bg-black relative h-[27rem] min-w-[20rem] lg:even:scale-125 rounded-xl flex-1 p-4 z-10 group border-2 border-base group`}>
       <Image width={800} 
         height={700} 
         src={`/img/${img}`} 

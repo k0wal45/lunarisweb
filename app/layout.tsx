@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/Footer";
 
-// const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,12 +14,12 @@ export const metadata: Metadata = {
     siteName: 'Lunaris Web',
     images: [
       {
-        url: 'https://nextjs.org/og.png', // Must be an absolute URL
+        url: 'https://nextjs.org/og.png',
         width: 800,
         height: 600,
       },
       {
-        url: 'https://nextjs.org/og-alt.png', // Must be an absolute URL
+        url: 'https://nextjs.org/og-alt.png',
         width: 1800,
         height: 1600,
         alt: 'Lunaris Web',
@@ -39,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={montserrat.className}>
+      <body className={`${montserrat.className} relative bg-black`}>
         {/* <Navbar /> */}
         {children}
         <Footer />
