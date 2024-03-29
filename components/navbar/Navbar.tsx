@@ -68,12 +68,6 @@ const Navbar = () => {
           <Link href='/omnie' className='hover:underline'>O Mnie</Link>
         </li>
         <li>
-          <Link href='/oferta' className='hover:underline'>Oferta</Link>
-        </li>
-        <li>
-          <Link href='/portfolio' className='hover:underline'>Portfolio</Link>
-        </li>
-        <li>
           <Pop />
         </li>
           <li>

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FaStar } from 'react-icons/fa';
+import { MdOutlineStar } from 'react-icons/md';
 
 const Review = ({img, name, opinion, rate, link}: any) => {
 
@@ -7,7 +7,7 @@ const Review = ({img, name, opinion, rate, link}: any) => {
     
   for (let i = 1; i <= rate; i++) {
       rating.push(
-        <FaStar key={generateRandomString()}/>
+        <MdOutlineStar key={generateRandomString()}/>
       );
     }
   
