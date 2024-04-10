@@ -27,8 +27,8 @@ const Reviews = () => {
   }
 
   return (
-    <section className='flex flex-col gap-8 p-4 py-12 text-white'>
-      <h6 className="text-3xl font-bold text-center">Opinie naszych Klientów</h6>
+    <section className='flex flex-col gap-8 p-4 py-12'>
+      <h6 className="text-3xl lg:text-6xl font-bold text-center">Opinie naszych Klientów</h6>
 
       <Swiper
         slidesPerView={'auto'}

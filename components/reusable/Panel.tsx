@@ -4,7 +4,7 @@ import BtnLink from './btn-link'
 
 const Panel = ({title, text, link}: {title: string, text: string, link: string}) => {
   return (
-    <section className={`${classes.bgGradinet} text-center p-4 overflow-hidden py-24 flex flex-col text-white items-center justify-center gap-4 relative rounded-xl z-10 m-4 border-2 border-base`}>
+    <section className={`${classes.bgGradinet} w-full text-center p-4 overflow-hidden py-24 flex flex-col text-white items-center justify-center gap-4 relative z-10`}>
 
         <SparklesCore
           id="another"

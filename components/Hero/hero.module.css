@@ -1,17 +1,12 @@
-.bgGrid {
-  background: black;
-  background-image: linear-gradient(rgba(230, 230, 230, .4) .04em, transparent .04em), linear-gradient(90deg, rgba(230, 230, 230, .4) .03em, transparent .04em);
-  background-size: 35px 35px;
+.circleContainer {
+  height: 100%;
+	position: relative;
+	display: inline-block;
+  z-index: 10; /* Make sure the container doesn't collapse */
 }
 
-.bgMask {
-  background: rgb(0,0,0);
-  background: -moz-linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7399334733893557) 26%, rgba(0,0,0,1) 55%);
-  background: -webkit-linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7399334733893557) 26%, rgba(0,0,0,1) 55%);
-  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7399334733893557) 26%, rgba(0,0,0,1) 55%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
-}
-
-.bgOverlay {
-  background: linear-gradient(137deg, rgba(0,72,255,0) 22%, rgba(0,72,255,1) 52%, rgba(189,0,255,1) 72%, rgba(255,255,255,1) 94%);
+.circleContainer::before {
+	content: "";
+	@apply block h-4/5 aspect-square rounded-full bg-primary z-[-1] absolute top-1/2 left-1/2;
+	transform: translate(-50%, -35%); 
 }

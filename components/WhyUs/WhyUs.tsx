@@ -1,42 +1,35 @@
-import React from 'react'
-import OfferCard from '../Offers/Card'
-import WhyCard from './WhyCard'
-import { FaArrowsToDot, FaGear, FaPerson } from 'react-icons/fa6'
-import { FaClock, FaLeaf } from 'react-icons/fa'
+import { FaClock, FaLeaf } from "react-icons/fa"
+import WhyCard from "./WhyCard"
+import { FaArrowsToDot, FaPerson } from "react-icons/fa6"
 
-const WhyUs = () => {
+function WhyUs() {
+
   return (
-    <section className="flex flex-col gap-8 p-4 my-4 text-center text-white">
-      <div className="flex flex-col gap-2 justify-center items-center text-center">
-        <h5 className="font-bold text-4xl">Czemu my?</h5>
-        <p>Ale jakie właściwie są powody abyś właśnie ze mną powinieneś rozpocząć współpracę?</p>
-      </div>
-      <div className="flex gap-8 flex-wrap items-center justify-center">
+    <section className='my-0 mx-auto flex flex-col items-center text-center gap-8 w-full bg-primary bg-opacity-20  p-4 pt-12  lg:py-24 '> 
+      <h2 className="font-bold text-4xl lg:text-6xl">Czemu Powinieneś nas wybrać</h2>
+      <p className='opacity-70 text-xl'>Wybierz nas dla skutecznych strategii marketingowych oraz elastyczności dostosowanej do Twoich potrzeb.</p>
+      <div className='flex flex-col lg:flex-row justify-center items-start flex-wrap'>
         <WhyCard 
-          title='Oszczędność czasu i zasobów'
+          heading='Oszczędność czasu i zasobów'
           text='Zaoszczędzony czas przekłada się na większą produktywność i większe zyski'
           icon={<FaClock />}
-          color='#bd00ff'
-        />
-        <WhyCard 
-          title='Wszystko w jednym miejscu'
-          text='Grafika, Strony Internetowe i Logotypy w jendym miejscu co pozwala zaoszczędzić czas i nerwy'
-          icon={<FaArrowsToDot />}
-          color='#bd00ff'
-        />
-        <WhyCard 
-          title='Świeże spojrzenie'
-          text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur atque nihil odit earum animi pariatur'
-          icon={<FaLeaf />}
-          color='#bd00ff'
-        />
-        <WhyCard 
-          title='Jedna osoba od wszystkiego'
-          text='Od kontaktu po realizacje, od stron po grafikę, a to wszystko w rękach jednej osoby'
-          icon={<FaPerson />}
-          color='#bd00ff'
         />
         
+        <WhyCard
+          heading='Świeże spojrzenie i kreatywność'
+          text='Świeże spojrzenie, kreatywność i innowacyjne pomysły, które ożywią twoją firmę w sieci i poza nią'
+          icon={<FaLeaf />}
+        />
+        <WhyCard 
+          heading='Wszystko w jednym miejscu'
+          text='Grafika, Strony Internetowe i Logotypy w jendym miejscu co pozwala zaoszczędzić czas i nerwy'
+          icon={<FaArrowsToDot />}
+        />
+        <WhyCard 
+          heading='Jedna osoba od wszystkiego'
+          text='Od kontaktu po realizacje, od stron po grafikę, a to wszystko w rękach jednej osoby'
+          icon={<FaPerson />}
+        />
       </div>
     </section>
   )

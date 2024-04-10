@@ -17,10 +17,10 @@ module.exports = {
     
     extend: {
       colors: {
-        primary: "#bd00ff",
-        secondary: '#0048ff',
+        primary: '#0048ff',
+        secondary: "#bd00ff",
         accent: '#ffde01',
-        base: '#5a5a5a'
+        base: '#bababa'
       },
     },
   },

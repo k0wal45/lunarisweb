@@ -8,24 +8,28 @@ import Panel from "@/components/reusable/Panel";
 import Reviews from "@/components/reviews/Reviews";
 import ContactSec from "@/components/ContactForm/ContactSec";
 import FaqSection from "@/components/FAQ/FaqSection";
+import Stats from "@/components/Stats";
+import Map from "@/components/Map";
 
 export default async function Home() {
 
 
   return (
-      <main className="overflow-x-hidden max-w-screen">
+    <main className="overflow-x-hidden max-w-screen">
       <Hero />
+      <Stats />
       <About />
       <Offers />
+      <WhyUs />
       <Portfolio />
       <Panel 
         title='Marketing w internecie to 1 krok do sukcesu!'
         text='Strona Internetowa to pierwszy krok jaki możesz podjąć aby rozbudować swój biznes i dać o sobie znać w internecie'
         link=''
       /> 
-      <WhyUs />
       <Reviews />
       <ContactSec />
+      <Map />
       <FaqSection />
     </main> 
   );

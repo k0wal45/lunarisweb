@@ -1,9 +1,6 @@
 .bgGradinet {
-  background: rgb(189,0,255);
-  background: -moz-radial-gradient(circle, rgba(189,0,255,0.75) 0%, rgba(50,122,255,0.3) 43%, rgba(0,4,187,0) 70%);
-  background: -webkit-radial-gradient(circle, rgba(189,0,255,0.75) 0%, rgba(50,122,255,0.3) 43%, rgba(0,4,187,0) 70%);
-  background: radial-gradient(circle, rgba(189,0,255,0.75) 0%, rgba(50,72,255,0.3) 43%, rgba(0,4,187,0) 70%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bd00ff",endColorstr="#0004bb",GradientType=1);
+  background: rgb(255,222,1);
+  background: linear-gradient(149deg, rgba(255,222,1,1) 0%, rgba(189,0,255,1) 49%, rgba(0,72,255,1) 100%);
   background-attachment: fixed;
 
   }

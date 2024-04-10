@@ -22,11 +22,11 @@ const About = () => {
   return (
     <section className="
       flex flex-col-reverse lg:flex-row items-center justify-center gap-8
-      p-4 text-white 
+      p-4
     ">
       <div className="flex flex-col justify-center items-center gap-2  w-full lg:max-w-[25rem] *:w-full" >
         <Image src='/img/me.jpg' alt='Daniel Kowalski Lunaris Web' width={600} height={500} className='rounded-xl h-[25rem] max-w-[30rem] object-cover'/>
-        <BtnLink link='https://daniel-kowalski.com/'>Sprawdź Moją Stronę</BtnLink>
+        <BtnLink link='https://daniel-kowalski.com/'>Więcej moich realizacji</BtnLink>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:max-w-[38rem]">
@@ -48,7 +48,7 @@ const About = () => {
           <li className='flex gap-4 flex-nowrap items-center pt-2'><FaArrowRight className='text-primary text-sm' />Cyberbezpieczeństwo</li>
           <li className='flex gap-4 flex-nowrap items-center pt-2'><FaArrowRight className='text-primary text-sm' />Studia Informatyczne</li>
         </ul>
-        <Image src='/img/me.jpg' alt='Daniel Kowalski Lunaris Web' width={400} height={500} className='h-52 object-cover rounded-xl w-full hidden sm:block'/>
+        <Image src='/img/me.png' alt='Daniel Kowalski Lunaris Web' width={400} height={500} className='h-52 object-cover object-top rounded-xl w-full hidden sm:block origin-top'/>
       </div>
     </section>
   )

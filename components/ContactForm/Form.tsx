@@ -75,45 +75,45 @@ const Form = () => {
 
   
   return (
-    <form action="" className="p-4 border-2 border-base rounded-xl text-white w-full flex-1 h-min max-w-[40rem] bg-black" onSubmit={handleSubmit}>
+    <form action="" className="p-4 border-2 border-base rounded-xl  w-full flex-1 h-min max-w-[40rem] bg-white" onSubmit={handleSubmit}>
 
       <p className="text-lg font-bold text-secondary">Masz pytania?</p>
       <p className="text-4xl font-bold">Napisz tutaj!</p>
       
-      <label htmlFor="name" className='translate-y-[50%] translate-x-[1rem] p-2 bg-black w-min whitespace-nowrap rounded-lg'>Imię i Nazwisko</label>
+      <label htmlFor="name" className='translate-y-[50%] translate-x-[1rem] p-2 bg-white w-min whitespace-nowrap rounded-lg'>Imię i Nazwisko</label>
       <input 
         type="text" name='name' 
         id='name' 
         onChange={onMutate} value={name}
-        className='w-full bg-black p-4 border-2 border-base rounded-xl focus:bg-black autofill:bg-black outlne-white ring-white' 
+        className='w-full bg-white p-4 border-2 border-base rounded-xl focus:bg-white autofill:bg-white outlne-white ring-white' 
         required
       /> 
   
-      <label htmlFor="email" className='translate-y-[50%] translate-x-[1rem] p-2 bg-black w-min whitespace-nowrap rounded-lg'>Twój e-mail</label>
+      <label htmlFor="email" className='translate-y-[50%] translate-x-[1rem] p-2 bg-white w-min whitespace-nowrap rounded-lg'>Twój e-mail</label>
       <input 
         type="email" name='email' 
         id='email' 
         onChange={onMutate} value={email}
-        className='w-full bg-black p-4 border-2 border-base rounded-xl focus:bg-black autofill:bg-black outlne-white ring-white' 
+        className='w-full bg-white p-4 border-2 border-base rounded-xl focus:bg-white autofill:bg-white outlne-white ring-white' 
         required
       /> 
   
-      <label htmlFor='phone' className='translate-y-[50%] translate-x-[1rem] p-2 bg-black w-min whitespace-nowrap rounded-lg'>Numer Telefonu</label>
+      <label htmlFor='phone' className='translate-y-[50%] translate-x-[1rem] p-2 bg-white w-min whitespace-nowrap rounded-lg'>Numer Telefonu</label>
       <input 
         type="number" name='phone' 
         id='phone' 
         onChange={onMutate} value={phone}
-        className='w-full bg-black p-4 border-2 border-base rounded-xl focus:bg-black autofill:bg-black outlne-white ring-white' 
+        className='w-full bg-white p-4 border-2 border-base rounded-xl focus:bg-white autofill:bg-white outlne-white ring-white' 
         required
       /> 
       
   
-      <label htmlFor='message' className='translate-y-[50%] translate-x-[1rem] p-2 bg-black w-min whitespace-nowrap rounded-lg'>Wiadomość</label>
+      <label htmlFor='message' className='translate-y-[50%] translate-x-[1rem] p-2 bg-white w-min whitespace-nowrap rounded-lg'>Wiadomość</label>
       <textarea 
         name='message' 
         id='message' 
         onChange={onMutate} value={message}
-        className='w-full h-48 bg-black p-4 border-2 border-base rounded-xl focus:bg-black autofill:bg-black outlne-white ring-white' 
+        className='w-full h-48 bg-white p-4 border-2 border-base rounded-xl focus:bg-white autofill:bg-white outlne-white ring-white' 
         required
       /> 
 

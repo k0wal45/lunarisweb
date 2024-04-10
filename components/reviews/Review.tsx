@@ -24,9 +24,9 @@ const Review = ({img, name, opinion, rate, link}: any) => {
 
   return (
     
-    <a href={link} target='_blank' rel='noreferer' className="flex flex-col gap-4 p-4 border-2 border-neutral-200 max-w-[20rem] lg:max-w-[30rem] max-h-min mx-auto rounded-xl flex-1">
+    <a href={link} target='_blank' rel='noreferer' className="flex flex-col gap-4 p-4 border-2 border-neutral-200 max-w-[20rem] lg:max-w-[30rem] max-h-min mx-auto rounded-md flex-1">
       <div className="flex justify-start items-center gap-4">
-        <Image width={200} height={200} src={img} alt="Zdjęcie użytkownika który wystawił opinię" className='aspect-square rounded-full w-16'/>
+        <Image width={100} height={100} src={img} alt="Zdjęcie użytkownika który wystawił opinię" className='aspect-square rounded-full w-16'/>
     
         <div className="flex flex-col gap-2">
           <h6 className="text-xl font-hussar">{name}</h6>
