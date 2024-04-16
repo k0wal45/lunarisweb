@@ -9,4 +9,27 @@
 	content: "";
 	@apply block h-4/5 aspect-square rounded-full bg-primary z-[-1] absolute top-1/2 left-1/2;
 	transform: translate(-50%, -35%); 
+	animation: buble 15s ease-in-out infinite;
+
+}
+
+@keyframes buble {
+  0% {
+    border-radius: 100%
+  }
+  20% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  40% {
+    border-radius: 40% 60% 100% 40% 70%;
+  }
+  60% {
+    border-radius: 50% 60% 40% 70%/40% 80% 40% 70%;
+  }
+  80% {
+    border-radius: 60% 30% 20% 80%/70% 50% 30% 40%;
+  }
+  100% {
+    border-radius: 100%
+  }
 }
