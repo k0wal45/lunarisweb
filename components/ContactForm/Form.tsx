@@ -1,11 +1,10 @@
 'use client'
-import React, { useState } from 'react'
+
+import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 const Form = () => {
-
-
 
   const [formData, setFormData] = useState({
     name: '',
@@ -73,9 +72,12 @@ const Form = () => {
 
   }
 
-  
+
   return (
-    <form action="" className="p-4 border-2 border-base rounded-xl  w-full flex-1 h-min max-w-[40rem] bg-white" onSubmit={handleSubmit}>
+    <form 
+      className="p-4 border-2 border-base rounded-xl  w-full flex-1 h-min max-w-[40rem] bg-white" 
+      onSubmit={handleSubmit}
+    >
 
       <p className="text-lg font-bold text-secondary">Masz pytania?</p>
       <p className="text-4xl font-bold">Napisz tutaj!</p>

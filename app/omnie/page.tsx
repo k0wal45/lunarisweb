@@ -1,11 +1,10 @@
-import Navbar from "@/components/navbar/Navbar"
 
 const AboutPage = () => {
   return (
-    <div className="text-white">
-      <Navbar />
+    <main className="h-screen w-screen bg-green-400">
+
       O mnie
-    </div>
+    </main>
   )
 }
 

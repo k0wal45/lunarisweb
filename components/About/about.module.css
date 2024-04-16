@@ -1,0 +1,11 @@
+.bgObject::before {
+	content: "";
+	@apply block h-4/5 aspect-square bg-gradient-to-r from-primary to-secondary z-[-1] absolute top-1/2 left-1/2 transition-all duration-300 ease-in-out;
+	transform: translate(-50%, -35%); 
+  clip-path: polygon(7% 11%, 100% 0, 92% 93%, 1% 99%);
+
+}
+
+.bgObject:hover::before {
+  clip-path: polygon(0 0, 88% 11%, 100% 100%, 9% 93%);
+}

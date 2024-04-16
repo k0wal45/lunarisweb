@@ -1,17 +1,37 @@
 'use client'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import {  useState } from 'react'
 import './hamburger.css'
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
 import Image from 'next/image'
-
+import {motion, useMotionValueEvent, useScroll } from 'framer-motion'
 const Navbar = () => {
 
-  const [visible, setVisible] = useState(false)
+  const {scrollY} = useScroll()
 
+  const [visible, setVisible] = useState(false)
+  const [hidden, setHidden] = useState(false)
+
+  useMotionValueEvent(scrollY, 'change', (latest: any) => {
+
+    const previous: any = scrollY.getPrevious()
+    if (latest > previous && latest > 150) {
+      setHidden(true)
+    } else {
+      setHidden(false)
+    }
+  })
 
   return (
-    <nav className="fixed top-0 left-0 rounded-t-xl w-full px-4 z-4 flex justify-between items-center lg:px-20 z-50 bg-white">
+    <motion.nav 
+      variants={{
+        visible: {y: 0},
+        hidden: {y: '-100%'}
+      }}
+      animate={hidden ? 'hidden' : 'visible'}
+      transition={{duration: 0.35, ease: 'easeInOut'}}
+      className="fixed top-0 left-0  w-full px-4 z-4 flex justify-between items-center lg:px-20 z-40 bg-white"
+    >
       <Link href='/' className="flex justify-center items-center p-4 gap-4 z-50">
         <Image src='/img/logo.png' alt="Logo Lunaris Web" width={70} height={70}/>
         <h2 className={`whitespace-nowrap text-2xl md:text-4xl font-[800] mt-[5px] transition-color duration-150 ${
@@ -45,6 +65,9 @@ const Navbar = () => {
             <Link href='/omnie'>O Mnie</Link>
           </li>
           <li>
+            <Link href='/blog' className='hover:underline'>Blog</Link>
+          </li>
+          <li>
             <Link href='/oferta'>Oferta</Link>
           </li>
           <li>
@@ -71,6 +94,9 @@ const Navbar = () => {
         </li>
         <li>
           <Link href='/omnie' className='hover:underline'>O Mnie</Link>
+        </li>
+        <li>
+          <Link href='/blog' className='hover:underline'>Blog</Link>
         </li>
         <li>
           <details>
@@ -103,7 +129,7 @@ const Navbar = () => {
       </ul>
 
       <div className="absolute bottom-0 left-0 bg-gradient-to-r from-transparent via-base to-transparent w-full h-[1px]"></div>
-    </nav>
+    </motion.nav>
   )
 }
 
