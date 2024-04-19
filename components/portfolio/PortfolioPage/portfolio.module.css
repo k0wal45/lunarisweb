@@ -1,0 +1,7 @@
+.clipObject {
+  clip-path: url(#initial);
+}
+
+.clipObject:hover {
+  clip-path: url(#hovered);
+}

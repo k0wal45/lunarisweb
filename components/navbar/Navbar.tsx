@@ -65,13 +65,13 @@ const Navbar = () => {
             <Link href='/omnie'>O Mnie</Link>
           </li>
           <li>
-            <Link href='/blog' className='hover:underline'>Blog</Link>
-          </li>
-          <li>
             <Link href='/oferta'>Oferta</Link>
           </li>
           <li>
             <Link href='/portfolio'>Portfolio</Link>
+          </li>
+          <li>
+            <Link href='/blog' className='hover:underline'>Blog</Link>
           </li>
           <li>
             <Link href='/blog'>Blog</Link>
@@ -96,33 +96,15 @@ const Navbar = () => {
           <Link href='/omnie' className='hover:underline'>O Mnie</Link>
         </li>
         <li>
+          <Link href='/uslugi' className='hover:underline'>Usługi</Link>
+        </li>
+        <li>
+          <Link href='/portfolio' className='hover:underline'>Portfolio</Link>
+        </li>
+        <li>
           <Link href='/blog' className='hover:underline'>Blog</Link>
         </li>
-        <li>
-          <details>
-            <summary className='cursor-pointer'>
-              Oferta
-            </summary>
-            <ul className="p-4 flex flex-col gap-4 absolute top-20 bg-white border-2 border-base rounded-xl z-40">
-              <li><Link href='/oferta/strony-internetowe'>Strony Internetowe</Link></li>
-              <li><Link href='/oferta/logotypy'>Logotypy</Link></li>
-              <li><Link href='/oferta/grafika'>Grafika Komputerowa</Link></li>
-            </ul>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary className='cursor-pointer'>
-              Portfolio
-            </summary>
-            <ul className="p-4 flex flex-col gap-4 absolute top-20 bg-white border-2 border-base rounded-xl z-40">
-              <li><Link href='/portfolio/strony-internetowe'>Strony Internetowe</Link></li>
-              <li><Link href='/portfolio/wizytówki'>Wizytówki</Link></li>
-              <li><Link href='/portfolio/banery-reklamowe'>Banery Reklamowe</Link></li>
-              <li><Link href='/portfolio/logotypy'>Logotypy</Link></li>
-            </ul>
-          </details>
-        </li>
+      
           <li>
             <Link href='/kontakt' className='p-4 px-6 bg-black text-white rounded-lg font-bold'>Porozmawiajmy!</Link>
           </li>
