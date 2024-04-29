@@ -4,9 +4,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 import './swiper.css'
 // import required modules
-import { Autoplay, FreeMode } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 
 import Review from './Review';
 
@@ -27,16 +29,16 @@ const Reviews = () => {
   }
 
   return (
-    <section className='flex flex-col gap-8 p-4 py-12'>
-      <h6 className="text-3xl lg:text-6xl font-bold text-center">Opinie naszych Klientów</h6>
+    <section className='flex flex-col gap-8 py-12'>
+      <h6 className="text-3xl lg:text-6xl font-bold text-center p-4">Opinie naszych Klientów</h6>
 
       <Swiper
-        slidesPerView={'auto'}
-        spaceBetween={20}
+        pagination={{
+          type: 'progressbar',
+        }}
+        modules={[Pagination, Autoplay]}
         loop={true}
-        modules={[Autoplay, FreeMode]}
         className="mySwiper"
-      
       >
         {
           data.map((review) => (
@@ -51,8 +53,7 @@ const Reviews = () => {
               </SwiperSlide>
           ))
         }
-        
-        
+
       </Swiper>
 
       <div className="flex mx-auto">

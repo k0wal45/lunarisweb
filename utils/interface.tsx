@@ -4,6 +4,7 @@ export interface Post {
   publishedAt: string;
   excerpt: string;
   body: any;
+  mainImage: string;
   tags: Array<Tag>;
   _id: string;
   headings?: Array<HTMLHeadElement | string>

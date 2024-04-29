@@ -10,7 +10,7 @@ import ContactSec from "@/components/ContactForm/ContactSec";
 import FaqSection from "@/components/FAQ/FaqSection";
 import Stats from "@/components/Stats";
 import Map from "@/components/Map";
-import PreLoader from "@/components/PreLoader/Preloader";
+import BlogSection from "@/components/Blog/BlogSection";
 
 export default async function Home() {
  
@@ -27,6 +27,7 @@ export default async function Home() {
           text='Strona Internetowa to pierwszy krok jaki możesz podjąć aby rozbudować swój biznes i dać o sobie znać w internecie'
         /> 
         <Reviews />
+        <BlogSection />
         <ContactSec />
         <Map />
         <FaqSection />

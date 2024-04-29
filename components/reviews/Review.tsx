@@ -24,21 +24,20 @@ const Review = ({img, name, opinion, rate, link}: any) => {
 
   return (
     
-    <a href={link} target='_blank' rel='noreferer' className="flex flex-col gap-4 p-4 border-2 border-neutral-200 max-w-[20rem] lg:max-w-[30rem] max-h-min mx-auto rounded-md flex-1">
-      <div className="flex justify-start items-center gap-4">
-        <Image width={100} height={100} src={img} alt="Zdjęcie użytkownika który wystawił opinię" className='aspect-square rounded-full w-16'/>
-    
-        <div className="flex flex-col gap-2">
-          <h6 className="text-xl font-hussar">{name}</h6>
-
-          <div className="flex text-yellow-500">
-            {rating}
-          </div>
-          
-        </div>
-
+    <a href={link} target='_blank' rel='noreferer' 
+      className="flex flex-col items-center justify-center mt-12 gap-8 p-4 mx-auto lg:max-w-[66vw]"
+    >
+      <div className="flex text-3xl text-black">
+        {rating}
       </div>
-      <p className="text-lg">{opinion}</p>
+
+      <p className="text-2xl  font-bold">{opinion}</p>
+
+      <div className="flex flex-col items-center gap-2">
+        <Image width={100} height={100} src={img} alt="Zdjęcie użytkownika który wystawił opinię" className='aspect-square rounded-full w-16'/>
+        <h6 className="text-lg text-base font-hussar">{name}</h6>
+      </div>
+
     </a>
   )
 }

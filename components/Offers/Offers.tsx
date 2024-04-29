@@ -11,7 +11,7 @@ const Offers = () => {
         <p className="lg:w-2/3">Świadcze usługi tworzenia kompelksowych stron internetowycyh, logotypów i wszelkiego rodzaju materiałów reklamowych takich jak wizytówki czy banery</p>
       </div>
       
-      <div className="flex flex-col lg:flex-row gap-16 items-center justify-center py-12">
+      <div className="flex flex-col lg:flex-row gap-16 items-center justify-center py-12 w-full">
         <OfferCard 
           title='Logotypy'
           text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami.'

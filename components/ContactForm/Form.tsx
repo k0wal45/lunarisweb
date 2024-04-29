@@ -121,7 +121,9 @@ const Form = () => {
 
       <input type="checkbox" name="validate" id="validate" className='hidden' />
   
-      <button type='submit' className='p-4 px-8 bg-gradient-to-r from-secondary to-primary rounded-xl text-white font-bold grid place-items-center text-xl w-full my-4' > Prześlij</button>
+      <button type='submit' className='p-4 px-8 bg-gradient-to-r from-secondary to-primary rounded-md text-white font-bold grid mt-4 place-items-center text-xl w-full transition-all duration-300
+      hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_black] 
+      active:translate-x-[0px] active:translate-y-[0px] active:shadow-none' > Prześlij</button>
 
 
       <ToastContainer />

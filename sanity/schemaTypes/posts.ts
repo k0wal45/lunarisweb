@@ -28,6 +28,11 @@ export const post = {
       initialValue: () => new Date().toISOString()
     }, 
     {
+      name: 'mainImage',
+      title: 'Main Image',
+      type: 'image'
+    },
+    {
       name: "excerpt",
       title: "Excerpt",
       type: "text",

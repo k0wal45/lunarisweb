@@ -32,6 +32,15 @@ const getPost = async (slug:string) => {
 }
 
 
+// export async function generateMetadata(slug:string) {
+
+//   const product = await getPost(slug)
+ 
+//   return {
+//     title: product.title,
+//   }
+// }
+
 const slug = async ({params}: Params) => {
 
   const event: Post = await getPost(params?.slug)
@@ -39,14 +48,15 @@ const slug = async ({params}: Params) => {
   const component = {
     types: {
       image: ({value}: any) => (
-        <Image src={urlForImage(value).url()} alt="Post Image" width={400} height={400}/>
+        <Image src={urlForImage(value).url()} alt="Post Image" width={800} height={500}/>
       ),
     }
   }
+  
 
   return (
-    <div className={`${classes.post} flex p-24 bg-neutral-900 flex-col items-center justify-center gap-8 w-full text-white`}>
-      <Link href='/' className="bg-blue-400 p-4 rounded-xl text-xl text-white w-min">Home</Link>
+    <section className={`${classes.post} flex p-4 flex-col items-center justify-center gap-8 w-full `}>
+
       <div className="flex flex-col gap-2">
         <h1 className="text-3xl font-bold">{event?.title}</h1>
         <div className="flex gap-4">
@@ -54,15 +64,15 @@ const slug = async ({params}: Params) => {
             <Link key={tag?.slug?.current} href={`${tag.slug?.current}`} className="p-2 rounded-xl bg-yellow-500">{tag.name}</Link>
           ))}
         </div>
-        <span className="text-sm text-neutral-200">{new Date(event?.publishedAt).toDateString()}</span>
+        <span className="text-sm text-base">{new Date(event?.publishedAt).toDateString()}</span>
       </div>
-      <div className="flex flex-col gap-2 max-w-xl bg-neutral-200 rounded-xl p-8 text-black">
+      <div className="flex flex-col gap-2 lg:max-w-5xl w-full rounded-xl p-8 text-black">
         <PortableText 
           value={event?.body}
           components={component}
         />
       </div>
-    </div>
+    </section>
   )
 }
 
