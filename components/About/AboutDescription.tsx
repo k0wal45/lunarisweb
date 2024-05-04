@@ -1,10 +1,9 @@
-'use client'
-import { useRef } from "react";
-import {motion, useInView} from 'framer-motion'
 
 import { IoPersonOutline } from 'react-icons/io5'
 import { MdOutlineWeb } from 'react-icons/md'
 import AppearFromLeft from "../Animations/AppearFromLeft";
+import { FaCheck } from 'react-icons/fa';
+import BtnLink from '../reusable/btn-link';
 
 
 const AboutDescription = () => {
@@ -13,7 +12,7 @@ const AboutDescription = () => {
       <h3 className="text-3xl lg:text-6xl font-bold">Z kim będziesz pracować?</h3>
       <p className="text-lg">Od pierwszego kontaktu z klientem po finalną realizację projektu, jestem z Tobą na każdym etapie. Lunaris Web to jedna osoba, która specjalizuje się w kompleksowej tworzeniu stron internetowych, logotypów i innych materiałów reklamowych. Nazywam się Daniel Kowalski i chce pomóc ci w rozrastaniu twojego bizensu</p>
       <div className="flex flex-wrap gap-4 items-center justify-start w-full">
-         
+        
         <div className="flex-1">
           <AppearFromLeft>
             <div className="flex gap-4 items-center">
@@ -36,6 +35,21 @@ const AboutDescription = () => {
           </AppearFromLeft>
         </div>
 
+
+      </div>
+
+      <div className="flex flex-col gap-2 mt-2">
+        <div className="flex gap-2 items-center">
+          <FaCheck/> <p className="text-lg">Techniczne wykształcenie w dziedzinie informatyki</p>
+        </div>
+      </div>
+      <div className="flex flex-col gap-2">
+        <div className="flex gap-2 items-center">
+          <FaCheck/> <p className="text-lg">Chęć pomocy i rozwoju aby przedewszystkim pomóc właśnie tobie</p>
+        </div>
+      </div>
+      <div className="max-w-[35rem]">
+        <BtnLink link='' >Sprawdź moje niekomercyjne realizacje</BtnLink>
       </div>
 
       

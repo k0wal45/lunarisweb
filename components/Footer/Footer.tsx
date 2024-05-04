@@ -1,11 +1,14 @@
+import classes from './footer.module.css'
+
 function Footer() {
   const date = new Date()
   const year = date.getFullYear()
 
+
   return (
     
 
-    <footer className="flex flex-col gap-2 text-center lg:flex-row justify-between px-8 p-4 bg-base-200 shadow-inner z-70 text-lg border-t-2 border-base z-20 text-black">
+    <footer className={`${classes.bgWave} h-72 flex flex-col gap-2 text-center lg:flex-row justify-between px-8 p-4 bg-base-200 shadow-inner z-70 text-lg border-t-2 border-base z-20 text-black`}>
       <div className="items-center grid-flow-col">
         <p>Copyright © {year} - Wszystkie prawa zastrzeżone</p>
       </div> 

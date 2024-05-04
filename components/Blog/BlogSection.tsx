@@ -38,7 +38,7 @@ const BlogSection = async () => {
 			<p>Znajdziesz tu najnowsze posty z naszego bloga. Dowiedz się wiecej o tworzeniu storn internetowych i nie tylko!</p>
 		</div>
 
-		<div className=" w-full flex justify-around items-start">
+		<div className=" w-full flex flex-wrap justify-around items-start">
 		{
         posts?.map((post: Post) => (
           <BlogItem post={post} />

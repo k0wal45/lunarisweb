@@ -11,9 +11,9 @@ const BlogItem = (post: any) => {
     <Link href={'/blog/' + post.post.slug.current} key={post.post._id} 
     className="
       flex flex-col gap-2 w-[23rem] h-min rounded-xl shadow-none
-      hover:translate-y-[-4px] hover:translate-x-2 hover:shadow-xl
+      lg:hover:translate-y-[-4px] lg:hover:translate-x-2 lg:hover:shadow-xl
       duration-200 transition-all
-      group
+      lg:group
     ">
       <Image src={urlForImage(post.post.mainImage).url()} alt={post.post.title} width={400} height={300} className='w-full h-48 rounded-xl group-hover:translate-y-[-4px] group-hover:translate-x-2
         duration-200 transition-all'/>
