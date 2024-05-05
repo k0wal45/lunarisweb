@@ -1,4 +1,7 @@
+'use client'
+import Image from 'next/image'
 import classes from './footer.module.css'
+import { FaFacebook, FaFacebookF, FaInstagram } from 'react-icons/fa'
 
 function Footer() {
   const date = new Date()
@@ -8,13 +11,29 @@ function Footer() {
   return (
     
 
-    <footer className={`${classes.bgWave} h-72 flex flex-col gap-2 text-center lg:flex-row justify-between px-8 p-4 bg-base-200 shadow-inner z-70 text-lg border-t-2 border-base z-20 text-black`}>
-      <div className="items-center grid-flow-col">
-        <p>Copyright © {year} - Wszystkie prawa zastrzeżone</p>
-      </div> 
-      <section>
-        <p>Stronę Wykonał: <a target="_blank" href="https://daniel-kowalski.com" className="underline" rel="noreferrer">Daniel Kowalski</a></p>
-      </section> 
+    <footer className={`${classes.bgWave} bg-neutral-200 rounded-t-3xl grid grid-cols-1 lg:grid-cols-3 lg:h-56 items-center justify-center gap-12 p-4`}>
+      
+        <p className='font-bold text-3xl h-full grid place-items-center'>©{year} Lunaris Web</p>
+
+        <div onClick={() => window.scrollTo(0, 0)} className="flex flex-col gap-2 justify-center items-center cursor-pointer">
+          <Image src='/img/logo.png' alt='Logo Lunaris Web' className='w-32' width={200} height={200} />
+          <p className='text-3xl font-bold'>Strony Internetowe</p>
+        </div>
+        
+        <ul className="flex gap-2 items-center justify-center">
+          <li className='text-3xl text-black hover:text-primary transition-all duration-75 active:scale-110'>
+            <a href="">
+              <FaFacebookF />
+            </a>
+          </li>
+          <li className='text-3xl text-black hover:text-primary transition-all duration-75 active:scale-110'>
+            <a href="">
+              <FaInstagram />
+            </a>
+          </li>
+          
+        </ul>
+      
     </footer>
 
   )

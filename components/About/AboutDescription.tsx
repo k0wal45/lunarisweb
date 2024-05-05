@@ -49,7 +49,7 @@ const AboutDescription = () => {
         </div>
       </div>
       <div className="max-w-[35rem]">
-        <BtnLink link='' >Sprawdź moje niekomercyjne realizacje</BtnLink>
+        <BtnLink link='https://daniel-kowalski.com' >Sprawdź moje niekomercyjne realizacje</BtnLink>
       </div>
 
       

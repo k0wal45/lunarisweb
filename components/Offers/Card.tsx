@@ -19,7 +19,7 @@ const OfferCard = ({title, text, link, img, icon}: any) => {
       initial='initial'
       animate="initial"
     >
-      <Image src={'/img/' + img} alt='title' width={700} height={800} className='w-full h-full object-cover absolute z-[-1]'/>
+      <Image src={'/img/' + img} alt='title' width={1000} height={1000} className='w-full h-full object-cover absolute z-[-1]'/>
       <div className="w-full h-full p-2">
         <motion.div 
           variants={clipPath}

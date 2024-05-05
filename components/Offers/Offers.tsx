@@ -16,21 +16,21 @@ const Offers = () => {
           title='Logotypy'
           text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami.'
           link='logotypy'
-          img='placeholder.jpg'
+          img='logotyp.jpg'
           icon={<PiPencilCircle />}
         />
         <OfferCard 
           title='Strony Internetowe'
           text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami.'
           link='strony-internetowe'
-          img='placeholder.jpg'
+          img='strona.jpg'
           icon={<MdOutlineWeb />}
         />
         <OfferCard 
           title='Materiały Reklamowe'
           text='Wizytówki, Banery Reklamowe i wiele innych rzeczy które pomogą ci zdobyć klientów'
           link='grafika koputerowa'
-          img='placeholder.jpg'
+          img='wizytowka.jpg'
           icon={<FaAddressCard />}
         />
         
