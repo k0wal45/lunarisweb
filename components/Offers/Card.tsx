@@ -10,21 +10,29 @@ const OfferCard = ({title, text, link, img, icon}: any) => {
     initial: {clipPath: 'polygon(0 0, 100% 0, 11% 11%, 0 100%)'},
     animate: {clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'}
   }
+  
+  const scale = {
+    initial: {scale: 1},
+    animate: {scale: 1.1}
+  }
 
 
   return (
     <motion.div 
-      className={`bg-white relative w-full max-w-[25rem] aspect-square flex-1 z-10 group `}
+      className={`bg-white relative w-full max-w-[25rem] aspect-square flex-1 z-10 group hidden lg:block`}
       whileHover='animate'
+      whileTap='animate'
       initial='initial'
       animate="initial"
+      variants={scale}
+      transition={{duration: 0.6, ease: 'backOut'}}
     >
       <Image src={'/img/' + img} alt='title' width={1000} height={1000} className='w-full h-full object-cover absolute z-[-1]'/>
       <div className="w-full h-full p-2">
         <motion.div 
           variants={clipPath}
           className="flex flex-col z-20 bg-white w-full h-full items-center justify-center text-center p-4 gap-2"
-          transition={{ease: 'backOut', duration: 1}}
+          transition={{ duration: 0.8, ease: 'backOut' }}
         >
           <motion.p 
             className="text-8xl text-primary"
@@ -57,7 +65,7 @@ const OfferCard = ({title, text, link, img, icon}: any) => {
               animate: {opacity: 1, translateY: 0}
             }}
           >
-            <BtnLink link={link}>Sprawdź Teraz</BtnLink>
+            <BtnLink link={`/uslugi/${link}`}>Sprawdź Teraz</BtnLink>
           </motion.div>
         </motion.div>
           

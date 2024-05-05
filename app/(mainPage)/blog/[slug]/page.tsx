@@ -6,6 +6,7 @@ import { PortableText } from "@portabletext/react";
 import classes from './post.module.css'
 import Image from "next/image";
 import { urlForImage } from "@/sanity/lib/image";
+import { Fragment } from "react";
 
 
 
@@ -17,6 +18,7 @@ const getPost = async (slug:string) => {
     slug,
     publishedAt,
     excerpt,
+    mainImage,
     _id,
     body,
     tags[]-> {
@@ -52,13 +54,14 @@ const slug = async ({params}: Params) => {
       ),
     }
   }
+  console.log(event)
   
 
   return (
-    <section className={`${classes.post} flex p-4 flex-col items-center justify-center gap-8 w-full `}>
-
+    <Fragment>
+      <Image src={urlForImage(event?.mainImage).url()} width={1300} height={1000} alt={event?.title} className="w-full rounded-br-[6rem] lg:rounded-br-[13rem]" />
       <div className="flex flex-col gap-2">
-        <h1 className="text-3xl font-bold">{event?.title}</h1>
+        <h1 className="text-5xl font-bold">{event?.title}</h1>
         <div className="flex gap-4">
           {event?.tags?.map((tag) => (
             <Link key={tag?.slug?.current} href={`${tag.slug?.current}`} className="p-2 rounded-xl bg-yellow-500">{tag.name}</Link>
@@ -66,13 +69,14 @@ const slug = async ({params}: Params) => {
         </div>
         <span className="text-sm text-base">{new Date(event?.publishedAt).toDateString()}</span>
       </div>
-      <div className="flex flex-col gap-2 lg:max-w-5xl w-full rounded-xl p-8 text-black">
+      <div className={classes.post}>
         <PortableText 
           value={event?.body}
           components={component}
         />
       </div>
-    </section>
+    </Fragment>
+    
   )
 }
 

@@ -2,6 +2,7 @@ import OfferCard from "./Card"
 import { MdOutlineWeb } from "react-icons/md"
 import { PiPencilCircle } from "react-icons/pi"
 import { FaAddressCard } from "react-icons/fa"
+import CardMobile from "./CardMobile"
 
 const Offers = () => {
   return (
@@ -12,6 +13,7 @@ const Offers = () => {
       </div>
       
       <div className="flex flex-col lg:flex-row gap-16 items-center justify-center py-12 w-full">
+        
         <OfferCard 
           title='Logotypy'
           text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami.'
@@ -27,6 +29,27 @@ const Offers = () => {
           icon={<MdOutlineWeb />}
         />
         <OfferCard 
+          title='Materiały Reklamowe'
+          text='Wizytówki, Banery Reklamowe i wiele innych rzeczy które pomogą ci zdobyć klientów'
+          link='grafika koputerowa'
+          img='wizytowka.jpg'
+          icon={<FaAddressCard />}
+        />
+        <CardMobile 
+          title='Logotypy'
+          text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami.'
+          link='logotypy'
+          img='logotyp.jpg'
+          icon={<PiPencilCircle />}
+        />
+        <CardMobile 
+          title='Strony Internetowe'
+          text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami.'
+          link='strony-internetowe'
+          img='strona.jpg'
+          icon={<MdOutlineWeb />}
+        />
+        <CardMobile 
           title='Materiały Reklamowe'
           text='Wizytówki, Banery Reklamowe i wiele innych rzeczy które pomogą ci zdobyć klientów'
           link='grafika koputerowa'
