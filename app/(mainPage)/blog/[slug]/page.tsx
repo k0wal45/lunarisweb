@@ -9,7 +9,6 @@ import { urlForImage } from "@/sanity/lib/image";
 import { Fragment } from "react";
 
 
-
 const getPost = async (slug:string) => {
   const EVENTS_QUERY = `*[
     _type == "post" && slug.current == "${slug}"
