@@ -1,5 +1,6 @@
 import BlogSection from "@/components/Blog/BlogSection";
 import ContactSec from "@/components/ContactForm/ContactSec";
+import FaqSection from "@/components/FAQ/FaqSection";
 import Offers from "@/components/Offers/Offers";
 import Panel from "@/components/reusable/Panel";
 
@@ -20,7 +21,7 @@ const layout = ({
         /> 
       <Offers />
       <ContactSec />
-
+      <FaqSection />
     </main>
   )
 }

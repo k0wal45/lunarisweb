@@ -4,9 +4,7 @@ import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
 import cards from "./dummyData";
-import Link from "next/link";
 import OnClickCard from "./OnClickCard";
-import { FaXmark } from "react-icons/fa6";
 
 
 type Card = {

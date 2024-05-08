@@ -7,7 +7,7 @@ const cards = [
     link: '/1',
     className: "md:col-span-2",
     thumbnail:
-      "/img/placeholder.jpg",
+      "/img/wizytowka.jpg",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const cards = [
     link: '/2',
     className: "col-span-1",
     thumbnail:
-      "/img/placeholder.jpg",
+      "/img/strona.jpg",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const cards = [
     link: '/3',
     className: "col-span-1",
     thumbnail:
-      "/img/placeholder.jpg",
+      "/img/placeholder2.png",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const cards = [
     link: '/4',
     className: "md:col-span-2",
     thumbnail:
-      "/img/placeholder.jpg",
+      "/img/placeholder1.png",
   },
 ];
 

@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import {motion, useInView} from 'framer-motion'
 
-const AppearFromLeft = ({children}: any) => {
+const AppearFromRight = ({children}: any) => {
   const ref: any = useRef()
 
   const IsInView = useInView(ref, {once: true, amount: 0.2})
@@ -13,7 +13,7 @@ const AppearFromLeft = ({children}: any) => {
       variants={{
         hidden: {
           opacity: 0,
-          x: -100
+          x: 100
         },
         visible: {
           opacity: 1,
@@ -28,4 +28,4 @@ const AppearFromLeft = ({children}: any) => {
   )
 }
 
-export default AppearFromLeft
+export default AppearFromRight

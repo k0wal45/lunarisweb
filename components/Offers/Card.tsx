@@ -21,7 +21,6 @@ const OfferCard = ({title, text, link, img, icon}: any) => {
     <motion.div 
       className={`bg-white relative w-full max-w-[25rem] aspect-square flex-1 z-10 group hidden lg:block`}
       whileHover='animate'
-      whileTap='animate'
       initial='initial'
       animate="initial"
       variants={scale}

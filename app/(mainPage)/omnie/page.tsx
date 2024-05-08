@@ -1,3 +1,5 @@
+import Hero from "@/components/Hero/HeroUniversal";
+import Stats from "@/components/Stats";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,9 +9,13 @@ export const metadata: Metadata = {
 
 const AboutPage = () => {
   return (
-    <main className="h-screen w-screen bg-green-400">
-
-      O mnie
+    <main className="overflow-x-hidden max-w-screen">
+      <Hero 
+        slug='o mnie'
+        title='Twórca Stron Internetowych z Indywidualnym Podejściem'
+        text='Indywidualne podejście do każdego projektu'
+      />
+      <Stats />
     </main>
   )
 }

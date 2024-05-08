@@ -41,7 +41,7 @@ const BlogSection = async () => {
 		<div className=" w-full flex flex-wrap justify-around items-start">
 		{
         posts?.map((post: Post) => (
-          <BlogItem post={post} />
+          <BlogItem post={post}/>
         ))
       }
 		</div>
