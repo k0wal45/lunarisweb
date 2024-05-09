@@ -3,6 +3,8 @@ import { MdOutlineWeb } from "react-icons/md"
 import { PiPencilCircle } from "react-icons/pi"
 import { FaAddressCard } from "react-icons/fa"
 import CardMobile from "./CardMobile"
+import AppearFromLeft from "../Animations/AppearFromLeft"
+import AppearFromRight from "../Animations/AppearFromRight"
 
 const Offers = () => {
   return (
@@ -13,14 +15,16 @@ const Offers = () => {
       </div>
       
       <div className="flex flex-col lg:flex-row gap-16 items-center justify-center py-12 w-full">
-        
-        <OfferCard 
-          title='Logotypy'
-          text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami.'
-          link='logotypy'
-          img='logotyp.jpg'
-          icon={<PiPencilCircle />}
-        />
+        <AppearFromLeft>
+          <OfferCard 
+            title='Logotypy'
+            text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami.'
+            link='logotypy'
+            img='logotyp.jpg'
+            icon={<PiPencilCircle />}
+          />
+        </AppearFromLeft>
+
         <OfferCard 
           title='Strony Internetowe'
           text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami.'
@@ -28,13 +32,16 @@ const Offers = () => {
           img='strona.jpg'
           icon={<MdOutlineWeb />}
         />
-        <OfferCard 
-          title='Materiały Reklamowe'
-          text='Wizytówki, Banery Reklamowe i wiele innych rzeczy które pomogą ci zdobyć klientów'
-          link='grafika koputerowa'
-          img='wizytowka.jpg'
-          icon={<FaAddressCard />}
-        />
+        <AppearFromRight>
+          <OfferCard 
+            title='Materiały Reklamowe'
+            text='Wizytówki, Banery Reklamowe i wiele innych rzeczy które pomogą ci zdobyć klientów'
+            link='grafika koputerowa'
+            img='wizytowka.jpg'
+            icon={<FaAddressCard />}
+          />
+        </AppearFromRight>
+
         <CardMobile 
           title='Logotypy'
           text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami.'

@@ -1,6 +1,7 @@
 import { client } from "@/sanity/client";
 import BlogItem from "./BlogItem";
 import { Post } from "@/utils/interface";
+import AppearFromLeft from "../Animations/AppearFromLeft";
 
 const getPosts = async () => {
   const EVENTS_QUERY = `*[
@@ -41,7 +42,9 @@ const BlogSection = async () => {
 		<div className=" w-full flex flex-wrap justify-around items-start">
 		{
         posts?.map((post: Post) => (
-          <BlogItem post={post}/>
+          <AppearFromLeft>
+            <BlogItem post={post}/>
+          </AppearFromLeft>
         ))
       }
 		</div>

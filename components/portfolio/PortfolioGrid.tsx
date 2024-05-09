@@ -73,8 +73,8 @@ const PortfolioGrid = () => {
 
 const Placeholder = ({ card, classname }: { card: Card, classname: string }) => {
   return (
-    <Image width={800} 
-    height={700} 
+    <Image width={1000} 
+    height={800} 
     src={card.thumbnail} 
     alt="" 
     className={`${classname} top-0 left-0 w-full h-72 rounded-xl object-cover bg-white`} />
