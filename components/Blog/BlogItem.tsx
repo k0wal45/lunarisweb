@@ -23,7 +23,7 @@ const BlogItem = (post: any) => {
       ">
         <ul className="flex gap-4 ">
           {post.post.tags?.map((tag: any) => (
-          <li key={post.post._id} className="px-2 py-1 rounded-xl text-sm bg-yellow-500">{tag.name}</li>
+          <li key={tag._id} className={`px-2 py-1 rounded-xl text-sm font-bold`} style={{background: tag.color}}>{tag.name}</li>
           ))}
         </ul>
 

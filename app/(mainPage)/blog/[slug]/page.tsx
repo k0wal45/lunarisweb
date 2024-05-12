@@ -8,6 +8,7 @@ import Image from "next/image";
 import { urlForImage } from "@/sanity/lib/image";
 import { Fragment } from "react";
 
+export const revalidate = 10
 
 const getPost = async (slug:string) => {
   const EVENTS_QUERY = `*[
@@ -22,7 +23,7 @@ const getPost = async (slug:string) => {
     body,
     tags[]-> {
       _id,
-      slug,
+      color,
       name
     }
     
@@ -61,11 +62,11 @@ const slug = async ({params}: Params) => {
       <Image src={urlForImage(event?.mainImage).url()} width={1300} height={1000} alt={event?.title} className="w-full rounded-br-[6rem] lg:rounded-br-[13rem]" />
       <div className="flex flex-col gap-2">
         <h1 className="text-5xl font-bold">{event?.title}</h1>
-        <div className="flex gap-4">
-          {event?.tags?.map((tag) => (
-            <Link key={tag?.slug?.current} href={`${tag.slug?.current}`} className="p-2 rounded-xl bg-yellow-500">{tag.name}</Link>
+        <ul className="flex gap-4 my-2">
+          {event.tags?.map((tag: any) => (
+          <li key={tag._id} className={`px-2 py-1 rounded-xl text-md font-bold`} style={{background: tag.color}}>{tag.name}</li>
           ))}
-        </div>
+        </ul>
         <span className="text-sm text-base">{new Date(event?.publishedAt).toDateString()}</span>
       </div>
       <div className={classes.post}>

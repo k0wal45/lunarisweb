@@ -1,3 +1,4 @@
+import WhyUs from "@/components/About/AboutPage/WhyUs";
 import Hero from "@/components/Hero/HeroUniversal";
 import Stats from "@/components/Stats";
 import type { Metadata } from "next";
@@ -15,6 +16,7 @@ const AboutPage = () => {
         title='Twórca Stron Internetowych z Indywidualnym Podejściem'
         text='Indywidualne podejście do każdego projektu'
       />
+      <WhyUs />
       <Stats />
     </main>
   )

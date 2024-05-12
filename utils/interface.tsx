@@ -16,3 +16,12 @@ export interface Tag {
   _id: string;
   postCount?: number
 }
+
+export interface PortfolioPage {
+  title: string;
+  company: string;
+  img: string;
+  heading: string;
+  text: string;
+  link: string;
+}

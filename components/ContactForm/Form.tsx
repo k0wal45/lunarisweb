@@ -75,7 +75,7 @@ const Form = () => {
 
   return (
     <form 
-      className="p-4 border-2 border-base rounded-xl  w-full flex-1 h-min max-w-[40rem] bg-white" 
+      className="p-4 border-2 border-base rounded-xl w-[90vw] lg:w-[40rem] bg-white" 
       onSubmit={handleSubmit}
     >
 

@@ -9,16 +9,12 @@ export const tag = defineType({
       name: "name",
       title: "Tag Name",
       type: "string",
-
     },
     {
-      name: "slug",
-      title: "Slug",
-      type: "slug",
-      options: {
-        source: "name"
-      }
-
+      name: "color",
+      title: "Color",
+      type: "string",
     },
+    
   ]
 })

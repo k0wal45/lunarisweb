@@ -1,10 +1,16 @@
-import React from 'react'
+import { TextParallaxContentExample } from "@/components/portfolio/PortfolioSlug/PortfolioSection"
+import { Params } from "next/dist/shared/lib/router/utils/route-matcher"
+import data from "./data"
 
-const page = () => {
+const page = async ({params}: Params) => {
+
+  
+  const events = page
+
   return (
-    <div className='w-screen h-screen grid place-items-center'>
-      portfolio  item
-    </div>
+    <main className="overflow-x-hidden max-w-screen">
+      <TextParallaxContentExample />
+    </main>
   )
 }
 

@@ -5,6 +5,7 @@ import { Post } from "@/utils/interface";
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import BlogItem from "@/components/Blog/BlogItem";
 
+export const revalidate = 10
 
 // export const metadata: Metadata = {
 //   title: "Lunaris Web - Blog",

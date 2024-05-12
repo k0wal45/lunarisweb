@@ -12,8 +12,11 @@ import Stats from "@/components/Stats";
 import Map from "@/components/Map";
 import BlogSection from "@/components/Blog/BlogSection";
 
+export const revalidate = 10
+
 export default async function Home() {
  
+
   return (
     <main className="overflow-x-hidden max-w-screen">
         <Hero />

@@ -1,3 +1,4 @@
+import ShuffleHero from '@/components/portfolio/PortfolioPage/Hero/Hero';
 import PortfolioItem from '@/components/portfolio/PortfolioPage/Item'
 import type { Metadata } from "next";
 
@@ -8,7 +9,8 @@ export const metadata: Metadata = {
 
 const PortfolioPage = () => {
   return (
-    <main className=' w-full h-screen grid place-items-center'>
+    <main className='overflow-x-hidden max-w-screen'>
+      <ShuffleHero />
       <PortfolioItem />
     </main>
   )

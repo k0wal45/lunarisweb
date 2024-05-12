@@ -24,7 +24,7 @@ const FaqElement = ({ title, answer }: {title: string, answer: string}) => {
       }}
       animate={IsInView ? 'visible' : 'hidden'}
       transition={{duration: 0.35, ease: 'easeInOut'}}
-      className="p-4 border-2 border-base rounded-xl " 
+      className="p-4 border-2 border-base rounded-xl text-lg" 
     >
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
@@ -58,7 +58,7 @@ const FaqElement = ({ title, answer }: {title: string, answer: string}) => {
         </svg>
       </button>
       <div
-        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-lg ${
+        className={`grid overflow-hidden transition-all duration-300 ease-in-out ${
           accordionOpen
             ? "grid-rows-[1fr] opacity-100 p-4 border-l-2 py-2 my-2"
             : "grid-rows-[0fr] opacity-0"
