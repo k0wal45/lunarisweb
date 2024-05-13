@@ -1,7 +1,9 @@
 .clipObject {
-  clip-path: url(#initial);
+  clip-path: polygon(0 0, 0 50%, 0 100%, 330px 100%, 350px 50%, 500px 0);
 }
 
-.clipObject:hover {
-  clip-path: url(#hovered);
+@media (max-width: 1024px) {
+  .clipObject {
+    clip-path: none;
+  }
 }

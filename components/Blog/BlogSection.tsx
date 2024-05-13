@@ -34,7 +34,7 @@ const BlogSection = async () => {
 
   return (
 		<section className='
-		relative p-4 lg:m-12
+		relative p-4 lg:my-12
 		flex flex-col items-center justify-center gap-8 w-full
 	'>
 		<div className="flex flex-col gap-8 items-center justify-center lg:w-1/2 text-center">

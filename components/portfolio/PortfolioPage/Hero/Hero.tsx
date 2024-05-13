@@ -9,7 +9,7 @@ const ShuffleHero = () => {
         <span className="block mb-4 text-lg md:text-lg text-indigo-500 font-medium tracking-[4px] uppercase">
           Portfolio
         </span>
-        <h1 className="text-4xl md:text-6xl font-semibold">
+        <h1 className="text-4xl md:text-6xl font-bold">
           Innowacje, które Tworzą Różnicę
         </h1>
         <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">

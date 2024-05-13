@@ -28,7 +28,7 @@ const FaqElement = ({ title, answer }: {title: string, answer: string}) => {
     >
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
-        className="flex justify-between w-full text-start"
+        className="flex justify-between items-center  w-full text-start"
       >
         <p>{title}</p>
         <svg
