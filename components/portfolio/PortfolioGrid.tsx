@@ -1,10 +1,12 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
-import cards from "./dummyData";
+import { bqCars, merkuryMedica, oktech, werva } from "./fullData";
 import OnClickCard from "./OnClickCard";
+
+const cards = [oktech, werva, merkuryMedica, bqCars]
 
 
 type Card = {
@@ -20,7 +22,7 @@ const PortfolioGrid = () => {
     const [selected, setSelected] = useState<Card | null>(null);
     const [lastSelected, setLastSelected] = useState<Card | null>(null);
   
-    const handleClick = (card: Card) => {
+    const handleClick = (card: any) => {
       setLastSelected(selected);
       setSelected(card);
     };

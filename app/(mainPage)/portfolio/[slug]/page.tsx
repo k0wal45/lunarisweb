@@ -1,15 +1,31 @@
+'use client'
 import { TextParallaxContentExample } from "@/components/portfolio/PortfolioSlug/PortfolioSection"
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher"
-import data from "./data"
+import { bqCars, oktech } from "@/components/portfolio/fullData"
+import { useEffect, useState } from "react"
 
-const page = async ({params}: Params) => {
+const page = ({params}: Params) => {
 
-  
-  const events = page
+  const [pageData, setPageData] = useState([])
+
+  type pageData = any
+
+  useEffect(() => {
+    if (params.slug === 'oktech-klimatyzacje') {
+      setPageData(oktech.slugPage)
+    } else if (params.slug === 'bq-cars-katowice') {
+      setPageData(bqCars.slugPage)
+    }
+  }, [params])
 
   return (
     <main className="overflow-x-hidden max-w-screen">
-      <TextParallaxContentExample />
+      {
+        pageData.map((data) => (
+          <TextParallaxContentExample content={data} />
+        ))
+      }
+      
     </main>
   )
 }
