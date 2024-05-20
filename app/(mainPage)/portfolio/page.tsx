@@ -6,20 +6,25 @@ import FaqSection from '@/components/FAQ/FaqSection';
 import Offers from '@/components/Offers/Offers';
 import ContactSec from '@/components/ContactForm/ContactSec';
 import Reviews from '@/components/reviews/Reviews';
-import { oktech } from '@/components/portfolio/fullData';
+import { bqCars, merkuryMedica, oktech, werva } from '@/components/portfolio/fullData';
+import { revalidate } from '../page';
 export const metadata: Metadata = {
   title: "Lunaris Web - Portfolio",
   description: "Tworzymy innowacyjne i błyskawiczne strony internetowe, bezpieczne oraz dostosowane do potrzeb klienta. Wejdź do świata internetu już teraz!",
 }
 
+
 const PortfolioPage = () => {
-  const data = [oktech]
+
+  const revalidate = 10
+
+  const data = [oktech, bqCars, merkuryMedica, werva]
 
   return (
     <main className='overflow-x-hidden max-w-screen'>
       <ShuffleHero />
       <Stats />
-      <section className="flex flex-col gap-8 items-center justify-cente p-4 my-12">
+      <section className="flex flex-col gap-12 items-center justify-cente p-4 my-12">
         <div className="flex flex-col gap-8 items-center justify-center lg:w-1/2 text-center">
           <h3 className="text-3xl lg:text-6xl font-bold">Sprawdź moje wybrane realizacje</h3>
           <p className='text-lg'>Znajdziesz tu najciekawsze realizacje z poszczególnych kategorii</p>

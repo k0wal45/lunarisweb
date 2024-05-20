@@ -30,8 +30,6 @@ const BlogSection = async () => {
 
 	const posts: any = await getPosts()
 
-  console.log(posts)
-
   return (
 		<section className='
 		relative p-4 lg:my-12

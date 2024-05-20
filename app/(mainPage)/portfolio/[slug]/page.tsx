@@ -1,21 +1,28 @@
 'use client'
 import { TextParallaxContentExample } from "@/components/portfolio/PortfolioSlug/PortfolioSection"
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher"
-import { bqCars, oktech } from "@/components/portfolio/fullData"
+import { GetFullPortfolioData, bqCars, oktech } from "@/components/portfolio/fullData"
 import { useEffect, useState } from "react"
+import Portfolio from "@/components/portfolio/Portfolio"
 
 const page = ({params}: Params) => {
 
+  const revalidate = 10
+
   const [pageData, setPageData] = useState([])
+
 
   type pageData = any
 
   useEffect(() => {
-    if (params.slug === 'oktech-klimatyzacje') {
-      setPageData(oktech.slugPage)
-    } else if (params.slug === 'bq-cars-katowice') {
-      setPageData(bqCars.slugPage)
+    async function findObjectBySlug(slug: any, array: any) {
+      const currentPage = array.find(item => item.link === slug);
+
+      setPageData(currentPage.slugPage)
     }
+
+    findObjectBySlug(params.slug, GetFullPortfolioData())
+
   }, [params])
 
   return (
@@ -25,6 +32,7 @@ const page = ({params}: Params) => {
           <TextParallaxContentExample content={data} />
         ))
       }
+      <Portfolio />
       
     </main>
   )

@@ -6,7 +6,7 @@ import Image from "next/image";
 import { bqCars, merkuryMedica, oktech, werva } from "./fullData";
 import OnClickCard from "./OnClickCard";
 
-const cards = [oktech, werva, merkuryMedica, bqCars]
+const cards = [oktech, werva, bqCars, merkuryMedica]
 
 
 type Card = {
@@ -15,7 +15,8 @@ type Card = {
     text: string,
     link: string,
     className: string;
-    thumbnail: string;
+    image: string;
+    slugPage: any;
   };
 
 const PortfolioGrid = () => {
@@ -75,11 +76,11 @@ const PortfolioGrid = () => {
 
 const Placeholder = ({ card, classname }: { card: Card, classname: string }) => {
   return (
-    <Image width={1000} 
-    height={800} 
-    src={card.thumbnail} 
+    <Image width={1300} 
+    height={1000} 
+    src={'/img/' + card.image} 
     alt="" 
-    className={`${classname} top-0 left-0 w-full h-72 rounded-xl object-cover bg-white`} />
+    className={`${classname} top-0 left-0 w-full h-72 rounded-xl object-cover object-right-top bg-white`} />
   );
 }
 
@@ -115,9 +116,9 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         className="absolute inset-0 h-full w-full bg-black opacity-60 z-[-1] rounded-lg"
       />
         {
-          selected ? <Image width={800} 
-          height={700} 
-          src={selected?.thumbnail} 
+          selected ? <Image width={1200} 
+          height={1000} 
+          src={selected?.slugPage[0].image} 
           alt="" 
           className='absolute top-0 left-0 w-full h-full z-[-2] object-cover rounded-lg'
         /> 

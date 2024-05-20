@@ -10,7 +10,7 @@ export const oktech: any = {
     <SiTailwindcss />,
     <SiSanity />,
   ],
-  image: 'placeholder2.png',
+  image: 'oktech/panel.png',
   tag: 'strony-internetowe',
   className: "col-span-1",
   thumbnail: "/img/strona.jpg",
@@ -20,28 +20,9 @@ export const oktech: any = {
       header: 'Prosta Strona Wizytówka',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
       link: '/',
-      image: '',
+      image: '/img/oktech/thumbnail.png',
     },
-    {
-      title: 'Strona Internetowa',
-      header: 'Prosta Strona Wizytówka',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
-      image: '',
-    },
-    {
-      title: 'Strona Internetowa',
-      header: 'Prosta Strona Wizytówka',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
-      link: '/',
-      image: '',
-    },
-    {
-      title: 'Strona Internetowa',
-      header: 'Prosta Strona Wizytówka',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
-      link: '/',
-      image: '',
-    },
+    
   ]
 }
 
@@ -55,7 +36,7 @@ export const werva: any = {
     <SiTailwindcss />,
     <SiSanity />,
   ],
-  image: 'placeholder1.png',
+  image: 'werva/panel.png',
   tag: 'strony-internetowe',
   className: "col-span-2",
   thumbnail: "/img/strona.jpg",
@@ -64,8 +45,14 @@ export const werva: any = {
       title: 'Strona Internetowa',
       header: 'Prosta Strona Wizytówka',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
-      link: '/',
-      image: '',
+      link: 'https://wervasolutions.pl/',
+      image: '/img/werva/thumbnail.png',
+    },
+    {
+      title: 'Wizytówki i Logotyp',
+      header: 'Projekty Wizytówek oraz Prosta Strona Internetowa',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
+      image: '/img/werva/thumbnail2.png',
     },
     
   ]
@@ -81,7 +68,7 @@ export const merkuryMedica: any = {
     <SiTailwindcss />,
     <SiSanity />,
   ],
-  image: 'placeholder2.png',
+  image: 'merkuryMedica/panel.png',
   tag: 'strony-internetowe',
   className: "col-span-1",
   thumbnail: "/img/wizytowka.jpg",
@@ -91,7 +78,7 @@ export const merkuryMedica: any = {
       header: 'Wiele projektów wizytówek',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
       link: '/',
-      image: '',
+      image: '/img/oktech/thumbnail.png',
     },
     
   ]
@@ -107,7 +94,7 @@ export const bqCars: any = {
     <SiTailwindcss />,
     <SiSanity />,
   ],
-  image: 'placeholder2.png',
+  image: 'bqcars/panel.png',
   tag: 'strony-internetowe',
   className: "col-span-2",
   thumbnail: "/img/logotyp.jpg",
@@ -117,15 +104,15 @@ export const bqCars: any = {
       header: 'Projekt Skomplikowanego Logotypu',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
       link: '/',
-      image: '',
+      image: '/img/oktech/thumbnail.png',
     },
     
   ]
 }
 
 
-export const portfolioData = () => {
-  const data = [oktech, ]
+export const GetFullPortfolioData= () => {
+  const data = [oktech, bqCars, merkuryMedica, werva]
 
   return data
 }

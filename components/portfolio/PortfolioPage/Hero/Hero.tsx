@@ -4,7 +4,7 @@ import ShuffleGrid from './ShuffleCards';
 
 const ShuffleHero = () => {
   return (
-    <section className="w-screen px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-[90vw] mx-auto min-h-screen">
+    <section className="w-screen px-8 py-32 lg:py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-[90vw] mx-auto min-h-screen">
       <div>
         <span className="block mb-4 text-lg md:text-lg text-indigo-500 font-medium tracking-[4px] uppercase">
           Portfolio
