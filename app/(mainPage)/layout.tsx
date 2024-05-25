@@ -5,6 +5,7 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import PreLoader from "@/components/PreLoader/Preloader";
+import Head from "next/head";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -39,8 +40,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  return (
+  return ( 
     <html lang="pl">
+      <Head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </Head>
       <body className={`${montserrat.className} bg-white text-black`}>
           <PreLoader>
             <Navbar />

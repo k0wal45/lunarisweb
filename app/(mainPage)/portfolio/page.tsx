@@ -6,7 +6,7 @@ import FaqSection from '@/components/FAQ/FaqSection';
 import Offers from '@/components/Offers/Offers';
 import ContactSec from '@/components/ContactForm/ContactSec';
 import Reviews from '@/components/reviews/Reviews';
-import { bqCars, merkuryMedica, oktech, werva } from '@/components/portfolio/fullData';
+import { GetFullPortfolioData, bqCars, merkuryMedica, oktech, werva } from '@/components/portfolio/fullData';
 import { revalidate } from '../page';
 export const metadata: Metadata = {
   title: "Lunaris Web - Portfolio",
@@ -18,7 +18,7 @@ const PortfolioPage = () => {
 
   const revalidate = 10
 
-  const data = [oktech, bqCars, merkuryMedica, werva]
+  const data = GetFullPortfolioData()
 
   return (
     <main className='overflow-x-hidden max-w-screen'>

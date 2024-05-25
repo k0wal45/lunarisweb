@@ -4,6 +4,9 @@ import { Params } from "next/dist/shared/lib/router/utils/route-matcher"
 import { GetFullPortfolioData, bqCars, oktech } from "@/components/portfolio/fullData"
 import { useEffect, useState } from "react"
 import Portfolio from "@/components/portfolio/Portfolio"
+import Offers from "@/components/Offers/Offers"
+import ContactSec from "@/components/ContactForm/ContactSec"
+import FaqSection from "@/components/FAQ/FaqSection"
 
 const page = ({params}: Params) => {
 
@@ -33,6 +36,9 @@ const page = ({params}: Params) => {
         ))
       }
       <Portfolio />
+      <Offers />
+      <ContactSec />
+      <FaqSection />
       
     </main>
   )

@@ -1,25 +1,20 @@
-import { SiNextdotjs, SiSanity, SiTailwindcss } from 'react-icons/si';
+import { SiAdobephotoshop, SiInkscape, SiNextdotjs, SiReact, SiSanity, SiTailwindcss, SiWordpress } from 'react-icons/si';
 
 export const oktech: any = {
   id: 1,
-  title:'Oktech Klimatyzacje',
-  subtitile: 'Strona Internetowa dla firmy montującej kliamtyzacje', 
+  title:'Oktech Klimatyzacje', 
   link:'oktech-klimatyzacje',
   techStack: [
-    <SiNextdotjs />,
-    <SiTailwindcss />,
-    <SiSanity />,
+    
   ],
   image: 'oktech/panel.png',
-  tag: 'strony-internetowe',
   className: "col-span-1",
-  thumbnail: "/img/strona.jpg",
   slugPage: [
     {
       title: 'Strona Internetowa',
       header: 'Prosta Strona Wizytówka',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
-      link: '/',
+      link: 'https://klima-serwis.eu/',
       image: '/img/oktech/thumbnail.png',
     },
     
@@ -29,17 +24,14 @@ export const oktech: any = {
 export const werva: any = {
   id: 2,
   title:'Werva Solutions',
-  subtitile: 'Logotyp, Wizytówki oraz Strona Internetowa', 
   link:'werva-solutions',
   techStack: [
-    <SiNextdotjs />,
-    <SiTailwindcss />,
-    <SiSanity />,
+    <SiWordpress />,
+    <SiInkscape />,
+    <SiAdobephotoshop />
   ],
   image: 'werva/panel.png',
-  tag: 'strony-internetowe',
   className: "col-span-2",
-  thumbnail: "/img/strona.jpg",
   slugPage: [
     {
       title: 'Strona Internetowa',
@@ -61,24 +53,20 @@ export const werva: any = {
 export const merkuryMedica: any = {
   id: 3,
   title:'Merkury Medica',
-  subtitile: 'Logotyp, Wizytówki oraz inne materiały reklamowe', 
   link:'merkury-medica',
   techStack: [
-    <SiNextdotjs />,
-    <SiTailwindcss />,
-    <SiSanity />,
+    <SiInkscape />,
+    <SiAdobephotoshop />
   ],
   image: 'merkuryMedica/panel.png',
-  tag: 'strony-internetowe',
   className: "col-span-1",
-  thumbnail: "/img/wizytowka.jpg",
   slugPage: [
     {
       title: 'Wizytówki',
       header: 'Wiele projektów wizytówek',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
       link: '/',
-      image: '/img/oktech/thumbnail.png',
+      image: '/img/merkuryMedica/thumbnail.png',
     },
     
   ]
@@ -87,32 +75,91 @@ export const merkuryMedica: any = {
 export const bqCars: any = {
   id: 4,
   title:'BQ Cars Katowice',
-  subtitile: 'Strona Internetowe, Logotyp oraz inne materiały reklamowe', 
   link:'bq-cars-katowice',
   techStack: [
-    <SiNextdotjs />,
     <SiTailwindcss />,
-    <SiSanity />,
+    <SiInkscape />,
+    <SiAdobephotoshop />
   ],
   image: 'bqcars/panel.png',
-  tag: 'strony-internetowe',
   className: "col-span-2",
-  thumbnail: "/img/logotyp.jpg",
   slugPage: [
     {
       title: 'Logotyp',
-      header: 'Projekt Skomplikowanego Logotypu',
+      header: 'Projekt Uniwersalnego Logotypu',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
-      link: '/',
-      image: '/img/oktech/thumbnail.png',
+      image: '/img/bqcars/thumbnail1.png',
+    },
+    {
+      title: 'Strona Internetowa',
+      header: 'Projekt Strony Internetowej',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
+      link: 'https://bqcarskatowice.netlify.app/',
+      image: '/img/bqcars/thumbnail.png',
+    },
+    {
+      title: 'Projekty Graficzne',
+      header: 'Projekt Baneru i Ulotek',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
+      image: '/img/bqcars/thumbnail2.png',
     },
     
   ]
 }
 
+export const maliCzarodzieje: any = {
+  id: 5,
+  title:'Mali Czarodzieje',
+  link:'mali-czarodzieje',
+  techStack: [
+    <SiReact />,
+    <SiTailwindcss />,
+  ],
+  image: 'maliCzarodzieje/panel.png',
+  tag: 'strony-internetowe',
+  className: "col-span-2",
+  slugPage: [
+    {
+      title: 'Strona Internetowa',
+      header: 'Projekt Strony Internetowej',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
+      link: 'https://maliczarodzieje.eu/',
+      image: '/img/maliCzarodzieje/thumbnail.png',
+    }
+  ]
+}
+
+export const bezpieczniWTeorii: any = {
+  id: 5,
+  title:'Bezpieczni w teorii',
+  link:'bezpieczni-w-teorii',
+  techStack: [
+    <SiReact />,
+    <SiTailwindcss />,
+  ],
+  image: 'bezpieczniWTeorii/panel.png',
+  className: "col-span-2",
+  slugPage: [
+    {
+      title: 'Strona Internetowa',
+      header: 'Projekt Strony Internetowej',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
+      link: 'https://bezpieczniwteorii.pl/',
+      image: '/img/bezpieczniwteorii/thumbnail.png',
+    },
+    {
+      title: 'Materiały Graficzne',
+      header: 'Projekt Logotypu oraz materiałów graficznych',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
+      link: 'https://bezpieczniwteorii.pl/',
+      image: '/img/bezpieczniwteorii/thumbnail2.png',
+    }
+  ]
+}
+
 
 export const GetFullPortfolioData= () => {
-  const data = [oktech, bqCars, merkuryMedica, werva]
+  const data = [oktech, bqCars, merkuryMedica, werva, maliCzarodzieje, bezpieczniWTeorii]
 
   return data
 }
