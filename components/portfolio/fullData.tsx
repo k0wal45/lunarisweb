@@ -64,25 +64,25 @@ export const merkuryMedica: any = {
     {
       title: 'Banery Reklamowe',
       header: 'Wiele projektów Banerów Reklamowych',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
+      text: 'Zaprojektowałem banery reklamowe dla przychodni, które wyróżniają się nowoczesnym designem i czytelnymi informacjami. Wykorzystują kolory wybrane przez przychodnię, wysokiej jakości zdjęcia oraz krótkie slogany, podkreślając profesjonalizm i zaawansowanie technologiczne przychodni. Banery zawierają kluczowe informacje, takie jak nazwa, zakres usług, godziny otwarcia i dane kontaktowe, skutecznie promując przychodnię i budując jej pozytywny wizerunek.',
       image: '/img/merkuryMedica/thumbnail.png',
     },
     {
       title: 'Wizytówki',
       header: 'Wiele projektów wizytówek',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
+      text: 'Zaprojektowałem wizytówki dla przychodni, które są eleganckie i funkcjonalne. Wizytówki wykorzystują stonowane kolory i czytelną typografię, odzwierciedlając profesjonalizm i zaufanie. Zawierają logo przychodni, imię i nazwisko, dane kontaktowe oraz adres. Dzięki przemyślanemu układowi i wysokiej jakości wykończeniu, wizytówki skutecznie prezentują przychodnię i ułatwiają pacjentom kontakt z placówką.',
       image: '/img/merkuryMedica/thumbnail2.png',
     },
     {
       title: 'Logotyp',
       header: 'Projekt Logotypu',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
+      text: 'Zaprojektowałem logotyp dla przychodni zgodnie z zaleceniami właścicieli, wykorzystując konkretny kolor i czcionkę powiązaną z ich innymi działalnościami. Logotyp łączy profesjonalizm i nowoczesność, odzwierciedlając spójność wizualną z pozostałymi markami właścicieli. Główne elementy to stylizowany symbol litery M oraz nazwa przychodni, co tworzy jednolity i rozpoznawalny wizerunek. Dzięki temu logotyp skutecznie komunikuje identyfikację wizualną przychodni, wzmacniając jej profesjonalny i zaufany charakter.',
       image: '/img/merkuryMedica/thumbnail3.png',
     },
     {
       title: 'Materiały Reklamowe',
       header: 'Wiele materiałów reklamowych',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
+      text: 'Zaprojektowałem różnorodne materiały reklamowe dla przychodni, w tym tabliczki, roll-upy, reklamy w busach i ulotki, wszystkie w spójnej identyfikacji wizualnej, z użyciem charakterystycznego koloru i czcionki. Tabliczki informują o godzinach otwarcia i danych kontaktowych, roll-upy prezentują usługi i korzyści dla pacjentów, reklamy w busach są widoczne i przyciągające uwagę, a ulotki zawierają szczegółowe informacje o usługach i specjalnych ofertach. Dzięki tym materiałom przychodnia skutecznie buduje swój profesjonalny wizerunek i przyciąga nowych pacjentów.',
       image: '/img/merkuryMedica/thumbnail4.png',
     },
     

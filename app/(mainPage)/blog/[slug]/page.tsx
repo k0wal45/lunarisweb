@@ -33,16 +33,6 @@ const getPost = async (slug:string) => {
     return event
 }
 
-
-// export async function generateMetadata(slug:string) {
-
-//   const product = await getPost(slug)
- 
-//   return {
-//     title: product.title,
-//   }
-// }
-
 const slug = async ({params}: Params) => {
 
   const event: Post = await getPost(params?.slug)
@@ -54,7 +44,7 @@ const slug = async ({params}: Params) => {
       ),
     }
   }
-  console.log(event)
+
   
 
   return (

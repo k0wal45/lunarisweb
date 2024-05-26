@@ -30,13 +30,14 @@ const PortfolioPage = () => {
           <p className='text-lg'>Znajdziesz tu najciekawsze realizacje z poszczególnych kategorii</p>
         </div>
         {
-          data.map((item) => (
+          data.map((item, index) => (
             <PortfolioItem
               id={item.id} 
               title={item.title}
               link={item.link}
               techStack={item.techStack}
               image={item.image}
+              key={index}
             />
           ))
         }

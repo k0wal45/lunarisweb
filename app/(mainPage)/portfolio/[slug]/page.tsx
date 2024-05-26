@@ -26,8 +26,8 @@ const page = async ({params}: Params) => {
   return (
     <main className="overflow-x-hidden max-w-screen">
       {
-        pageData.map((data) => (
-          <TextParallaxContentExample content={data} />
+        pageData.map((data, index) => (
+          <TextParallaxContentExample content={data} key={index} />
         ))
       }
       <Portfolio />
