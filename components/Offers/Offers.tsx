@@ -18,7 +18,7 @@ const Offers = () => {
         <AppearFromLeft>
           <OfferCard 
             title='Logotypy'
-            text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami.'
+            text='Zapadające w pamięć oraz przyjemne dla oka logotypy dla każdej firmy'
             link='logotypy'
             img='logotyp.jpg'
             icon={<PiPencilCircle />}
@@ -27,7 +27,7 @@ const Offers = () => {
 
         <OfferCard 
           title='Strony Internetowe'
-          text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami.'
+          text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami'
           link='strony-internetowe'
           img='strona.jpg'
           icon={<MdOutlineWeb />}
@@ -44,14 +44,14 @@ const Offers = () => {
 
         <CardMobile 
           title='Logotypy'
-          text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami.'
+          text='Zapadające w pamięć oraz przyjemne dla oka logotypy dla każdej firmy'
           link='logotypy'
           img='logotyp.jpg'
           icon={<PiPencilCircle />}
         />
         <CardMobile 
           title='Strony Internetowe'
-          text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami.'
+          text='Nowoczesne, responsywne strony internetowe kompatybilne z wszystkimi urządzeniami'
           link='strony-internetowe'
           img='strona.jpg'
           icon={<MdOutlineWeb />}
