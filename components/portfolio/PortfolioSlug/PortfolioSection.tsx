@@ -16,6 +16,7 @@ export const TextParallaxContentExample = ({content, index}: any) => {
           subtitle={content.subtitile}
           text={content.text}
           link={content.link}
+          index={index}
         />
       </TextParallaxContent>
   
@@ -23,8 +24,8 @@ export const TextParallaxContentExample = ({content, index}: any) => {
   );
 };
 
-const ExampleContent = ({ text, link }: any) => (
-  <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
+const ExampleContent = ({ text, link, index }: any) => (
+  <div key={index} className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
       Więcej informacji o projekcie możesz znaleźć tutaj
     </h2>

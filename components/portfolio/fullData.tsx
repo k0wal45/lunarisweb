@@ -62,11 +62,28 @@ export const merkuryMedica: any = {
   className: "col-span-1",
   slugPage: [
     {
+      title: 'Banery Reklamowe',
+      header: 'Wiele projektów Banerów Reklamowych',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
+      image: '/img/merkuryMedica/thumbnail.png',
+    },
+    {
       title: 'Wizytówki',
       header: 'Wiele projektów wizytówek',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
-      link: '/',
-      image: '/img/merkuryMedica/thumbnail.png',
+      image: '/img/merkuryMedica/thumbnail2.png',
+    },
+    {
+      title: 'Logotyp',
+      header: 'Projekt Logotypu',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
+      image: '/img/merkuryMedica/thumbnail3.png',
+    },
+    {
+      title: 'Materiały Reklamowe',
+      header: 'Wiele materiałów reklamowych',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus cupiditate rerum laudantium cumque nobis similique vitae possimus ut earum eum debitis, hic alias voluptas magnam aperiam vero sapiente assumenda ad asperiores impedit eveniet dicta, sunt omnis? Odit, veniam ullam, rem iste aliquam, earum velit suscipit minus eligendi nesciunt magnam eum dolorem incidunt totam autem neque! Earum laborum quod amet!',
+      image: '/img/merkuryMedica/thumbnail4.png',
     },
     
   ]
@@ -94,7 +111,6 @@ export const bqCars: any = {
       title: 'Strona Internetowa',
       header: 'Projekt Strony Internetowej',
       text: 'Stworzyłem nowoczesną i intuicyjną stronę internetową dla wypożyczalni samochodów, która zapewnia użytkownikom łatwy dostęp do szerokiej oferty pojazdów. Strona charakteryzuje się przejrzystym designem, responsywnością. Dzięki zastosowaniu najnowszych technologii i najlepszych praktyk UX, strona nie tylko przyciąga nowych klientów, ale także zwiększa efektywność operacyjną wypożyczalni. Niestety Wypożyczalnia przestała funkcjonować i strona jest już nie dostępna',
-      
       image: '/img/bqcars/thumbnail.png',
     },
     {
@@ -117,7 +133,7 @@ export const maliCzarodzieje: any = {
   ],
   image: 'maliCzarodzieje/panel.png',
   tag: 'strony-internetowe',
-  className: "col-span-2",
+  className: "col-span-1",
   slugPage: [
     {
       title: 'Strona Internetowa',
@@ -140,7 +156,7 @@ export const bezpieczniWTeorii: any = {
     <SiAdobephotoshop />
   ],
   image: 'bezpieczniWTeorii/panel.png',
-  className: "col-span-2",
+  className: "col-span-1",
   slugPage: [
     {
       title: 'Strona Internetowa',

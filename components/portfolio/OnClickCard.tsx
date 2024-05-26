@@ -15,8 +15,6 @@ type Card = {
 
 const OnClickCard = ({ selected }: { selected: Card | null }) => {
   
-  console.log(selected)
-  
   return (
     <div className="w-full h-full flex flex-col items-start justify-end p-4">
       <p className="font-bold text-4xl text-white">{selected?.title}</p>
