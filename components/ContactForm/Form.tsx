@@ -1,8 +1,9 @@
 'use client'
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import emailjs from '@emailjs/browser';
 
 const Form = () => {
 
@@ -21,6 +22,8 @@ const Form = () => {
     message,
 
   } = formData
+
+  const form = useRef();
 
   const onMutate = (e: any) => {
     
@@ -51,6 +54,112 @@ const Form = () => {
 
     }
 
+      // Wyrażenia regularne do walidacji
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phoneRegex = /^\+?\d{9,15}$/;
+      
+      // Sprawdzanie pola "name"
+      if (name.trim() === "") {
+        toast.error('Nieprawidłowo wpisane imię', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
+          return ;
+      }
+      
+      // Sprawdzanie pola "email"
+      if (email.trim() === "") {
+        toast.error('Nieprawidłowy adres e-mail', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
+          return ;
+      } else if (!emailRegex.test(email)) {
+        toast.error('Nieprawidłowy adres e-mail', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
+          return ;
+      }
+      
+      // Sprawdzanie pola "phone"
+      if (phone.trim() === "") {
+        toast.error('Nieprawidłowy numer telefonu', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
+          return ;
+      } else if (!phoneRegex.test(phone)) {
+        toast.error('Nieprawidłowy numer telefonu', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
+          return ;
+      }
+      
+      // Sprawdzanie pola "message"
+      if (message.trim() === "") {
+        toast.error('Cos poszło nie tak, Skontaktuj się mailowo: lunarisweb.pl@gmail.com', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
+          return ;
+      }
+
+    emailjs.sendForm('service_r8dmshk', 'template_pojq8ao', form.current, process.env.NEXT_PUBLIC_EMAIL_JS)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+        toast.error('Cos poszło nie tak, Skontaktuj się mailowo: lunarisweb.pl@gmail.com', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
+        return
+      });
+
+
     setFormData({
       name: '',
       email: '',
@@ -77,6 +186,7 @@ const Form = () => {
     <form 
       className="p-4 border-2 border-base rounded-xl w-[90vw] lg:w-[40rem] bg-white" 
       onSubmit={handleSubmit}
+      ref={form}
     >
 
       <p className="text-lg font-bold text-secondary">Masz pytania?</p>
