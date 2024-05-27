@@ -23,67 +23,67 @@ const shuffle = (array: (typeof squareData)[0][]) => {
 const squareData = [
   {
     id: 1,
-    src: "",
+    src: "portfolioImg1.png",
   },
   {
     id: 2,
-    src: "",
+    src: "portfolioImg2.png",
   },
   {
     id: 3,
-    src: "",
+    src: "portfolioImg3.png",
   },
   {
     id: 4,
-    src: "",
+    src: "portfolioImg14.png",
   },
   {
     id: 5,
-    src: "",
+    src: "portfolioImg5.png",
   },
   {
     id: 6,
-    src: "",
+    src: "portfolioImg16.png",
   },
   {
     id: 7,
-    src: "",
+    src: "portfolioImg7.png",
   },
   {
     id: 8,
-    src: "",
+    src: "portfolioImg8.png",
   },
   {
     id: 9,
-    src: "",
+    src: "portfolioImg9.png",
   },
   {
     id: 10,
-    src: "",
+    src: "portfolioImg10.png",
   },
   {
     id: 11,
-    src: "",
+    src: "portfolioImg11.png",
   },
   {
     id: 12,
-    src: "",
+    src: "portfolioImg12.png",
   },
   {
     id: 13,
-    src: "",
+    src: "portfolioImg13.png",
   },
   {
     id: 14,
-    src: "",
+    src: "portfolioImg4.png",
   },
   {
     id: 15,
-    src: "",
+    src: "portfolioImg15.png",
   },
   {
     id: 16,
-    src: "",
+    src: "portfolioImg6.png",
   },
 ];
 
@@ -95,7 +95,7 @@ const generateSquares = () => {
       transition={{ duration: 1.5, type: "spring" }}
       className="w-full h-full"
     >
-      <Image width={300} height={200} className="w-full h-full object-cover" alt="" src={sq.src} />
+      <Image width={150} height={100} className="w-full h-full object-cover" alt="" src={'/img/portfolioImages/' + sq.src} />
     </motion.div>
   ));
 };
