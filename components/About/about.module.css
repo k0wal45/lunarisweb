@@ -11,7 +11,7 @@
 }
 
 .bgAbout {
-	background: url('/img/placeholder2.png');
+	background: url('/img/programing.jpg');
 	@apply bg-fixed bg-cover bg-center bg-blend-darken;
 
 }

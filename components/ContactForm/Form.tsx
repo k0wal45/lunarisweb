@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState } from 'react';
+import { Fragment, useRef, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
@@ -40,7 +40,23 @@ const Form = () => {
     e.preventDefault()
 
     if (e.target.validate.checked) {
+      console.log('validate')
       toast.error('Cos poszło nie tak, Skontaktuj się mailowo: lunarisweb.pl@gmail.com', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
+      return
+
+    }
+
+    if (!e.target.accpet.checked) {
+      toast.error('Pamiętaj aby wyrazić zgodę na przetwarzanie danych na dole formularza', {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -183,6 +199,8 @@ const Form = () => {
 
 
   return (
+    <Fragment >
+    
     <form 
       className="p-4 border-2 border-base rounded-xl w-[90vw] lg:w-[40rem] bg-white" 
       onSubmit={handleSubmit}
@@ -220,6 +238,9 @@ const Form = () => {
       /> 
       
   
+
+      <input type="checkbox" name="validate" id="validate" className='scale-0 w-0 h-0' />
+      
       <label htmlFor='message' className='translate-y-[50%] translate-x-[1rem] p-2 bg-white w-min whitespace-nowrap rounded-lg'>Wiadomość</label>
       <textarea 
         name='message' 
@@ -229,8 +250,13 @@ const Form = () => {
         required
       /> 
 
-      <input type="checkbox" name="validate" id="validate" className='hidden' />
-  
+
+      <div className="flex gap-2 items-start w-full">
+        <input type="checkbox" name="accpet" id="accpet" className='block' required/>
+        <label htmlFor="accept" className='text-xs text-neutral-700 w-full'>Akceptując, wyrażasz zgodę na przetwarzanie Twoich danych osobowych przez właściciela strony oraz na otrzymywanie ofert i informacji handlowych na podany adres e-mail lub numer telefonu."</label>
+      </div>
+
+
       <button type='submit' className='p-4 px-8 bg-gradient-to-r from-secondary to-primary rounded-md text-white font-bold grid mt-4 place-items-center text-xl w-full transition-all duration-300
       hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_black] 
       active:translate-x-[0px] active:translate-y-[0px] active:shadow-none' > Prześlij</button>
@@ -238,8 +264,8 @@ const Form = () => {
 
       <ToastContainer />
 
-      
     </form>
+    </Fragment>
   )
 }
 

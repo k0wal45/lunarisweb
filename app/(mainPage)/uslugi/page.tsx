@@ -7,9 +7,9 @@ export const metadata: Metadata = {
 
 const offersPage = () => {
   return (
-    <div>
-      
-    </div>
+    <main className="overflow-x-hidden max-w-screen">
+
+    </main>
   )
 }
 

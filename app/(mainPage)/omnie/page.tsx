@@ -1,6 +1,13 @@
-import WhyUs from "@/components/About/AboutPage/WhyUs";
+import About from "@/components/About/About";
+import Programing from "@/components/About/AboutPage/Programing";
+import WhoAmI from "@/components/About/AboutPage/WhoAmI";
+import ContactSec from "@/components/ContactForm/ContactSec";
+import FaqSection from "@/components/FAQ/FaqSection";
 import Hero from "@/components/Hero/HeroUniversal";
+import Map from "@/components/Map";
 import Stats from "@/components/Stats";
+import WhyUs from "@/components/WhyUs/WhyUs";
+import Portfolio from "@/components/portfolio/Portfolio";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,12 +19,19 @@ const AboutPage = () => {
   return (
     <main className="overflow-x-hidden max-w-screen">
       <Hero 
-        slug='o mnie'
+        header='o mnie'
         title='Twórca Stron Internetowych z Indywidualnym Podejściem'
         text='Indywidualne podejście do każdego projektu'
       />
-      <WhyUs />
       <Stats />
+      <About />
+      <Programing />
+      <WhoAmI />
+      <Portfolio />
+      <WhyUs />
+      <Map />
+      <ContactSec />
+      <FaqSection />
     </main>
   )
 }

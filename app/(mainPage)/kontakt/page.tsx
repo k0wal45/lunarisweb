@@ -7,10 +7,9 @@ export const metadata: Metadata = {
 
 const ContactPage = () => {
   return (
-    <div className="text-white">
-
-      Kontakt
-    </div>
+    <main className="overflow-x-hidden max-w-screen">
+      
+    </main>
   )
 }
 

@@ -37,17 +37,20 @@ const AboutDescription = () => {
 
 
       </div>
-
-      <div className="flex flex-col gap-2 mt-2">
-        <div className="flex gap-2 items-center">
-          <FaCheck/> <p className="text-lg">Techniczne wykształcenie w dziedzinie informatyki</p>
+      <AppearFromLeft>
+        <div className="flex flex-col gap-2 mt-2">
+          <div className="flex gap-2 items-center">
+            <FaCheck/> <p className="text-lg">Techniczne wykształcenie w dziedzinie informatyki</p>
+          </div>
         </div>
-      </div>
-      <div className="flex flex-col gap-2">
-        <div className="flex gap-2 items-center">
-          <FaCheck/> <p className="text-lg">Chęć pomocy i rozwoju aby przedewszystkim pomóc właśnie tobie</p>
+      </AppearFromLeft>
+      <AppearFromLeft>
+        <div className="flex flex-col gap-2">
+          <div className="flex gap-2 items-center">
+            <FaCheck/> <p className="text-lg">Chęć pomocy i rozwoju aby przedewszystkim pomóc właśnie tobie</p>
+          </div>
         </div>
-      </div>
+      </AppearFromLeft>
       <div className="max-w-[35rem]">
         <BtnLink link='https://daniel-kowalski.com' >Sprawdź moje niekomercyjne realizacje</BtnLink>
       </div>
