@@ -1,4 +1,5 @@
 import PackageCard from "./PackageCard"
+import { data } from "./PackagesData"
 
 
 const Packages = () => {
@@ -9,9 +10,14 @@ const Packages = () => {
 
       <div className="flex flex-col lg:flex-row justify-center lg:justify-around items-center gap-12">
 
-        <PackageCard />
-        <PackageCard />
-        <PackageCard />
+        {
+          data.map((item, index) => (
+            <PackageCard
+              content={item}
+              key={index}
+            />
+          ))
+        }
 
       </div>
 
