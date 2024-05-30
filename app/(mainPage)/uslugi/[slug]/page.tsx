@@ -43,9 +43,9 @@ const OfferPage = async ({params}: Params) => {
         title={pageData.hero.title}
         text={pageData.hero.text}
       />
-      <Advanteges />
-      <Services 
-        content={pageData.services}
+      <Services />
+      <Advanteges 
+        content={pageData.advanteges}
       />
       <Packages />
       <Portfolio />

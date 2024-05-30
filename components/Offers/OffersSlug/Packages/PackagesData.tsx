@@ -1,7 +1,7 @@
 export const data = [
   {
     badge: 'Start',
-    cost: '3000PLN',
+    cost: '2200PLN',
     title: 'Pakiet Na Start',
     strony: [
       'Prosta Strona Wizytówka',
@@ -18,7 +18,7 @@ export const data = [
   },
   {
     badge: 'Standard',
-    cost: '6000PLN',
+    cost: '4000PLN',
     title: 'Pakiet Standard',
     strony: [
       'Bardziej Rozbudowana Strona Internetowa',
@@ -26,14 +26,14 @@ export const data = [
       'Blog i system zarządzania treścią (CMS)'
     ],
     grafika: [
-      'Pełen Branding firmy',
-      'Logo, wizytówki, Wybór czcionek oraz kolorów'
+      'Pełen Branding dla Firmy',
+      'Pomoc w założeniu i ustawieniu Sociale Mediów'
 
     ]
   },
   {
     badge: 'Pro',
-    cost: '12000PLN',
+    cost: '7000PLN',
     title: 'Pakiet Premium',
     strony: [
       'Interaktywna Strona Internetowa',
@@ -41,8 +41,8 @@ export const data = [
       'Analiza + Raport ruchu na stronie',
     ],
     grafika: [
-      'Pełen Branding firmy',
-      'Logo, wizytówki, Wybór czcionek oraz kolorów'
+      'Pełen Branding dla Firmy',
+      'Pomoc w założeniu i ustawieniu Sociale Mediów'
 
     ]
   },
