@@ -1,11 +1,12 @@
 
 import ContactSec from '@/components/ContactForm/ContactSec'
 import FaqSection from '@/components/FAQ/FaqSection'
-import Hero from '@/components/Hero/HeroUniversal'
 import { fullOffersData } from '@/components/Offers/OffersData'
 import Advanteges from '@/components/Offers/OffersSlug/Advanteges/Advanteges'
+import Hero from '@/components/Offers/OffersSlug/Hero'
 import Packages from '@/components/Offers/OffersSlug/Packages/Packages'
 import Services from '@/components/Offers/OffersSlug/Services/Services'
+import Stats from '@/components/Stats'
 import Portfolio from '@/components/portfolio/Portfolio'
 import Reviews from '@/components/reviews/Reviews'
 import { Metadata } from 'next'
@@ -39,10 +40,9 @@ const OfferPage = async ({params}: Params) => {
   // !pageData ? redirect('/not-found') :
     <main className='overflow-x-hidden max-w-screen'>
       <Hero
-        header={pageData.hero.header}
-        title={pageData.hero.title}
-        text={pageData.hero.text}
+        content={pageData.hero}
       />
+      <Stats />
       <Services />
       <Advanteges 
         content={pageData.advanteges}

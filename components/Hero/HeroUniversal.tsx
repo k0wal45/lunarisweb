@@ -8,10 +8,10 @@ const Hero = ({header, title, text}: {header: string, title: string, text: strin
 				<p className="text-xl tracking-[4px] text-neutral-600 uppercase">{header}</p>
 			</AppearFromLeft>
 			<AppearFromRight>
-				<h1 className="text-4xl lg:text-6xl font-[500] max-w-6xl">{title}</h1>
+				<h1 className="text-5xl lg:text-6xl font-[500] max-w-6xl">{title}</h1>
 			</AppearFromRight>
 			<AppearFromLeft>
-				<p className="text-xl">{text}</p>
+				<p className="text-xl max-w-6xl">{text}</p>
 			</AppearFromLeft>
 
     </section>

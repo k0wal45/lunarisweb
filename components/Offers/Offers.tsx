@@ -36,7 +36,7 @@ const Offers = () => {
           <OfferCard 
             title='Materiały Reklamowe'
             text='Wizytówki, Banery Reklamowe i wiele innych rzeczy które pomogą ci zdobyć klientów'
-            link='grafika koputerowa'
+            link='grafika-koputerowa'
             img='wizytowka.jpg'
             icon={<FaAddressCard />}
           />
@@ -59,7 +59,7 @@ const Offers = () => {
         <CardMobile 
           title='Materiały Reklamowe'
           text='Wizytówki, Banery Reklamowe i wiele innych rzeczy które pomogą ci zdobyć klientów'
-          link='grafika koputerowa'
+          link='grafika-koputerowa'
           img='wizytowka.jpg'
           icon={<FaAddressCard />}
         />

@@ -1,8 +1,10 @@
+import AppearFromLeft from '@/components/Animations/AppearFromLeft'
 import classes from '../about.module.css'
 
 const Programing = () => {
   return (
     <section className={`${classes.bgAbout} flex items-cener justify-center lg:justify-end gap-12 w-full mt-12`}>
+      <AppearFromLeft>
         <div className=" flex flex-col p-12 m-6 lg:m-0 max-w-[50rem] bg-white gap-4 lg:mr-72 text-lg">
           <h2 className="text-4xl font-bold">Programowane Strony Internetowe</h2>
           <p className="text-lg">Programowanie stron internetowych od podstaw przynosi liczne korzyści. Strony są w pełni personalizowane, optymalizowane pod kątem wydajności i szybkości ładowania, oraz zapewniają wyższy poziom bezpieczeństwa. Dzięki temu są skalowalne i łatwo dostosowują się do rosnących potrzeb biznesu. Dodatkowo, unikalne funkcje i interakcje wyróżniają je na tle konkurencji.</p>
@@ -14,6 +16,7 @@ const Programing = () => {
             <li>Łatwiejsze dostosowanie i rozbudowa strony w miarę rozwoju biznesu</li>
           </ul>
         </div>
+      </AppearFromLeft>
     </section>
   )
 }

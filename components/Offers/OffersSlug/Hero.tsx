@@ -1,0 +1,42 @@
+import Image from 'next/image'
+import classes from './hero.module.css'
+import { FaCheck } from 'react-icons/fa'
+import BtnLink from '@/components/reusable/btn-link'
+import AppearFromLeft from '@/components/Animations/AppearFromLeft'
+
+const Hero = ({content}: any) => {
+  return (
+    <section className="grid lg:grid-cols-5 gap-12  min-h-screen w-full">
+      <div className="flex flex-col items-start justify-center gap-8 p-4 pt-32 lg:pt-12 w-full lg:pl-24 col-span-2">
+        <AppearFromLeft >
+          <h1 className="text-6xl font-bold w-full ">{content.title}</h1>
+        </AppearFromLeft>
+        <AppearFromLeft>
+          <p className="text-xl font-semibold pl-4 border-l-4 border-primary max-w-lg">{content.text}</p>
+        </AppearFromLeft>
+        <AppearFromLeft>
+          <ul className="flex flex-col gap-2 items-start justify-start text-lg">
+            {
+              content.list.map((reason, index) => (
+                <li className="flex items-center justify-start gap-4" key={index}><p className='text-primary'><FaCheck /></p>{reason}</li>
+              ))
+            }
+          </ul>
+        </AppearFromLeft>
+        <AppearFromLeft>
+          <BtnLink link='/kontakt'>Skontaktuj się już teraz</BtnLink>
+          <p className="text-lg font-bold">Nie czekaj zrób krok w przód już dziś</p>
+        </AppearFromLeft>
+
+      </div>
+      <div className={`${classes.mask} w-full h-full object-cover col-span-3`}>
+        <video className='w-full h-full object-cover' autoPlay muted loop>  
+          <source src='/video/coding.mp4' type='video/mp4'/>
+        </video>
+      </div>
+  
+    </section>
+  )
+}
+
+export default Hero

@@ -7,8 +7,15 @@ export const stronyInternetowe = {
   slug: 'strony-internetowe',
   hero: {
     header: 'strony internetowe',
-    title: 'Profesjonalne i responsywne Strony Internetowe',
-    text: 'Stworzymy dla Ciebie stronę internetową, która wyróżni Twoją markę w sieci.',
+    title: 'Najlepsza wizytówka twojego biznesu',
+    text: 'Stworzymy dla Ciebie stronę internetową, która wyróżni Twoją markę w sieci',
+    img: 'coding.mp4',
+    list: [
+      'Zwiększona widoczność i dostępność',
+      'Profesjonalny wizerunek firmy w sieci',
+      'Skuteczny'
+
+    ]
   },
   advanteges: {
     title: 'Jakie są korzyści posiadania strony internetowej?',

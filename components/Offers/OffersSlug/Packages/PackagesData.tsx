@@ -1,7 +1,7 @@
 export const data = [
   {
     badge: 'Start',
-    cost: '2200PLN',
+    cost: '3000PLN',
     title: 'Pakiet Na Start',
     strony: [
       'Prosta Strona Wizytówka',
@@ -18,11 +18,11 @@ export const data = [
   },
   {
     badge: 'Standard',
-    cost: '4000PLN',
+    cost: '4500PLN',
     title: 'Pakiet Standard',
     strony: [
-      'Bardziej Rozbudowana Strona Internetowa',
       'Wszystko co w pakiecie Na Start', 
+      'Bardziej Rozbudowana Strona Internetowa',
       'Blog i system zarządzania treścią (CMS)'
     ],
     grafika: [
@@ -33,11 +33,11 @@ export const data = [
   },
   {
     badge: 'Pro',
-    cost: '7000PLN',
+    cost: '8000PLN',
     title: 'Pakiet Premium',
     strony: [
-      'Interaktywna Strona Internetowa',
       'Wszystko co w Pakiecie Standard',
+      'Interaktywna Strona Internetowa',
       'Analiza + Raport ruchu na stronie',
     ],
     grafika: [

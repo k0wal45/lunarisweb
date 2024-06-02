@@ -8,7 +8,11 @@ const data = [
   },
   {
     title: "Jaki jest koszt wykonania sklepu internetowego?",
-    answer: "Niestety nie zajmujemy się na ten moment tworzeniem sklepów internetowych",
+    answer: "Niestety nie zajmuje się na ten moment tworzeniem sklepów internetowych",
+  },
+  {
+    title: "Jakie są dodatkowe koszta związane ze stroną internetową?",
+    answer: "Dodatkowymi kosztami będą faktury wystawiane przez dostawców usług niezbędnych do poprawnego działania stworzonej strony. Będzie to np. opłata za domenę oraz hosting.",
   },
   {
     title: "Czy mogę liczyć na fakturę VAT?",
@@ -16,12 +20,12 @@ const data = [
   },
   
   {
-    title: "Czym się zajmujemy?",
-    answer: "Nasza specjalność to tworzenie nowoczesnych stron internetowych w najnowszych technologiach, które zapewniają szybkość oraz wachlarz możliwości. Dodatkowo, projektujemy logotypy, banery reklamowe, wizytówki, różnego rodzaju materiały promocyjne oraz tworzymy elementy graficzne. Naszym celem jest dostarczanie kompleksowych rozwiązań, które pomogą w promocji Twojego biznesu",
+    title: "Czym się zajmuje?",
+    answer: "Moja specjalność to tworzenie nowoczesnych stron internetowych w najnowszych technologiach, które zapewniają szybkość oraz wachlarz możliwości. Dodatkowo, projektuje logotypy, banery reklamowe, wizytówki, różnego rodzaju materiały promocyjne oraz tworzymy elementy graficzne. Moim celem jest dostarczanie kompleksowych rozwiązań, które pomogą w promocji Twojego biznesu",
   },
   {
-    title: "Czy podpisujemy umowy z klientami?",
-    answer: "Jeśli klient wyrazi takie życzenie, jesteśmy gotowi do podpisania umowy",
+    title: "Czy podpisuje umowy z klientami?",
+    answer: "Jeśli klient wyrazi takie życzenie, jestem gotowy do podpisania umowy",
   },
   
   {
