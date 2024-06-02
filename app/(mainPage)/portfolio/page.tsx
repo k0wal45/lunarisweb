@@ -6,11 +6,11 @@ import FaqSection from '@/components/FAQ/FaqSection';
 import Offers from '@/components/Offers/Offers';
 import ContactSec from '@/components/ContactForm/ContactSec';
 import Reviews from '@/components/reviews/Reviews';
-import { GetFullPortfolioData, bqCars, merkuryMedica, oktech, werva } from '@/components/portfolio/fullData';
-import { revalidate } from '../page';
+import { GetFullPortfolioData } from '@/components/portfolio/fullData';
+
 export const metadata: Metadata = {
   title: "Lunaris Web - Portfolio",
-  description: "Tworzymy innowacyjne i błyskawiczne strony internetowe, bezpieczne oraz dostosowane do potrzeb klienta. Wejdź do świata internetu już teraz!",
+  description: "Sprawdź nasze wcześniejsze realizacje, może właśnie to przekona cie do współpracy z nami. Przychodnia medyczna czy wypożyczalnia samochodów ",
 }
 
 
@@ -27,7 +27,7 @@ const PortfolioPage = () => {
       <section className="flex flex-col gap-12 items-center justify-cente p-4 my-12">
         <div className="flex flex-col gap-8 items-center justify-center lg:w-1/2 text-center">
           <h3 className="text-3xl lg:text-6xl font-bold">Sprawdź moje wybrane realizacje</h3>
-          <p className='text-lg'>Znajdziesz tu najciekawsze realizacje z poszczególnych kategorii</p>
+          <p className='text-lg'>Sprawdź nasze wcześniejsze realizacje, może właśnie to przekona cie do współpracy z nami</p>
         </div>
         {
           data.map((item, index) => (
