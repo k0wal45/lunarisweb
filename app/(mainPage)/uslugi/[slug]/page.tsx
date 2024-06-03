@@ -1,6 +1,7 @@
 
 import ContactSec from '@/components/ContactForm/ContactSec'
 import FaqSection from '@/components/FAQ/FaqSection'
+import GrowSection from '@/components/Grow/GrowSection'
 import { fullOffersData } from '@/components/Offers/OffersData'
 import Advanteges from '@/components/Offers/OffersSlug/Advanteges/Advanteges'
 import Hero from '@/components/Offers/OffersSlug/Hero'
@@ -43,11 +44,14 @@ const OfferPage = async ({params}: Params) => {
         content={pageData.hero}
       />
       <Stats />
-      <Services />
+      <Services 
+        content={pageData.services}
+      />
       <Advanteges 
         content={pageData.advanteges}
       />
       <Packages />
+      <GrowSection />
       <Portfolio />
       <Reviews />
       <ContactSec />

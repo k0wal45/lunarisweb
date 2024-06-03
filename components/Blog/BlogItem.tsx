@@ -11,7 +11,7 @@ const BlogItem = (post: any) => {
     <Link href={'/blog/' + post.post.slug.current} key={post.post._id} 
     className="
       flex flex-col gap-2 w-[23rem] h-min rounded-xl shadow-none
-      lg:hover:translate-y-[-4px] lg:hover:translate-x-2 lg:hover:shadow-xl
+      lg:hover:translate-y-[-4px] lg:hover:translate-x-2 lg:hover:shadow-xl bg-neutral-800 text-white
       duration-200 transition-all
       lg:group
     ">
@@ -28,7 +28,7 @@ const BlogItem = (post: any) => {
         </ul>
 
         <h2 className=" text-lg font-bold">{post.post.title}</h2>
-        <p className="text-neutral-600">{post.post.excerpt}</p>
+        <p className="text-neutral-300">{post.post.excerpt}</p>
         <span className="text-sm text-base">{new Date(post?.post.publishedAt).toDateString()}</span>
       </div>
 

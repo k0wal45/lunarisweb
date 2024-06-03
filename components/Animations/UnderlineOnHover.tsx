@@ -1,5 +1,5 @@
+'use client'
 import {motion} from 'framer-motion'
-import { JSXElementConstructor } from 'react'
 
 const UnderlineOnHover = ({children}: {children: JSX.Element}) => {
   return (
@@ -18,11 +18,10 @@ const UnderlineOnHover = ({children}: {children: JSX.Element}) => {
           animate: {
             clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 0% 100%)'
           }
-        }}
+        }} 
         transition={{duration: 0.4, ease: 'easeOut'}}
-        className='h-[2px] w-full origin-left roudned-full bg-white'
+        className='h-[2px] w-full origin-left roudned-full bg-white z-50'
       >
-
       </motion.div>
     </motion.div>
   )

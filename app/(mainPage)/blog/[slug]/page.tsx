@@ -7,6 +7,7 @@ import classes from './post.module.css'
 import Image from "next/image";
 import { urlForImage } from "@/sanity/lib/image";
 import { Fragment } from "react";
+import { redirect } from "next/navigation";
 
 export const revalidate = 10
 
@@ -48,6 +49,7 @@ const slug = async ({params}: Params) => {
   
 
   return (
+    !event ? redirect('/not-found') :
     <Fragment>
       <Image src={urlForImage(event?.mainImage).url()} width={1300} height={1000} alt={event?.title} className="w-full rounded-br-[6rem] lg:rounded-br-[13rem]" />
       <div className="flex flex-col gap-2">

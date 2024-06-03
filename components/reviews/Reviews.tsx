@@ -29,7 +29,7 @@ const Reviews = () => {
   }
 
   return (
-    <section className='flex flex-col gap-8 py-12'>
+    <section className='flex flex-col gap-8 py-12 w-full bg-neutral-800 text-white'>
       <h6 className="text-3xl lg:text-6xl font-bold text-center p-4">Opinie naszych Klientów</h6>
 
       <Swiper

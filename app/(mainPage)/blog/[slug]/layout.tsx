@@ -10,7 +10,7 @@ const layout = ({
     children: React.ReactNode;
   }>) => {
   return (
-    <main className="flex flex-col pt-32 items-center justify-center w-full">
+    <main className="flex flex-col pt-32 items-center justify-center w-full overflow-x-hidden">
         <article className='lg:max-w-5xl flex flex-col items-center justify-start gap-8 w-full pb-12 border-base border-b-2 p-4'>
 				  {children}
         </article>

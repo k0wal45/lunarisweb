@@ -21,7 +21,7 @@ const AppearFromRight = ({children}: any) => {
         },
       }}
       animate={IsInView ? 'visible' : 'hidden'}
-      transition={{duration: 0.35, ease: 'easeInOut', delay: 0.1}}  
+      transition={{duration: 0.35, ease: 'easeInOut', delay: 0.4}}  
     >
       {children}
     </motion.div>

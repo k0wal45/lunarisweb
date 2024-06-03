@@ -1,26 +1,25 @@
 'use client'
-import { items } from "./ServicesData";
 import { Dispatch, SetStateAction, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import { IconType } from "react-icons";
 
-const Services = () => {
-  const [open, setOpen] = useState(items[0].id);
+const Services = ({content}: any) => {
+  const [open, setOpen] = useState(content.list[0].id);
 
   return (
     <section className="flex flex-col gap-16 my-12 items-center justify-center p-4">
-      <h4 className="text-6xl font-bold">Jakie strony internetowe tworzymy?</h4>
-      <div className="flex flex-col lg:flex-row h-fit lg:h-[450px] w-full max-w-6xl mx-auto shadow overflow-hidden">
+      <h4 className="text-5xl lg:text-6xl font-bold p-4">{content.title}</h4>
+      <div className="flex flex-col lg:flex-row h-fit lg:h-[550px] w-full max-w-6xl mx-auto overflow-hidden">
 
-        {items.map((item) => {
+        {content.list.map((item) => {
           return (
             <Panel
               key={item.id}
               open={open}
               setOpen={setOpen}
               id={item.id}
-              Icon={item.Icon}
+              icon={item.icon}
               title={item.title}
               imgSrc={item.imgSrc}
               description={item.description}
@@ -36,7 +35,7 @@ interface PanelProps {
   open: number;
   setOpen: Dispatch<SetStateAction<number>>;
   id: number;
-  Icon: IconType;
+  icon: any;
   title: string;
   imgSrc: string;
   description: string;
@@ -46,7 +45,7 @@ const Panel = ({
   open,
   setOpen,
   id,
-  Icon,
+  icon,
   title,
   imgSrc,
   description,
@@ -57,22 +56,16 @@ const Panel = ({
   return (
     <>
       <button
-        className="bg-white hover:bg-slate-50 transition-colors p-3 border-r-[1px] border-b-[1px] border-slate-200 flex flex-row-reverse lg:flex-col justify-end items-center gap-4 relative group"
+        className="lg:w-20 bg-white hover:bg-slate-100 transition-colors p-3 border-r-[2px] border-b-[2px] border-slate-200 flex flex-row-reverse lg:flex-col justify-between items-center gap-4 relative group rounded-xl"
         onClick={() => setOpen(id)}
       >
-        <span
-          style={{
-            writingMode: "vertical-lr",
-          }}
-          className="hidden lg:block text-xl font-light rotate-180"
-        >
+        <div className="hidden lg:block"></div>
+        <p className="text-xl whitespace-nowrap lg:rotate-[-90deg] lg:tracking-widest">
           {title}
-        </span>
-        <span className="block lg:hidden text-xl font-light">{title}</span>
-        <div className="w-6 lg:w-full aspect-square bg-indigo-600 text-white grid place-items-center">
-          <Icon />
+        </p>
+        <div className="w-6 lg:w-full aspect-square bg-indigo-600 text-white grid place-items-center lg:text-2xl">
+          {icon}
         </div>
-        <span className="w-4 h-4 bg-white group-hover:bg-slate-50 transition-colors border-r-[1px] border-b-[1px] lg:border-b-0 lg:border-t-[1px] border-slate-200 rotate-45 absolute bottom-0 lg:bottom-[50%] right-[50%] lg:right-0 translate-y-[50%] translate-x-[50%] z-20" />
       </button>
 
       <AnimatePresence>
@@ -88,14 +81,14 @@ const Panel = ({
               backgroundPosition: "center",
               backgroundSize: "cover",
             }}
-            className="w-full h-full overflow-hidden relative bg-black flex items-end"
+            className="w-full h-full overflow-hidden relative  flex items-end rounded-xl"
           >
             <motion.div
               variants={descriptionVariants}
               initial="closed"
               animate="open"
               exit="closed"
-              className="px-4 py-2 bg-black/40 backdrop-blur-sm text-white"
+              className="px-4 py-2 bg-black/40 backdrop-blur-sm text-white lg:text-2xl"
             >
               <p>{description}</p>
             </motion.div>
