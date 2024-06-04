@@ -3,12 +3,12 @@ import GrowItem from "./GrowItem"
 const data = [
   {
     title: 'Strony internetowe',
-    description: 'Projektowanie stron internetowych to połączenie kreatywności i funkcjonalności. Efektywnie tworze i programuje strony internetowe, które są idealnie dostosowane do indywidualnych potrzeb każdego klienta.',
+    description: 'Projektowanie stron internetowych to połączenie kreatywności i funkcjonalności. Efektywnie tworze i programuje strony internetowe, które są idealnie dostosowane do indywidualnych potrzeb każdego klienta. Zacznijmy współpracę już dziś',
     img: 'https://source.unsplash.com/random',
   },
   {
     title: 'SEO',
-    description: 'Nasze usługi obejmują kompleksową gamę działań - od koncepcji i projektowania graficznego, przez programowanie, po optymalizację pod kątem wyszukiwarek internetowych (SEO).',
+    description: 'Nasze usługi obejmują kompleksową gamę działań - od koncepcji i projektowania graficznego, przez programowanie, po optymalizację pod kątem wyszukiwarek internetowych (SEO). Dodatkowo współpracujemy z agencją specjalizującą się w SEO',
     img: 'https://source.unsplash.com/random',
   },
   {

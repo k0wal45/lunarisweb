@@ -2,17 +2,16 @@ import Reveal from "./Animations/Reveal"
 
 function Stats() {
 
-  const howManyYears = () => {
+  function obliczWiek(dataObecna: any) {
+    
+    const dataUrodzenia: any = new Date('2023-04-21');
+    const roznicaCzasu = dataObecna - dataUrodzenia;
+    const roznicaWiek = new Date(roznicaCzasu).getFullYear() - 1970;
+    return roznicaWiek;
+}
 
-    const start = new Date(2023, 1, 1).getFullYear()
+const dataObecna = new Date(); // Bieżąca data
 
-    const dateNow = new Date().getFullYear()   
-
-    const years = dateNow - start
-
-      return years 
- 
-  }
 
   return (
     <section className="flex flex-col lg:flex-row gap-8 p-4 w-full border-b-2 border-base overflow-hidden">
@@ -38,7 +37,7 @@ function Stats() {
         <div className="flex-1 p-4 flex flex-col gap-4 text-center lg:text-start lg:items-start items-center">
           <h2 className="font-bold text-2xl">Lat na Rynku</h2>
           <Reveal>
-            <p  className="text-6xl text-primary font-bold ml-4">{howManyYears()}</p>
+            <p  className="text-6xl text-primary font-bold ml-4">{obliczWiek(dataObecna)}</p>
           </Reveal>
         </div>
       </section>
