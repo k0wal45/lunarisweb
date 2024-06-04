@@ -84,8 +84,8 @@ const Navbar = () => {
           </li>
           <div className="w-48 border-b-2 border-white my-6"></div>
           <li className='flex gap-8'>
-            <Link href='' className='text-5xl active:text-primary'><FaInstagram /></Link>
-            <Link href='' className='text-5xl active:text-primary'><FaFacebook /></Link>
+            <Link href='https://www.facebook.com/LunarisWeb?locale=pl_PL' className='text-5xl active:text-primary'><FaInstagram /></Link>
+            <Link href='https://www.instagram.com/lunarisweb.pl/' className='text-5xl active:text-primary'><FaFacebook /></Link>
           </li>
         </ul>
 

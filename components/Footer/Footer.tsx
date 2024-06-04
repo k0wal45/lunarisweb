@@ -17,18 +17,18 @@ function Footer() {
           <div className={classes.boxInner}></div>
       </div>
 
-        <ul className="flex gap-2 items-center justify-center h-full">
+        <ul className="flex gap-2 items-center justify-center h-full z-30">
           <li className='text-3xl text-black hover:text-primary transition-all duration-75 active:scale-110'>
-            <a href="">
+            <a href="https://www.facebook.com/LunarisWeb?locale=pl_PL">
               <FaFacebookF />
             </a>
           </li>
           <li className='text-3xl text-black hover:text-primary transition-all duration-75 active:scale-110'>
-            <a href="">
+            <a href="https://www.instagram.com/lunarisweb.pl/">
               <FaInstagram />
             </a>
           </li>
-                 
+
         </ul>
       
         <p className='font-bold text-3xl h-full grid place-items-center'>©{year} Lunaris Web</p>
