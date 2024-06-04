@@ -1,6 +1,4 @@
 import { client } from "@/sanity/client";
-import Link from "next/link";
-import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import { Post } from "@/utils/interface";
 import { PortableText } from "@portabletext/react";
 import classes from './post.module.css'
@@ -34,7 +32,7 @@ const getPost = async (slug:string) => {
     return event
 }
 
-const slug = async ({params}: Params) => {
+const slug = async ({params}: any) => {
 
   const event: Post = await getPost(params?.slug)
 

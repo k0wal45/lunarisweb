@@ -13,6 +13,7 @@ import Portfolio from '@/components/portfolio/Portfolio'
 import Reviews from '@/components/reviews/Reviews'
 import { Metadata } from 'next'
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher'
+import { redirect } from 'next/navigation'
 
 
 export const metadata: Metadata = {
@@ -39,7 +40,7 @@ const OfferPage = async ({params}: Params) => {
 
 
   return (
-  // !pageData ? redirect('/not-found') :
+  !pageData ? redirect('/not-found') :
     <main className='overflow-x-hidden max-w-screen'>
       <Hero
         content={pageData.hero}
