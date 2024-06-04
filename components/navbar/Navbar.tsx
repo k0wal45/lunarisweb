@@ -98,10 +98,7 @@ const Navbar = () => {
         <li>
           <Link href='/omnie' className='hover:underline'>O Mnie</Link>
         </li>
-        <li>
-          {/* <Link href='/uslugi' className='hover:underline'>Usługi</Link> */}
-          <StaggeredDropDown />
-        </li>
+        <StaggeredDropDown />
         <li>
           <Link href='/portfolio' className='hover:underline'>Portfolio</Link>
         </li>
@@ -124,7 +121,7 @@ const StaggeredDropDown = () => {
   const [open, setOpen] = useState(false);
 
   return (
-      <motion.div animate={open ? "open" : "closed"} className="relative">
+      <motion.li animate={open ? "open" : "closed"} className="relative">
         <button
           onClick={() => setOpen((pv) => !pv)}
           className="flex items-center gap-2"
@@ -145,7 +142,7 @@ const StaggeredDropDown = () => {
           <Option setOpen={setOpen} link='logotypy' Icon={PiPencilCircle } text="Logotypy" />
           <Option setOpen={setOpen} link='grafika-komputerowa' Icon={FaAddressCard} text="Grafika Komputerowa" />
         </motion.ul>
-      </motion.div>
+      </motion.li>
   );
 };
 
