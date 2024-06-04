@@ -35,7 +35,7 @@ const dataObecna = new Date(); // Bieżąca data
         <div className=" w-48 lg:w-0 lg:h-40 border-[1px] border-base m-auto"></div> 
 
         <div className="flex-1 p-4 flex flex-col gap-4 text-center lg:text-start lg:items-start items-center">
-          <h2 className="font-bold text-2xl">Lat na Rynku</h2>
+          <h2 className="font-bold text-2xl">Lata na Rynku</h2>
           <Reveal>
             <p  className="text-6xl text-primary font-bold ml-4">{obliczWiek(dataObecna)}</p>
           </Reveal>

@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     siteName: 'Lunaris Web',
     images: [
       {
-        url: 'https://nextjs.org/og.png',
-        width: 800,
-        height: 600,
+        url: 'https://www.lunarisweb.pl/_next/image?url=%2Fimg%2Flogo.png&w=96&q=75',
+        width: 96,
+        height: 96,
       },
       {
-        url: 'https://nextjs.org/og-alt.png',
-        width: 1800,
-        height: 1600,
+        url: 'https://www.lunarisweb.pl/_next/image?url=%2Fimg%2Flogo.png&w=96&q=75',
+        width: 96,
+        height: 96,
         alt: 'Lunaris Web',
       },
     ],

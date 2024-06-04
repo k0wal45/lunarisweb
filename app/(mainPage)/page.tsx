@@ -28,7 +28,7 @@ export default async function Home() {
         <WhyUs />
         <Portfolio />
         <Panel 
-          title='Marketing w internecie to 1 krok do sukcesu!'
+          title='Marketing w internecie to pierwszy krok do sukcesu!'
           text='Strona Internetowa to pierwszy krok jaki możesz podjąć aby rozbudować swój biznes i dać o sobie znać w internecie'
         /> 
         <Reviews />
