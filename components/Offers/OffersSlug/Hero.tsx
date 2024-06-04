@@ -6,7 +6,7 @@ import AppearFromLeft from '@/components/Animations/AppearFromLeft'
 
 const Hero = ({content}: any) => {
   return (
-    <section className="grid lg:grid-cols-5 gap-12  min-h-screen w-full relative">
+    <section className="grid lg:grid-cols-5 gap-12  min-h-screen w-full relative bg-neutral-700">
       <div className="flex flex-col items-start justify-center gap-8 p-4 pt-32 lg:pt-12 w-full lg:pl-24 col-span-2 z-20 text-white">
         <AppearFromLeft >
           <h1 className="text-6xl font-bold w-full ">{content.title}</h1>
