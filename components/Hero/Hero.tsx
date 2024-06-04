@@ -32,7 +32,7 @@ return (
 						<BtnLink link="/kontakt">Skontaktuj się po darmową wycenę</BtnLink> 
 				</div>
 				<div className={classes.circleContainer}>
-					<Image src='/img/beztla.png' alt="Daniel Kowalski Zdjęcie" width={700} height={900} className="lg:h-[90vh] w-auto block z-30 object-cover"/>
+					<Image src='/img/beztla.png' alt="Daniel Kowalski Zdjęcie" width={700} height={900} className="h-[30rem] lg:h-[90vh] lg:w-auto block z-30 object-cover"/>
 				</div>
 
 			</div>
