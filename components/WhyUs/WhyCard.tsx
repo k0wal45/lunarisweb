@@ -11,7 +11,7 @@ function ProsItem({heading, text, icon}: any) {
           </div>
         </AppearFromRight>
         <AppearFromLeft >
-          <h5 className="font-bold text-3xl">{heading}</h5>
+          <h6 className="font-bold text-3xl">{heading}</h6>
         </AppearFromLeft>
         <AppearFromRight >
           <p className="text-lg opacity-70">{text}</p>
