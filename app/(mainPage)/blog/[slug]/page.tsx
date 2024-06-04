@@ -7,7 +7,7 @@ import { urlForImage } from "@/sanity/lib/image";
 import { Fragment } from "react";
 import { redirect } from "next/navigation";
 
-export const revalidate = 10
+export const revalidate = 3600
 
 const getPost = async (slug:string) => {
   const EVENTS_QUERY = `*[

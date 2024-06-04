@@ -13,7 +13,7 @@ import Map from "@/components/Map";
 import BlogSection from "@/components/Blog/BlogSection";
 import GrowSection from "@/components/Grow/GrowSection";
 
-export const revalidate = 10
+export const revalidate = 3600
 
 export default async function Home() {
 

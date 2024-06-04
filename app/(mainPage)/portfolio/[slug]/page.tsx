@@ -7,9 +7,10 @@ import ContactSec from "@/components/ContactForm/ContactSec"
 import FaqSection from "@/components/FAQ/FaqSection"
 import { redirect } from "next/navigation"
 
+export const revalidate = 3600
+
 const page = async ({params}: any) => {
   
-  const revalidate = 10
 
 
   async function findObjectBySlug(slug: any, array: any) {

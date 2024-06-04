@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Lunaris Web - Usługi",
   description: "Tworzymy innowacyjne i błyskawiczne strony internetowe, bezpieczne oraz dostosowane do potrzeb klienta. Wejdź do świata internetu już teraz!",
 }
-export const revalidate = 10
+export const revalidate = 3600
 
 const OfferPage = async ({params}: any) => {
 
