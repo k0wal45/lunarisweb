@@ -1,6 +1,5 @@
 
 import { TextParallaxContentExample } from "@/components/portfolio/PortfolioSlug/PortfolioSection"
-import { Params } from "next/dist/shared/lib/router/utils/route-matcher"
 import { GetFullPortfolioData } from "@/components/portfolio/fullData"
 import Portfolio from "@/components/portfolio/Portfolio"
 import Offers from "@/components/Offers/Offers"
@@ -8,7 +7,7 @@ import ContactSec from "@/components/ContactForm/ContactSec"
 import FaqSection from "@/components/FAQ/FaqSection"
 import { redirect } from "next/navigation"
 
-const page = async ({params}: Params) => {
+const page = async ({params}: any) => {
   
   const revalidate = 10
 

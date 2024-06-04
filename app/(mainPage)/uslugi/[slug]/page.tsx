@@ -11,8 +11,7 @@ import Services from '@/components/Offers/OffersSlug/Services/Services'
 import Stats from '@/components/Stats'
 import Portfolio from '@/components/portfolio/Portfolio'
 import Reviews from '@/components/reviews/Reviews'
-import { Metadata } from 'next'
-import { Params } from 'next/dist/shared/lib/router/utils/route-matcher'
+import { Metadata } from 'next' 
 import { redirect } from 'next/navigation'
 
 
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
 }
 export const revalidate = 10
 
-const OfferPage = async ({params}: Params) => {
+const OfferPage = async ({params}: any) => {
 
   async function findObjectBySlug(slug: any, array: any) {
     const currentPage = array.find(item => item.slug === slug);
