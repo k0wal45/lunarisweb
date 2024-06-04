@@ -2,18 +2,7 @@ import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import UnderlineOnHover from '../Animations/UnderlineOnHover';
 
-
-type Card = {
-  id: number;
-  title: string,
-  text: string,
-  link: string,
-  className: string;
-  thumbnail: string;
-  slugPage: any;
-};
-
-const OnClickCard = ({ selected }: { selected: Card | null }) => {
+const OnClickCard = ({ selected }: { selected: any | null }) => {
   
   return (
     <div className="w-full h-full flex flex-col items-start justify-end p-4">

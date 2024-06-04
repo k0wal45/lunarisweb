@@ -2,7 +2,7 @@
 import { TypeAnimation } from 'react-type-animation';
 
 
-const TyperWriter = ({sequence}: Array) => {
+const TyperWriter = ({sequence}: any) => {
   return (
     <TypeAnimation
 

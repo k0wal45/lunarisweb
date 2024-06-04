@@ -46,7 +46,7 @@ const PackageCard = ({content}: any) => {
           
             <ul className="flex flex-col items-start justify-start list-disc px-4">
               {
-                content.strony.map(item => (
+                content.strony.map((item: any) => (
                   <li key={item}>{item}</li>
                 ))
               }
@@ -56,7 +56,8 @@ const PackageCard = ({content}: any) => {
 
           <ul className="flex flex-col items-start justify-start list-disc px-4">
             {
-              content.grafika.map((item, index) => (
+              content.grafika.map((item: any, index: any) => (
+                
                 <li key={index}>{item}</li>
               ))
             }

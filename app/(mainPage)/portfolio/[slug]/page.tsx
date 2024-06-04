@@ -13,7 +13,7 @@ const page = async ({params}: any) => {
 
 
   async function findObjectBySlug(slug: any, array: any) {
-    const currentPage = array.find(item => item.link === slug);
+    const currentPage = array.find((item:any) => item.link === slug);
 
     if (!currentPage || !currentPage.slugPage) {
       return false
@@ -30,7 +30,7 @@ const page = async ({params}: any) => {
   return (!pageData ? redirect('/not-found') :
     <main className="overflow-x-hidden max-w-screen">
       {
-        pageData.map((data, index) => (
+        pageData.map((data:any, index:any)  => (
           <TextParallaxContentExample content={data} key={index} />
         ))
       }

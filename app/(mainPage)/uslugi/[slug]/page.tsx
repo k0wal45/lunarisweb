@@ -24,7 +24,7 @@ export const revalidate = 10
 const OfferPage = async ({params}: any) => {
 
   async function findObjectBySlug(slug: any, array: any) {
-    const currentPage = array.find(item => item.slug === slug);
+    const currentPage = array.find((item: any) => item.slug === slug);
 
     if (!currentPage) {
       return false

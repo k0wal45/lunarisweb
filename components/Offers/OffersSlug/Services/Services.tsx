@@ -12,7 +12,7 @@ const Services = ({content}: any) => {
       <h4 className="text-5xl lg:text-6xl font-bold p-4">{content.title}</h4>
       <div className="flex flex-col lg:flex-row h-fit lg:h-[550px] w-full max-w-6xl mx-auto overflow-hidden">
 
-        {content.list.map((item) => {
+        {content.list.map((item: any) => {
           return (
             <Panel
               key={item.id}

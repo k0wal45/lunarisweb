@@ -1,6 +1,6 @@
 import AppearFromBottom from "@/components/Animations/AppearFromBottom";
 
-function getRandomElement(array) {
+function getRandomElement(array: any) {
   if (array.length === 0) {
     return undefined; // Jeśli tablica jest pusta, zwróć undefined
   }

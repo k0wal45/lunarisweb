@@ -17,7 +17,7 @@ const Hero = ({content}: any) => {
         <AppearFromLeft>
           <ul className="flex flex-col gap-2 items-start justify-start text-lg">
             {
-              content.list.map((reason, index) => (
+              content.list.map((reason: any) => (
                 <li className="flex items-center justify-start gap-4" key={reason} ><p className='text-primary'><FaCheck /></p>{reason}</li>
               ))
             }

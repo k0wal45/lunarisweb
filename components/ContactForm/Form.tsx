@@ -23,7 +23,7 @@ const Form = () => {
 
   } = formData
 
-  const form = useRef();
+  const form: any = useRef();
 
   const onMutate = (e: any) => {
     
