@@ -6,8 +6,8 @@ import AppearFromLeft from '@/components/Animations/AppearFromLeft'
 
 const Hero = ({content}: any) => {
   return (
-    <section className="grid lg:grid-cols-5 gap-12  min-h-screen w-full">
-      <div className="flex flex-col items-start justify-center gap-8 p-4 pt-32 lg:pt-12 w-full lg:pl-24 col-span-2">
+    <section className="grid lg:grid-cols-5 gap-12  min-h-screen w-full relative">
+      <div className="flex flex-col items-start justify-center gap-8 p-4 pt-32 lg:pt-12 w-full lg:pl-24 col-span-2 z-20 text-white">
         <AppearFromLeft >
           <h1 className="text-6xl font-bold w-full ">{content.title}</h1>
         </AppearFromLeft>
@@ -18,7 +18,7 @@ const Hero = ({content}: any) => {
           <ul className="flex flex-col gap-2 items-start justify-start text-lg">
             {
               content.list.map((reason, index) => (
-                <li className="flex items-center justify-start gap-4" key={index}><p className='text-primary'><FaCheck /></p>{reason}</li>
+                <li className="flex items-center justify-start gap-4" key={reason} ><p className='text-primary'><FaCheck /></p>{reason}</li>
               ))
             }
           </ul>
@@ -29,11 +29,11 @@ const Hero = ({content}: any) => {
         </AppearFromLeft>
 
       </div>
-      <div className={`${classes.mask} w-full h-full object-cover col-span-3`}>
-        <video className='w-full h-full object-cover' autoPlay muted loop>  
-          <source src='/video/coding.mp4' type='video/mp4'/>
+
+        <video className='w-full h-full object-cover absolute top-0 left-0 brightness-50' autoPlay muted loop >  
+          <source src={'/video/' + content.img} type='video/mp4'/>
         </video>
-      </div>
+      
   
     </section>
   )

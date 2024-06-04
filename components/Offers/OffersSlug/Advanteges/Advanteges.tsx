@@ -17,10 +17,10 @@ const Advanteges = ({content}: any) => {
       <div className="absolute top-0 left-0 w-full h-full bg-primary opacity-75 z-[-1] lg:rounded-tl-[50%] lg:rounded-br-[50%]"></div>
       <ul className=" flex flex-wrap items-start justify-around gap-8">
         {
-          content.list.map((item, index) => (
+          content.list.map((item: any) => (
             <AdvantegesItem 
               content={item}
-              key={index}
+              key={item.title}
             />
           ))
         }

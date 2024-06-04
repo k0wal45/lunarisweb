@@ -11,10 +11,10 @@ const Offers = () => {
     <section className={` bg-cover lg:bg-contain flex flex-col items-center justift-center gap-8 mx-auto p-4 my-12`}>
       <div className="flex flex-col gap-2 items-center justify-center text-center">
         <h6 className="text-3xl lg:text-6xl font-bold">Jakie usługi oferuje?</h6>
-        <p className="lg:w-2/3">Świadcze usługi tworzenia kompelksowych stron internetowycyh, logotypów i wszelkiego rodzaju materiałów reklamowych takich jak wizytówki czy banery</p>
+        <p className="lg:w-2/3 text-lg">Świadcze usługi tworzenia kompelksowych stron internetowycyh, logotypów i wszelkiego rodzaju materiałów reklamowych takich jak wizytówki czy banery</p>
       </div>
       
-      <div className="flex flex-col lg:flex-row gap-16 items-center justify-center py-12 w-full">
+      <div className="flex flex-col lg:flex-row gap-16 items-center justify-center pb-12 pt-0 lg:pt-12 w-full">
         <AppearFromLeft>
           <OfferCard 
             title='Logotypy'
@@ -36,7 +36,7 @@ const Offers = () => {
           <OfferCard 
             title='Materiały Reklamowe'
             text='Wizytówki, Banery Reklamowe i wiele innych rzeczy które pomogą ci zdobyć klientów'
-            link='grafika-koputerowa'
+            link='grafika-komputerowa'
             img='wizytowka.jpg'
             icon={<FaAddressCard />}
           />
@@ -59,7 +59,7 @@ const Offers = () => {
         <CardMobile 
           title='Materiały Reklamowe'
           text='Wizytówki, Banery Reklamowe i wiele innych rzeczy które pomogą ci zdobyć klientów'
-          link='grafika-koputerowa'
+          link='grafika-komputerowa'
           img='wizytowka.jpg'
           icon={<FaAddressCard />}
         />

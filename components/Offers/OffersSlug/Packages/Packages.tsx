@@ -14,7 +14,7 @@ const Packages = () => {
           data.map((item, index) => (
             <PackageCard
               content={item}
-              key={index}
+              key={item.badge}
             />
           ))
         }

@@ -89,11 +89,11 @@ export const stronyInternetowe = {
 }
 
 export const grafikaKomputerowa = {
-  slug: 'grafika-koputerowa',
+  slug: 'grafika-komputerowa',
   hero: {
     title: 'Wizytówki czy Banery Reklamowe z Twoją firmą',
     text: 'Jeśli potrzebujesz grafiki która pomoże twojemy biznesowi, zgłoś się do mnie',
-    img: 'coding.mp4',
+    img: 'graphic.mp4',
     list: [
       'Zwiększona świadomość społeczeństwa o twojej firmie',
       'Profesjonalny wizerunek firmy w przestrzeni publicznej',
@@ -172,7 +172,7 @@ export const logotypy = {
   hero: {
     title: 'Twój pierwszy krok w budowaniu twojej marki',
     text: 'Wyróżnij swoją firmę na tle konkurencji i zainwestuj w profesjonalny wizerunek firmy',
-    img: 'coding.mp4',
+    img: 'logo.mp4',
     list: [
       'Profesjonalny wizerunek firmy',
       'Odzwierciedlenie charakteru i wartości firmy',

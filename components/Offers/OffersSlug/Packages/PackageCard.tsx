@@ -6,6 +6,7 @@ import Link from "next/link";
 const PackageCard = ({content}: any) => {
   return (
     <motion.div
+      key={content.badge}
       whileHover="hover"
       transition={{
         duration: 1,
@@ -46,7 +47,7 @@ const PackageCard = ({content}: any) => {
             <ul className="flex flex-col items-start justify-start list-disc px-4">
               {
                 content.strony.map(item => (
-                  <li>{item}</li>
+                  <li key={item}>{item}</li>
                 ))
               }
             </ul>
