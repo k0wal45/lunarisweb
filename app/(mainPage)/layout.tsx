@@ -5,6 +5,7 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import Head from "next/head";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -49,6 +50,7 @@ export default function RootLayout({
               {children}
             <Footer />
       </body>
+      <GoogleAnalytics gaId={'G-LC4SHK59XE'}/>
     </html>
   );
 }
