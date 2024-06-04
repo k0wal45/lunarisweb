@@ -116,8 +116,8 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         className="absolute inset-0 h-full w-full bg-black opacity-60 z-[-1] rounded-lg"
       />
         {
-          selected ? <Image width={1200} 
-          height={1000} 
+          selected ? <Image width={800} 
+          height={700} 
           src={selected?.slugPage[0].image} 
           alt="" 
           className='absolute top-0 left-0 w-full h-full z-[-2] object-cover rounded-lg'
