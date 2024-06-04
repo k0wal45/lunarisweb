@@ -47,7 +47,7 @@ const AboutDescription = () => {
       <AppearFromLeft>
         <div className="flex flex-col gap-2">
           <div className="flex gap-2 items-center">
-            <FaCheck/> <p className="text-lg">Chęć pomocy i rozwoju aby przedewszystkim pomóc właśnie tobie</p>
+            <FaCheck/> <p className="text-lg">Chęć pomocy i rozwoju aby przede wszystkim pomóc właśnie tobie</p>
           </div>
         </div>
       </AppearFromLeft>

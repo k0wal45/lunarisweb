@@ -70,7 +70,7 @@ const Navbar = () => {
             <Link href='/omnie'>O Mnie</Link>
           </li>
           <li>
-            <Link href='/oferta'>Oferta</Link>
+            <Link href='/uslugi'>Oferta</Link>
           </li>
           <li>
             <Link href='/portfolio'>Portfolio</Link>
