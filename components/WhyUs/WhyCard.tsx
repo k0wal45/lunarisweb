@@ -16,7 +16,7 @@ function ProsItem({heading, text, icon}: any) {
         <AppearFromRight >
           <p className="text-lg opacity-70">{text}</p>
         </AppearFromRight>
-
+ 
       </div>
     
   )
