@@ -1,4 +1,4 @@
-import { SiAdobephotoshop, SiInkscape, SiNextdotjs, SiReact, SiSanity, SiTailwindcss, SiWordpress } from 'react-icons/si';
+import { SiAdobephotoshop, SiInkscape, SiNextdotjs, SiReact, SiTailwindcss, SiWordpress } from 'react-icons/si';
 
 export const oktech: any = {
   id: 1,
@@ -130,6 +130,7 @@ export const maliCzarodzieje: any = {
   techStack: [
     <SiReact />,
     <SiTailwindcss />,
+    <SiNextdotjs />
   ],
   image: 'maliCzarodzieje/panel.png',
   tag: 'strony-internetowe',
