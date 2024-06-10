@@ -36,7 +36,7 @@ export const oktechLaweta: any = {
       header: 'Prosta Strona Wizytówka',
       text: 'Zaprojektowałem prostą, statyczną stronę wizytówkę dla firmy montującej klimatyzacje. Strona zawiera przejrzysty układ z sekcjami przedstawiającymi usługi, informacje o firmie oraz galerię zdjęć z realizacjami. Intuicyjna nawigacja i estetyczny design sprawiają, że użytkownicy mogą łatwo znaleźć potrzebne informacje. Strona została zoptymalizowana pod kątem szybkości ładowania, co zapewnia płynne doświadczenie przeglądania. Dzięki tej stronie firma może skutecznie prezentować swoją ofertę i budować profesjonalny wizerunek w sieci.',
       link: 'https://klima-serwis.eu/',
-      image: '/img/oktech/thumbnail.png',
+      image: '/img/oktechAutolaweta/thumbnail.png',
     },
     
   ]
