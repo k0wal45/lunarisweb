@@ -21,8 +21,29 @@ export const oktech: any = {
   ]
 }
 
-export const werva: any = {
+export const oktechLaweta: any = {
   id: 2,
+  title:'Oktech Autolaweta', 
+  link:'oktech-autolaweta',
+  techStack: [
+    
+  ],
+  image: 'oktechAutolaweta/panel.png',
+  className: "col-span-2",
+  slugPage: [
+    {
+      title: 'Strona Internetowa',
+      header: 'Prosta Strona Wizytówka',
+      text: 'Zaprojektowałem prostą, statyczną stronę wizytówkę dla firmy montującej klimatyzacje. Strona zawiera przejrzysty układ z sekcjami przedstawiającymi usługi, informacje o firmie oraz galerię zdjęć z realizacjami. Intuicyjna nawigacja i estetyczny design sprawiają, że użytkownicy mogą łatwo znaleźć potrzebne informacje. Strona została zoptymalizowana pod kątem szybkości ładowania, co zapewnia płynne doświadczenie przeglądania. Dzięki tej stronie firma może skutecznie prezentować swoją ofertę i budować profesjonalny wizerunek w sieci.',
+      link: 'https://klima-serwis.eu/',
+      image: '/img/oktech/thumbnail.png',
+    },
+    
+  ]
+}
+
+export const werva: any = {
+  id: 3,
   title:'Werva Solutions',
   link:'werva-solutions',
   techStack: [
@@ -51,7 +72,7 @@ export const werva: any = {
 }
 
 export const merkuryMedica: any = {
-  id: 3,
+  id: 4,
   title:'Merkury Medica',
   link:'merkury-medica',
   techStack: [
@@ -90,7 +111,7 @@ export const merkuryMedica: any = {
 }
 
 export const bqCars: any = {
-  id: 4,
+  id: 5,
   title:'BQ Cars Katowice',
   link:'bq-cars-katowice',
   techStack: [
@@ -124,7 +145,7 @@ export const bqCars: any = {
 }
 
 export const maliCzarodzieje: any = {
-  id: 5,
+  id: 6,
   title:'Mali Czarodzieje',
   link:'mali-czarodzieje',
   techStack: [
@@ -147,7 +168,7 @@ export const maliCzarodzieje: any = {
 }
 
 export const bezpieczniWTeorii: any = {
-  id: 5,
+  id: 7,
   title:'Bezpieczni w teorii',
   link:'bezpieczni-w-teorii',
   techStack: [
@@ -177,7 +198,7 @@ export const bezpieczniWTeorii: any = {
 
 
 export const GetFullPortfolioData= () => {
-  const data = [oktech, bqCars, merkuryMedica, werva, maliCzarodzieje, bezpieczniWTeorii]
+  const data = [oktech, bqCars, merkuryMedica, werva, maliCzarodzieje, bezpieczniWTeorii, oktechLaweta]
 
   return data
 }
