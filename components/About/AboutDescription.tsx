@@ -10,7 +10,7 @@ const AboutDescription = () => {
   return (
     <div className="flex flex-col gap-4 lg:max-w-[50vw]">
       <h3 className="text-3xl lg:text-6xl font-bold">Z kim będziesz pracować?</h3>
-      <p className="text-lg">Od pierwszego kontaktu z klientem po finalną realizację projektu, jestem z Tobą na każdym etapie. Lunaris Web to jedna osoba, która specjalizuje się w kompleksowej tworzeniu stron internetowych, logotypów i innych materiałów reklamowych. Nazywam się Daniel Kowalski i chce pomóc ci w rozrastaniu twojego bizensu</p>
+      <p className="text-lg">Od pierwszego kontaktu z klientem po finalną realizację projektu, jestem z Tobą na każdym etapie. Lunaris Web to jedna osoba, która specjalizuje się w kompleksowym tworzeniu stron internetowych, logotypów i innych materiałów reklamowych. Nazywam się Daniel Kowalski i chce pomóc ci w rozrastaniu Twojego biznesu</p>
       <div className="flex flex-wrap gap-4 items-center justify-start w-full">
         
         <div className="flex-1">
@@ -47,7 +47,7 @@ const AboutDescription = () => {
       <AppearFromLeft>
         <div className="flex flex-col gap-2">
           <div className="flex gap-2 items-center">
-            <FaCheck/> <p className="text-lg">Chęć pomocy i rozwoju aby przede wszystkim pomóc właśnie tobie</p>
+            <FaCheck/> <p className="text-lg">Chęć pomocy i rozwoju aby przede wszystkim pomóc właśnie Tobie</p>
           </div>
         </div>
       </AppearFromLeft>

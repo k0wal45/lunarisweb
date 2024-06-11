@@ -14,7 +14,7 @@ export const oktech: any = {
       title: 'Strona Internetowa',
       header: 'Prosta Strona Wizytówka',
       text: 'Zaprojektowałem prostą, statyczną stronę wizytówkę dla firmy montującej klimatyzacje. Strona zawiera przejrzysty układ z sekcjami przedstawiającymi usługi, informacje o firmie oraz galerię zdjęć z realizacjami. Intuicyjna nawigacja i estetyczny design sprawiają, że użytkownicy mogą łatwo znaleźć potrzebne informacje. Strona została zoptymalizowana pod kątem szybkości ładowania, co zapewnia płynne doświadczenie przeglądania. Dzięki tej stronie firma może skutecznie prezentować swoją ofertę i budować profesjonalny wizerunek w sieci.',
-      link: 'https://klima-serwis.eu/',
+      link: 'https://klima-serwis.eu/', 
       image: '/img/oktech/thumbnail.png',
     },
     
@@ -36,7 +36,7 @@ export const oktechLaweta: any = {
     {
       title: 'Strona Internetowa',
       header: 'Prosta Strona Wizytówka',
-      text: 'Strona dla oktechu z wypożyczalnią autolawety została zaprojektowana z myślą o przejrzystości i funkcjonalności. Nasz zespół skupił się na intuicyjnej nawigacji, aby użytkownicy mogli szybko znaleźć potrzebne informacje o usługach holowniczych i transportowych. Strona jest responsywna, co zapewnia doskonałe doświadczenia na wszystkich urządzeniach. Dzięki nowoczesnemu designowi i jasnemu układowi, Autolaweta24 skutecznie przedstawia swoją ofertę, budując zaufanie i profesjonalny wizerunek firmy.',
+      text: 'Strona dla Oktechu z wypożyczalnią autolawety została zaprojektowana z myślą o przejrzystości i funkcjonalności. Nasz zespół skupił się na intuicyjnej nawigacji, aby użytkownicy mogli szybko znaleźć potrzebne informacje o usługach holowniczych i transportowych. Strona jest responsywna, co zapewnia doskonałe doświadczenia na wszystkich urządzeniach. Dzięki nowoczesnemu designowi i jasnemu układowi, Autolaweta24 skutecznie przedstawia swoją ofertę, budując zaufanie i profesjonalny wizerunek firmy.',
       link: 'https://autolaweta24.com.pl',
       image: '/img/oktechAutolaweta/thumbnail.png',
     },

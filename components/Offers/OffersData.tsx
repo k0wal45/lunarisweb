@@ -8,7 +8,7 @@ import { SiStackblitz } from 'react-icons/si'
 export const stronyInternetowe = {
   slug: 'strony-internetowe',
   hero: {
-    title: 'Najlepsza wizytówka twojego biznesu',
+    title: 'Najlepsza wizytówka Twojego biznesu',
     text: 'Stworzymy dla Ciebie stronę internetową, która wyróżni Twoją markę w sieci',
     img: 'coding.mp4',
     list: [

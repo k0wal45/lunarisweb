@@ -21,7 +21,7 @@ const AboutPage = () => {
       <Hero 
         header='o mnie'
         title='Twórca Stron Internetowych z Indywidualnym Podejściem'
-        text='Indywidualne podejście do każdego projektu'
+        text='Indywidualne podejście do każdego projektu. Techniczne wykształcenie w dziedzinie informatyki i tworzenia stron internetowych.'
       />
       <Stats />
       <About />

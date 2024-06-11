@@ -22,7 +22,7 @@ function WhyUs() {
         />
         <WhyCard 
           heading='Wszystko w jednym miejscu'
-          text='Grafika, Strony Internetowe i Logotypy w jendym miejscu co pozwala zaoszczędzić czas i nerwy'
+          text='Grafika, Strony Internetowe i Logotypy w jednym miejscu co pozwala zaoszczędzić czas i nerwy'
           icon={<FaArrowsToDot />}
         />
         <WhyCard 
