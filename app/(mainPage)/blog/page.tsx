@@ -50,8 +50,8 @@ const BlogPage = async () => {
     <main className="overflow-x-hidden max-w-screen">
       <Hero 
         header='blog'
-        title='title'
-        text='text'
+        title='Przeczytaj nasze artykuły o świecie stron internetowych'
+        text=''
       />
       <section className="flex flex-col items-center justify-center text-center gap-12 my-12">
         <h2 className="text-5xl font-bold">Sprawdź nasze wpisy na blogu</h2>
