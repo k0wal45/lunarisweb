@@ -76,9 +76,9 @@ const Navbar = () => {
             <Link href='/portfolio'>Portfolio</Link>
           </li>
 
-          {/* <li>
+          <li>
             <Link href='/blog'>Blog</Link>
-          </li> */}
+          </li>
           <li>
             <Link href='/kontakt' className='p-4 px-6 bg-white text-black rounded-lg font-bold'>Porozmawiajmy!</Link>
           </li>
@@ -102,9 +102,9 @@ const Navbar = () => {
         <li>
           <Link href='/portfolio' className='hover:underline'>Portfolio</Link>
         </li>
-        {/* <li>
+        <li>
           <Link href='/blog' className='hover:underline'>Blog</Link>
-        </li> */}
+        </li>
       
           <li>
             <Link href='/kontakt' className='p-4 px-6 bg-black text-white rounded-lg font-bold'>Porozmawiajmy!</Link>

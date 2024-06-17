@@ -9,22 +9,20 @@ import { redirect } from "next/navigation"
 
 export const revalidate = 3600
 
-const page = async ({params}: any) => {
-  
+async function findObjectBySlug(slug: any, array: any) {
+  const currentPage = array.find((item:any) => item.link === slug);
 
-
-  async function findObjectBySlug(slug: any, array: any) {
-    const currentPage = array.find((item:any) => item.link === slug);
-
-    if (!currentPage || !currentPage.slugPage) {
-      return false
-    }
-  
-    return currentPage.slugPage
+  if (!currentPage || !currentPage.slugPage) {
+    return false
   }
 
-  type pageData = any
+  return currentPage.slugPage
+}
 
+
+const page = async ({params}: any) => {
+
+  type pageData = any
 
   const pageData = await findObjectBySlug(params.slug, GetFullPortfolioData())
 

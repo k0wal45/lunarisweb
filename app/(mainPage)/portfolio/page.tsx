@@ -7,10 +7,11 @@ import Offers from '@/components/Offers/Offers';
 import ContactSec from '@/components/ContactForm/ContactSec';
 import Reviews from '@/components/reviews/Reviews';
 import { GetFullPortfolioData } from '@/components/portfolio/fullData';
+import BlogSection from '@/components/Blog/BlogSection';
 
 export const metadata: Metadata = {
-  title: "Lunaris Web - Portfolio",
-  description: "Sprawdź nasze wcześniejsze realizacje, może właśnie to przekona cie do współpracy z nami. Przychodnia medyczna czy wypożyczalnia samochodów ",
+  title: "Portfolio - Lunaris Web",
+  description: "Sprawdź nasze wcześniejsze realizacje, może właśnie to przekona cie do współpracy z nami. Przychodnia medyczna czy wypożyczalnia samochodów, Strony Internetowe",
 }
 
 
@@ -44,6 +45,7 @@ const PortfolioPage = () => {
       </section>
       <Reviews />
       <Offers />
+      <BlogSection />
       <ContactSec />
       <FaqSection />
 

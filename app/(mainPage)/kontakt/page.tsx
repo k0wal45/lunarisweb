@@ -1,3 +1,4 @@
+import BlogSection from "@/components/Blog/BlogSection";
 import ContactSec from "@/components/ContactForm/ContactSec";
 import FaqSection from "@/components/FAQ/FaqSection";
 import GrowSection from "@/components/Grow/GrowSection";
@@ -8,8 +9,7 @@ import Stats from "@/components/Stats";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Lunaris Web - Kontakt",
-  description: "Tworzymy innowacyjne i błyskawiczne strony internetowe, bezpieczne oraz dostosowane do potrzeb klienta. Wejdź do świata internetu już teraz!",
+  title: "Kontakt - Lunaris Web",
 }
 
 const ContactPage = () => {
@@ -25,6 +25,7 @@ const ContactPage = () => {
       <Packages />
       <GrowSection />
       <Offers />
+      <BlogSection />//
       <FaqSection />
 
     </main>

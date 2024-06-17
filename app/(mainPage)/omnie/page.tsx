@@ -1,6 +1,7 @@
 import About from "@/components/About/About";
 import Programing from "@/components/About/AboutPage/Programing";
 import WhoAmI from "@/components/About/AboutPage/WhoAmI";
+import BlogSection from "@/components/Blog/BlogSection";
 import ContactSec from "@/components/ContactForm/ContactSec";
 import FaqSection from "@/components/FAQ/FaqSection";
 import Hero from "@/components/Hero/HeroUniversal";
@@ -12,7 +13,6 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Lunaris Web - O mnie",
-  description: "Tworzymy innowacyjne i błyskawiczne strony internetowe, bezpieczne oraz dostosowane do potrzeb klienta. Wejdź do świata internetu już teraz!",
 }
 
 const AboutPage = () => {
@@ -29,6 +29,7 @@ const AboutPage = () => {
       <WhoAmI />
       <Portfolio />
       <WhyUs />
+      <BlogSection />
       <Map />
       <ContactSec />
       <FaqSection />

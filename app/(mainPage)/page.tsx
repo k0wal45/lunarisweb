@@ -32,7 +32,7 @@ export default async function Home() {
           text='Strona Internetowa to pierwszy krok jaki możesz podjąć aby rozbudować swój biznes i dać o sobie znać w internecie'
         /> 
         <Reviews />
-        {/* <BlogSection /> */}
+        <BlogSection />
         <ContactSec />
         <Map />
         <FaqSection />

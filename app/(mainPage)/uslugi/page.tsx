@@ -10,9 +10,24 @@ import Reviews from "@/components/reviews/Reviews";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Lunaris Web - Usługi",
-  description: "Tworzymy innowacyjne i błyskawiczne strony internetowe, bezpieczne oraz dostosowane do potrzeb klienta. Wejdź do świata internetu już teraz!",
-}
+  title: 'Nasza Oferta - Lunaris Web',
+  description: 'Zapoznaj się z kompleksową ofertą Lunaris Web. Oferujemy tworzenie stron internetowych, projektowanie logotypów oraz grafikę komputerową, dostosowane do indywidualnych potrzeb klientów.',
+  keywords: 'oferta, tworzenie stron internetowych, projektowanie logotypów, grafika komputerowa, Lunaris Web',
+  openGraph: {
+    title: 'Nasza Oferta - Lunaris Web',
+    description: 'Zapoznaj się z kompleksową ofertą Lunaris Web. Oferujemy tworzenie stron internetowych, projektowanie logotypów oraz grafikę komputerową, dostosowane do indywidualnych potrzeb klientów.',
+    url: 'https://www.lunarisweb.com/oferta',
+    type: 'website',
+    locale: 'pl_PL',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@LunarisWeb',
+    title: 'Nasza Oferta - Lunaris Web',
+    description: 'Zapoznaj się z kompleksową ofertą Lunaris Web. Oferujemy tworzenie stron internetowych, projektowanie logotypów oraz grafikę komputerową, dostosowane do indywidualnych potrzeb klientów.',
+  },
+};
+
 
 const offersPage = () => {
   return (

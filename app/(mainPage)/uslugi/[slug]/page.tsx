@@ -11,27 +11,91 @@ import Services from '@/components/Offers/OffersSlug/Services/Services'
 import Stats from '@/components/Stats'
 import Portfolio from '@/components/portfolio/Portfolio'
 import Reviews from '@/components/reviews/Reviews'
-import { Metadata } from 'next' 
 import { redirect } from 'next/navigation'
 
+async function findObjectBySlug(slug: any, array: any) {
+  const currentPage = array.find((item: any) => item.slug === slug);
 
-export const metadata: Metadata = {
-  title: "Lunaris Web - Usługi",
-  description: "Tworzymy innowacyjne i błyskawiczne strony internetowe, bezpieczne oraz dostosowane do potrzeb klienta. Wejdź do świata internetu już teraz!",
+  if (!currentPage) {
+    return false
+  }
+
+  return currentPage
 }
+
 export const revalidate = 3600
+
+
+export async function generateMetadata({ params }: any) {
+
+  if (params.slug === 'strony-internetowe') {
+    return {
+      title: 'Tworzenie Stron Internetowych - Lunaris Web',
+      description: 'Profesjonalne tworzenie stron internetowych dostosowanych do indywidualnych potrzeb klientów. Lunaris Web oferuje nowoczesne, responsywne i bezpieczne strony.',
+      keywords: 'tworzenie stron internetowych, strony internetowe, responsywne strony, bezpieczne strony, Lunaris Web,',
+      openGraph: {
+        title: 'Tworzenie Stron Internetowych - Lunaris Web',
+        description: 'Profesjonalne tworzenie stron internetowych dostosowanych do indywidualnych potrzeb klientów. Lunaris Web oferuje nowoczesne, responsywne i bezpieczne strony.',
+        url: 'https://www.lunarisweb.com/oferta/strony-internetowe',
+        type: 'website',
+        locale: 'pl_PL',
+      },
+      twitter: {
+        card: 'summary_large_image',
+        site: '@LunarisWeb',
+        title: 'Tworzenie Stron Internetowych - Lunaris Web',
+        description: 'Profesjonalne tworzenie stron internetowych dostosowanych do indywidualnych potrzeb klientów. Lunaris Web oferuje nowoczesne, responsywne i bezpieczne strony.',
+      },
+    }
+  }
+
+  if (params.slug === 'logotypy') {
+    return {
+      title: 'Projektowanie Logotypów - Lunaris Web',
+        description: 'Oferujemy unikalne i profesjonalne projekty logotypów, które wyróżnią Twoją markę. Lunaris Web zapewnia indywidualne podejście i wysoką jakość usług.',
+        keywords: 'projektowanie logotypów, logotypy, unikalne logotypy, Lunaris Web',
+        openGraph: {
+          title: 'Projektowanie Logotypów - Lunaris Web',
+          description: 'Oferujemy unikalne i profesjonalne projekty logotypów, które wyróżnią Twoją markę. Lunaris Web zapewnia indywidualne podejście i wysoką jakość usług.',
+          url: 'https://www.lunarisweb.com/oferta/logotypy',
+          type: 'website',
+          locale: 'pl_PL',
+        },
+        twitter: {
+          card: 'summary_large_image',
+          site: '@LunarisWeb',
+          title: 'Projektowanie Logotypów - Lunaris Web',
+          description: 'Oferujemy unikalne i profesjonalne projekty logotypów, które wyróżnią Twoją markę. Lunaris Web zapewnia indywidualne podejście i wysoką jakość usług.',
+        },
+    }
+  }
+
+  if (params.slug === 'grafika-komputerowa') {
+    return {
+      title: 'Grafika Komputerowa - Lunaris Web',
+      description: 'Profesjonalne usługi graficzne: projektowanie ulotek, banerów, wizytówek i innych materiałów promocyjnych. Lunaris Web oferuje kreatywne i unikalne projekty.',
+      keywords: 'grafika komputerowa, projektowanie graficzne, materiały promocyjne, Lunaris Web',
+      openGraph: {
+        title: 'Grafika Komputerowa - Lunaris Web',
+        description: 'Profesjonalne usługi graficzne: projektowanie ulotek, banerów, wizytówek i innych materiałów promocyjnych. Lunaris Web oferuje kreatywne i unikalne projekty.',
+        url: 'https://www.lunarisweb.com/oferta/grafika-komputerowa',
+        type: 'website',
+        locale: 'pl_PL',
+      },
+      twitter: {
+        card: 'summary_large_image',
+        site: '@LunarisWeb',
+        title: 'Grafika Komputerowa - Lunaris Web',
+        description: 'Profesjonalne usługi graficzne: projektowanie ulotek, banerów, wizytówek i innych materiałów promocyjnych. Lunaris Web oferuje kreatywne i unikalne projekty.',
+      },
+    }
+  }
+
+  return
+}
 
 const OfferPage = async ({params}: any) => {
 
-  async function findObjectBySlug(slug: any, array: any) {
-    const currentPage = array.find((item: any) => item.slug === slug);
-
-    if (!currentPage) {
-      return false
-    }
-  
-    return currentPage
-  }
 
   type pageData = any
 

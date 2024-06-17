@@ -32,6 +32,18 @@ const getPost = async (slug:string) => {
     return event
 }
 
+
+export async function generateMetadata({ params }: any) {
+
+  const event: Post = await getPost(params?.slug)
+
+  return {
+    title: event.title,
+    description: event.excerpt,
+  }
+  
+}
+
 const slug = async ({params}: any) => {
 
   const event: Post = await getPost(params?.slug)
@@ -44,7 +56,6 @@ const slug = async ({params}: any) => {
     }
   }
 
-  
 
   return (
     !event ? redirect('/not-found') :
