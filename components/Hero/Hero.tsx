@@ -18,7 +18,7 @@ function Hero() {
 	]
 
 return (
-		<section className="flex justify-center items-end min-h-screen max-w-screen relative overflow-hidden border-b-2 border-neutral-200 pb-0">
+		<section className="flex justify-center items-end min-h-screen max-w-screen relative overflow-hidden border-b-2 border-neutral-200 p-4 pb-0">
 			<div className="text-start flex flex-col lg:flex-row lg:pb-0 pt-32 lg:pt-0 justify-center items-center gap-24">
 				<div className="flex flex-col gap-4 max-w-md p-4 lg:p-0">
 						<AppearFromLeft>
@@ -32,7 +32,7 @@ return (
 						<BtnLink link="/kontakt">Skontaktuj się po darmową wycenę</BtnLink> 
 				</div>
 				<div className={classes.circleContainer}>
-					<Image src='/img/beztla.png' alt="Daniel Kowalski Zdjęcie" width={700} height={900} className="h-[30rem] lg:h-[90vh] lg:w-auto block z-30 object-cover"/>
+					<Image src='/img/beztla.png' alt="Daniel Kowalski Zdjęcie" width={700} height={900} className="h-[30rem] lg:h-[90vh] lg:w-auto block z-30 object-contain object-bottom"/>
 				</div>
 
 			</div>

@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import {  useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './hamburger.css'
 import { FaAddressCard, FaFacebook, FaInstagram } from 'react-icons/fa'
 import Image from 'next/image'
@@ -10,7 +10,7 @@ import { PiPencilCircle } from 'react-icons/pi'
 import { MdOutlineWeb } from 'react-icons/md'
 const Navbar = () => {
 
-
+  const hamburger = useRef<HTMLInputElement>(null);
 
   const {scrollY} = useScroll()
 
@@ -26,6 +26,13 @@ const Navbar = () => {
       setHidden(false)
     }
   })
+
+  const handleLinkClick = () => {
+    setVisible(false);
+    if (hamburger.current) {
+      hamburger.current.checked = false;
+    }
+  };
 
   return (
     <motion.nav 
@@ -46,8 +53,8 @@ const Navbar = () => {
         }`}>Lunaris Web</h2>
       </Link>
       <label className='flex lg:hidden z-50'>
-        <input type="checkbox" id="check" onClick={(e: any) => {e.target.checked ? setVisible(true) : setVisible(false)}} className='hidden'/> 
-        <span></span>
+        <input ref={hamburger} type="checkbox" id="check" onClick={(e: any) => {e.target.checked ? setVisible(true) : setVisible(false)}} className='hidden'/> 
+        <span></span> 
         <span></span>
         <span></span>
       </label>
@@ -64,23 +71,23 @@ const Navbar = () => {
 
         <ul className="flex flex-col justify-center items-center gap-8 text-xl font-bold text-white">
           <li>
-            <Link href='/'>Strona Główna</Link>
+            <Link onClick={handleLinkClick} href='/'>Strona Główna</Link>
           </li>
           <li>
-            <Link href='/omnie'>O Mnie</Link>
+            <Link onClick={handleLinkClick} href='/omnie'>O Mnie</Link>
           </li>
           <li>
-            <Link href='/uslugi'>Oferta</Link>
+            <Link onClick={handleLinkClick} href='/uslugi'>Oferta</Link>
           </li>
           <li>
-            <Link href='/portfolio'>Portfolio</Link>
+            <Link onClick={handleLinkClick} href='/portfolio'>Portfolio</Link>
           </li>
 
           <li>
-            <Link href='/blog'>Blog</Link>
+            <Link onClick={handleLinkClick} href='/blog'>Blog</Link>
           </li>
           <li>
-            <Link href='/kontakt' className='p-4 px-6 bg-white text-black rounded-lg font-bold'>Porozmawiajmy!</Link>
+            <Link onClick={handleLinkClick} href='/kontakt' className='p-4 px-6 bg-white text-black rounded-lg font-bold'>Porozmawiajmy!</Link>
           </li>
           <li className="w-48 border-b-2 border-white my-6"></li>
           <li className='flex gap-8'>
