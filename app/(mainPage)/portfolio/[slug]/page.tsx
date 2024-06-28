@@ -27,7 +27,7 @@ const page = async ({params}: any) => {
   const pageData = await findObjectBySlug(params.slug, GetFullPortfolioData())
 
   return (!pageData ? redirect('/not-found') :
-    <main className="overflow-x-hidden max-w-screen">
+    <main className="max-w-screen">
       {
         pageData.map((data:any, index:any)  => (
           <TextParallaxContentExample content={data} key={index} />
