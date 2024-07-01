@@ -187,13 +187,13 @@ export const bezpieczniWTeorii: any = {
       header: 'Projekt Strony Internetowej',
       text: 'Zaprojektowałem stronę typu one-page dla projektu o cyberbezpieczeństwie, w którym brałem udział. Strona jest zwięzła i intuicyjna, z płynnym przewijaniem, które prowadzi użytkowników przez kolejne sekcje. Zawiera informacje o zakupie VR dla szkół, naszych celach, korzyściach płynących z projektu oraz dane kontaktowe. Każda sekcja jest jasno oznaczona i wzbogacona o ikony i grafiki związane z tematyką cyberbezpieczeństwa. Responsywny design strony zapewnia doskonałe wrażenia na różnych urządzeniach, a przemyślany układ treści pozwala na szybkie i łatwe zapoznanie się z kluczowymi informacjami. Strona skutecznie przedstawia nasz projekt, promując edukację i świadomość w zakresie cyberbezpieczeństwa.',
       link: 'https://bezpieczniwteorii.pl/',
-      image: '/img/bezpieczniwteorii/thumbnail.png',
+      image: '/img/bezpieczniWTeorii/thumbnail.png',
     },
     {
       title: 'Materiały Graficzne',
       header: 'Projekt Logotypu oraz materiałów graficznych',
       text: 'Stworzyłem logotyp oraz materiały graficzne dla projektu o cyberbezpieczeństwie. Logotyp jest prosty i elegancki, przedstawia myślącą głowę w tarczy, otoczoną symbolami cybernetyczności, co symbolizuje ochronę, wiedzę i zaawansowane technologie. Użyłem nowoczesnej, czytelnej typografii oraz stonowanej palety kolorów, które podkreślają profesjonalizm projektu.',
-      image: '/img/bezpieczniwteorii/thumbnail2.png',
+      image: '/img/bezpieczniWTeorii/thumbnail2.png',
     }
   ]
 }
