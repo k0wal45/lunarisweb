@@ -24,3 +24,12 @@
 .post blockquote {
   @apply  ml-4 p-4 border-l-2 border-neutral-400 italic;
 }
+.post ul {
+  @apply list-disc ml-8 
+}
+.post ul li {
+  @apply mb-2
+}
+.post p {
+  @apply my-4
+}
