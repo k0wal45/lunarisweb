@@ -13,7 +13,7 @@ export const oktech: any = {
     {
       title: 'Strona Internetowa',
       header: 'Prosta Strona Wizytówka',
-      text: 'Zaprojektowałem prostą, statyczną stronę wizytówkę dla firmy montującej klimatyzacje. Strona zawiera przejrzysty układ z sekcjami przedstawiającymi usługi, informacje o firmie oraz galerię zdjęć z realizacjami. Intuicyjna nawigacja i estetyczny design sprawiają, że użytkownicy mogą łatwo znaleźć potrzebne informacje. Strona została zoptymalizowana pod kątem szybkości ładowania, co zapewnia płynne doświadczenie przeglądania. Dzięki tej stronie firma może skutecznie prezentować swoją ofertę i budować profesjonalny wizerunek w sieci.',
+      text: 'Zaprojektowałem przejrzystą, statyczną stronę wizytówkę dla firmy HDS Zwyżka, specjalizującej się w usługach transportu HDS, wynajmu zwyżek, montażu i serwisu klimatyzacji oraz wynajmu autolawet. Strona zawiera czytelny układ z sekcjami przedstawiającymi pełen zakres usług, informacje o firmie oraz galerię zdjęć z realizacjami. Intuicyjna nawigacja i estetyczny design sprawiają, że użytkownicy mogą łatwo znaleźć potrzebne informacje. Strona została zoptymalizowana pod kątem szybkości ładowania, co zapewnia płynne doświadczenie przeglądania. Dzięki tej stronie firma może skutecznie prezentować swoją ofertę i budować profesjonalny wizerunek w sieci.',
       link: 'https://klima-serwis.eu/', 
       image: '/img/oktech/thumbnail.png',
     },
@@ -44,34 +44,29 @@ export const oktechLaweta: any = {
   ]
 }
 
-export const werva: any = {
+
+export const oktechHds: any = {
   id: 3,
-  title:'Werva Solutions',
-  link:'werva-solutions',
+  title:'Oktech HDS',
+  link:'oktech-hds',
   techStack: [
-    <SiWordpress />,
-    <SiInkscape />,
-    <SiAdobephotoshop />
+    <SiReact />,
+    <SiTailwindcss />,
+    <SiNextdotjs />
   ],
-  image: 'werva/panel.png',
-  className: "col-span-2",
+  image: 'oktechHds/panel.png',
+  className: "col-span-1",
   slugPage: [
     {
       title: 'Strona Internetowa',
-      header: 'Prosta Strona Wizytówka',
-      text: 'Zaprojektowałem prostą, statyczną stronę wizytówkę dla firmy oferującej usługi w zakresie wynajmu pracowników, szkoleń oraz nieruchomości. Strona została podzielona na klarowne sekcje, każda dedykowana jednej z gałęzi działalności firmy. Przejrzysty układ i intuicyjna nawigacja ułatwiają użytkownikom szybkie znalezienie interesujących ich informacji. Każda sekcja zawiera opisy usług, zdjęcia oraz dane kontaktowe, co pozwala na kompleksową prezentację oferty. Strona została zoptymalizowana pod kątem szybkości ładowania, co zapewnia płynne doświadczenie użytkownika i skutecznie buduje profesjonalny wizerunek firmy w internecie.',
-      link: 'https://wervasolutions.pl/',
-      image: '/img/werva/thumbnail.png',
-    },
-    {
-      title: 'Wizytówki i Logotyp',
-      header: 'Projekty Wizytówek oraz Logotypu',
-      text: 'Stworzyłem prosty i elegancki logotyp oraz projekt wizytówek dla firmy. Logotyp charakteryzuje się minimalistycznym designem, który odzwierciedla profesjonalizm i wielobranżowy charakter firmy, z czytelną typografią i subtelnym akcentem graficznym symbolizującym różnorodność usług. Wizytówki zaprojektowałem z myślą o spójności wizualnej, wykorzystując kolory i motywy z logotypu. Każda wizytówka zawiera nazwę firmy, imię i nazwisko, stanowisko, dane kontaktowe oraz adres strony internetowej, utrzymując przejrzystość i estetykę. Projekt podkreśla profesjonalizm i nowoczesność, skutecznie wspierając działania marketingowe firmy',
-      image: '/img/werva/thumbnail2.png',
-    },
-    
+      header: 'Projekt Strony Internetowej',
+      text: 'Zaprojektowałem stronę typu one-page dla projektu o cyberbezpieczeństwie, w którym brałem udział. Strona jest zwięzła i intuicyjna, z płynnym przewijaniem, które prowadzi użytkowników przez kolejne sekcje. Zawiera informacje o zakupie VR dla szkół, naszych celach, korzyściach płynących z projektu oraz dane kontaktowe. Każda sekcja jest jasno oznaczona i wzbogacona o ikony i grafiki związane z tematyką cyberbezpieczeństwa. Responsywny design strony zapewnia doskonałe wrażenia na różnych urządzeniach, a przemyślany układ treści pozwala na szybkie i łatwe zapoznanie się z kluczowymi informacjami. Strona skutecznie przedstawia nasz projekt, promując edukację i świadomość w zakresie cyberbezpieczeństwa.',
+      link: 'https://hds-zwyzka.pl/',
+      image: '/img/oktechHds/thumbnail.png',
+    }
   ]
 }
+
 
 export const merkuryMedica: any = {
   id: 4,
@@ -199,8 +194,37 @@ export const bezpieczniWTeorii: any = {
 }
 
 
+export const werva: any = {
+  id: 8,
+  title:'Werva Solutions',
+  link:'werva-solutions',
+  techStack: [
+    <SiWordpress />,
+    <SiInkscape />,
+    <SiAdobephotoshop />
+  ],
+  image: 'werva/panel.png',
+  className: "col-span-2",
+  slugPage: [
+    {
+      title: 'Strona Internetowa',
+      header: 'Prosta Strona Wizytówka',
+      text: 'Zaprojektowałem prostą, statyczną stronę wizytówkę dla firmy oferującej usługi w zakresie wynajmu pracowników, szkoleń oraz nieruchomości. Strona została podzielona na klarowne sekcje, każda dedykowana jednej z gałęzi działalności firmy. Przejrzysty układ i intuicyjna nawigacja ułatwiają użytkownikom szybkie znalezienie interesujących ich informacji. Każda sekcja zawiera opisy usług, zdjęcia oraz dane kontaktowe, co pozwala na kompleksową prezentację oferty. Strona została zoptymalizowana pod kątem szybkości ładowania, co zapewnia płynne doświadczenie użytkownika i skutecznie buduje profesjonalny wizerunek firmy w internecie.',
+      link: 'https://wervasolutions.pl/',
+      image: '/img/werva/thumbnail.png',
+    },
+    {
+      title: 'Wizytówki i Logotyp',
+      header: 'Projekty Wizytówek oraz Logotypu',
+      text: 'Stworzyłem prosty i elegancki logotyp oraz projekt wizytówek dla firmy. Logotyp charakteryzuje się minimalistycznym designem, który odzwierciedla profesjonalizm i wielobranżowy charakter firmy, z czytelną typografią i subtelnym akcentem graficznym symbolizującym różnorodność usług. Wizytówki zaprojektowałem z myślą o spójności wizualnej, wykorzystując kolory i motywy z logotypu. Każda wizytówka zawiera nazwę firmy, imię i nazwisko, stanowisko, dane kontaktowe oraz adres strony internetowej, utrzymując przejrzystość i estetykę. Projekt podkreśla profesjonalizm i nowoczesność, skutecznie wspierając działania marketingowe firmy',
+      image: '/img/werva/thumbnail2.png',
+    },
+    
+  ]
+}
+
 export const GetFullPortfolioData= () => {
-  const data = [oktech, bqCars, merkuryMedica, werva, maliCzarodzieje, bezpieczniWTeorii, oktechLaweta]
+  const data = [ oktechLaweta, oktechHds, merkuryMedica, werva, maliCzarodzieje, bezpieczniWTeorii, oktech, bqCars,]
 
   return data
 }
