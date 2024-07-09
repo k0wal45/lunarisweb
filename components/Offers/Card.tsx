@@ -1,78 +1,84 @@
-'use client'
-import {motion} from 'framer-motion'
-import Image from 'next/image'
-import BtnLink from '../reusable/btn-link'
+"use client";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import BtnLink from "../reusable/btn-link";
 
-
-const OfferCard = ({title, text, link, img, icon}: any) => {
-
+const OfferCard = ({ title, text, link, img, icon }: any) => {
   const clipPath = {
-    initial: {clipPath: 'polygon(0 0, 100% 0, 11% 11%, 0 100%)'},
-    animate: {clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'}
-  }
-  
-  const scale = {
-    initial: {scale: 1},
-    animate: {scale: 1.1}
-  }
+    initial: { clipPath: "polygon(0 0, 100% 0, 11% 11%, 0 100%)" },
+    animate: { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" },
+  };
 
+  const scale = {
+    initial: { scale: 1 },
+    animate: { scale: 1.1 },
+  };
 
   return (
-    <motion.div 
+    <motion.div
       className={`bg-white relative w-full max-w-[25rem] aspect-square flex-1 z-10 group hidden lg:block`}
-      whileHover='animate'
-      initial='initial'
+      whileHover="animate"
+      initial="initial"
       animate="initial"
       variants={scale}
-      transition={{duration: 0.6, ease: 'backOut'}}
+      transition={{ duration: 0.6, ease: "backOut" }}
     >
-      <Image src={'/img/' + img} alt='title' width={1000} height={1000} className='w-full h-full object-cover absolute z-[-1]'/>
+      <Image
+        src={"/img/" + img}
+        alt="title"
+        width={1000}
+        height={1000}
+        className="w-full h-full object-cover absolute z-[-1]"
+      />
       <div className="w-full h-full p-2">
-        <motion.div 
+        <motion.div
           variants={clipPath}
           className="flex flex-col z-20 bg-white w-full h-full items-center justify-center text-center p-4 gap-2"
-          transition={{ duration: 0.8, ease: 'backOut' }}
+          transition={{ duration: 0.8, ease: "backOut" }}
         >
-          <motion.p 
+          <motion.p
             className="text-8xl text-primary"
-            transition={{duration: 0.5, delay: 0.2}}  
+            transition={{ duration: 0.5, delay: 0.2 }}
             variants={{
-              initial: {opacity: 0, translateY: '20px'},
-              animate: {opacity: 1, translateY: 0}
+              initial: { opacity: 0, translateY: "20px" },
+              animate: { opacity: 1, translateY: 0 },
             }}
           >
             {icon}
           </motion.p>
 
-          <motion.h6 
-            transition={{duration: 0.6, delay: 0.3}}  
+          <motion.h6
+            transition={{ duration: 0.6, delay: 0.3 }}
             variants={{
-              initial: {opacity: 0, translateY: '20px'},
-              animate: {opacity: 1, translateY: 0}
+              initial: { opacity: 0, translateY: "20px" },
+              animate: { opacity: 1, translateY: 0 },
             }}
-            className="text-2xl font-bold">{title}</motion.h6>
-          <motion.p 
-            transition={{duration: 0.7, delay: 0.4}}
+            className="text-2xl font-bold"
+          >
+            {title}
+          </motion.h6>
+          <motion.p
+            transition={{ duration: 0.7, delay: 0.4 }}
             variants={{
-              initial: {opacity: 0, translateY: '20px'},
-              animate: {opacity: 1, translateY: 0}
-            }}>{text}</motion.p >
+              initial: { opacity: 0, translateY: "20px" },
+              animate: { opacity: 1, translateY: 0 },
+            }}
+          >
+            {text}
+          </motion.p>
           <motion.div
-            transition={{duration: 0.8, delay: 0.5}}
+            transition={{ duration: 0.8, delay: 0.5 }}
             variants={{
-              initial: {opacity: 0, translateY: '20px'},
-              animate: {opacity: 1, translateY: 0}
+              initial: { opacity: 0, translateY: "20px" },
+              animate: { opacity: 1, translateY: 0 },
             }}
           >
             <BtnLink link={`/uslugi/${link}`}>Sprawdź Teraz</BtnLink>
           </motion.div>
         </motion.div>
-          
       </div>
-
-
     </motion.div>
-  )
-}
+  );
+};
 
-export default OfferCard
+export default OfferCard;

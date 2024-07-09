@@ -17,17 +17,25 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   @apply bg-primary;
-  border-radius: 3px
+  border-radius: 3px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primary;
-
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
+  transition-property: opacity, transform, filter, background;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
 }
 
-
+.page-transition {
+  opacity: 0;
+  background: white;
+  transform: translateY(40px);
+  filter: blur(12px);
+}

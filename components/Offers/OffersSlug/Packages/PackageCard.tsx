@@ -1,9 +1,8 @@
-'use client'
+"use client";
+import { TransitionLink } from "@/utils/TransitionLink";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
-
-const PackageCard = ({content}: any) => {
+const PackageCard = ({ content }: any) => {
   return (
     <motion.div
       key={content.badge}
@@ -38,36 +37,32 @@ const PackageCard = ({content}: any) => {
         >
           {content.cost}
         </motion.span>
-        <p className="text-3xl font-black mb-6">
-          {content.title}
-        </p>
+        <p className="text-3xl font-black mb-6">{content.title}</p>
         <ul className=" flex flex-col gap-2 items-start justify-start mb-4">
           <li className="font-bold">Tworzenie strony internetowej</li>
-          
-            <ul className="flex flex-col items-start justify-start list-disc px-4">
-              {
-                content.strony.map((item: any) => (
-                  <li key={item}>{item}</li>
-                ))
-              }
-            </ul>
-          
+
+          <ul className="flex flex-col items-start justify-start list-disc px-4">
+            {content.strony.map((item: any) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+
           <li className="font-bold">Grafika Komputerowa</li>
 
           <ul className="flex flex-col items-start justify-start list-disc px-4">
-            {
-              content.grafika.map((item: any, index: any) => (
-                
-                <li key={index}>{item}</li>
-              ))
-            }
+            {content.grafika.map((item: any, index: any) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </ul>
-        <Link href='/kontakt' className="z-40 rounded border-2 border-white bg-white py-2 w-full text-center font-black  uppercase text-neutral-800 backdrop-blur transition-all hover:bg-white/30 hover:text-white duration-100 active:translate-x-[-4px] active:translate-y-[-4px] active:shadow-[4px_4px_0px_#333] ">
+        <TransitionLink
+          href="/kontakt"
+          className="z-40 rounded border-2 border-white bg-white py-2 w-full text-center font-black  uppercase text-neutral-800 backdrop-blur transition-all hover:bg-white/30 hover:text-white duration-100 active:translate-x-[-4px] active:translate-y-[-4px] active:shadow-[4px_4px_0px_#333] "
+        >
           Skontaktuj się Teraz
-        </Link>
+        </TransitionLink>
       </div>
-    
+
       <Background />
     </motion.div>
   );
@@ -96,7 +91,7 @@ const Background = () => {
         variants={{
           hover: {
             scaleY: 0.4,
-            y: 20
+            y: 20,
           },
         }}
         transition={{
@@ -147,8 +142,6 @@ const Background = () => {
         fill="#262626"
       />
     </motion.svg>
-
-    
   );
 };
 
