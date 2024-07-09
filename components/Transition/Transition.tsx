@@ -19,7 +19,7 @@ const Transition = ({ open }: { open: boolean }) => {
       animate={open ? "animate" : "initial"}
       variants={variants}
       transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }}
-      className="absolute top-0 left-0 w-full h-full z-[100] bg-white grid place-items-center"
+      className="fixed top-0 left-0 w-full h-full z-[100] bg-white grid place-items-center"
     >
       <Image
         src="/img/logo.png"
