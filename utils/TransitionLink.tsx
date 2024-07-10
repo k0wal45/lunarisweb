@@ -35,6 +35,7 @@ export const TransitionLink: React.FC<TransitionLinkProps> = ({
     await sleep(1000);
     router.push(href);
 
+    await sleep(200);
     setOpen(false);
     await sleep(1000);
 
