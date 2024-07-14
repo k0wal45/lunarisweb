@@ -57,5 +57,5 @@ export default async function sitemap() {
     priority: 0.7,
   }));
 
-  return [...staticUrls, ...blogIrls, ...portfolioUrls, ...offerUrls];
+  return [...staticUrls, ...offerUrls, ...blogIrls, ...portfolioUrls];
 }
