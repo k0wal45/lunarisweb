@@ -41,7 +41,7 @@ const PackageCard = ({ content }: any) => {
         <ul className=" flex flex-col gap-2 items-start justify-start mb-4">
           <li className="font-bold">Tworzenie strony internetowej</li>
 
-          <ul className="flex flex-col items-start justify-start list-disc px-4">
+          <ul className="flex flex-col font-[500] items-start justify-start list-disc px-4">
             {content.strony.map((item: any) => (
               <li key={item}>{item}</li>
             ))}
@@ -49,7 +49,7 @@ const PackageCard = ({ content }: any) => {
 
           <li className="font-bold">Grafika Komputerowa</li>
 
-          <ul className="flex flex-col items-start justify-start list-disc px-4">
+          <ul className="flex flex-col font-[500] items-start justify-start list-disc px-4">
             {content.grafika.map((item: any, index: any) => (
               <li key={index}>{item}</li>
             ))}

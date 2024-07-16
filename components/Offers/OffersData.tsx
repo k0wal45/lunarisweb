@@ -1,25 +1,32 @@
-import { BiWorld } from 'react-icons/bi'
-import { FaComment, FaCompass, FaEye, FaGlobe, FaHandshake, FaPalette, FaPallet, FaRocket, FaSearch, FaStar, FaTrophy } from 'react-icons/fa'
-import { GoGraph } from 'react-icons/go'
-import { IoPhonePortraitOutline } from 'react-icons/io5'
-import { RiMegaphoneFill } from 'react-icons/ri'
-import { SiStackblitz } from 'react-icons/si'
+import {
+  FaChartLine,
+  FaCheck,
+  FaCode,
+  FaCompass,
+  FaDraftingCompass,
+  FaPaintBrush,
+  FaPallet,
+  FaPencilRuler,
+  FaSearch,
+} from "react-icons/fa";
+
+import { IoPhonePortraitOutline } from "react-icons/io5";
+
+import { SiStackblitz } from "react-icons/si";
 
 export const stronyInternetowe = {
-  slug: 'strony-internetowe',
+  slug: "strony-internetowe",
   hero: {
-    title: 'Najlepsza wizytówka Twojego biznesu',
-    text: 'Stworzymy dla Ciebie stronę internetową, która wyróżni Twoją markę w sieci',
-    img: 'coding.mp4',
+    title: "Najlepsza wizytówka Twojego biznesu",
+    text: "Stworzymy dla Ciebie stronę internetową, która wyróżni Twoją markę w sieci",
     list: [
-      'Zwiększona widoczność i dostępność',
-      'Profesjonalny wizerunek firmy w sieci',
-      'Skuteczny sposób dotarcia do klienta'
-
-    ]
+      "Zwiększona widoczność i dostępność",
+      "Profesjonalny wizerunek firmy w sieci",
+      "Skuteczny sposób dotarcia do klienta",
+    ],
   },
   services: {
-    title: 'Jakie strony internetowe tworzymy?',
+    title: "Jakie strony internetowe tworzymy?",
     list: [
       {
         id: 1,
@@ -57,52 +64,57 @@ export const stronyInternetowe = {
         description:
           "Dbamy o atrakcyjny wygląd stron, tworząc nowoczesne i estetyczne projekty, które przyciągają uwagę i wyróżniają się na tle konkurencji.",
       },
-    ]
+    ],
   },
-  advanteges: {
-    title: 'Jakie są korzyści posiadania strony internetowej?',
-    text: 'Strona internetowa zwiększa widoczność Twojej firmy, działa 24/7, buduje profesjonalny wizerunek i ułatwia komunikację z klientami. Umożliwia skuteczny marketing, dotarcie do globalnych klientów, zwiększa ruch i przychody. To kluczowe narzędzie, które zapewnia przewagę nad konkurencją.',
-    list: [
-      {
-        title: 'Zwiększona Widoczność i Dostępność',
-        icon: <FaGlobe />,
-      },
-      {
-        title: 'Profesjonalny Wizerunek',
-        icon: <GoGraph />,
-      },
-      {
-        title: 'Szerszy Zasięg Rynkowy',
-        icon: <BiWorld />,
-      },
-      {
-        title: 'Marketing i Reklama',
-        icon: <RiMegaphoneFill />
-      },
-      {
-        title: 'Przewaga nad Konkurencją',
-        icon: <FaTrophy />,
-      },
-    ]
-  }
-  
-}
+  step: [
+    {
+      icon: FaChartLine,
+      title: "Rozmowa",
+      description: "Analiza branży klienta, konkurencji i grupy docelowej",
+      points: [
+        "Rozmowa telefoniczna",
+        "Rozeznanie potrzeb",
+        "Wstępny zarys projektu",
+      ],
+    },
+    {
+      icon: FaPencilRuler,
+      title: "Planowanie",
+      description:
+        "Definiowanie technologii i serwisów potrzebnych do działania projektu",
+      points: [
+        "Wybór technologii",
+        "Dobranie serwisów",
+        "Konsultacja z klientem",
+      ],
+    },
+    {
+      icon: FaCode,
+      title: "Rozwój",
+      description:
+        "Tworzenie struktury strony, skryptów i wprowadzanie poprawek.",
+      points: [
+        "Zaprogramowanie projektu",
+        "Testowanie i poprawki",
+        "Wdrożenie produktu",
+      ],
+    },
+  ],
+};
 
 export const grafikaKomputerowa = {
-  slug: 'grafika-komputerowa',
+  slug: "grafika-komputerowa",
   hero: {
-    title: 'Wizytówki czy Banery Reklamowe z Twoją firmą',
-    text: 'Jeśli potrzebujesz grafiki która pomoże twojemy biznesowi, zgłoś się do mnie',
-    img: 'graphic.mp4',
+    title: "Wizytówki czy Banery Reklamowe z Twoją firmą",
+    text: "Jeśli potrzebujesz grafiki która pomoże twojemy biznesowi, zgłoś się do mnie",
     list: [
-      'Zwiększona świadomość społeczeństwa o twojej firmie',
-      'Profesjonalny wizerunek firmy w przestrzeni publicznej',
-      'Skuteczny sposób dotarcia do klienta'
-
-    ]
+      "Zwiększona świadomość społeczeństwa o twojej firmie",
+      "Profesjonalny wizerunek firmy w przestrzeni publicznej",
+      "Skuteczny sposób dotarcia do klienta",
+    ],
   },
   services: {
-    title: 'Co może pomóc ci osiągnąć twoje cele?',
+    title: "Co może pomóc ci osiągnąć twoje cele?",
     list: [
       {
         id: 1,
@@ -140,48 +152,53 @@ export const grafikaKomputerowa = {
         description:
           "Materiały graficzne, które mogą pomóc firmie, to między innymi plakaty, broszury, katalogi, infografiki, reklamy internetowe czy opakowania produktów. ",
       },
-    ]
+    ],
   },
-  advanteges: {
-    title: 'Korzyści z Dobrej Identyfikacji Graficznej Firmy',
-    text: 'Dobra identyfikacja graficzna firmy przynosi wiele korzyści, które pomagają w budowaniu silnej marki i osiąganiu sukcesu na rynku. Oto kluczowe zalety posiadania profesjonalnie zaprojektowanej grafiki, które mogą znacząco wpłynąć na rozwój Twojej firmy',
-    list: [
-      {
-        title: 'Wyróżnienie się na rynku',
-        icon: <FaStar />,
-      },
-      {
-        title: 'Budowanie rozpoznawalności',
-        icon: <FaEye />,
-      },
-      {
-        title: 'Zwiększenie zaufania',
-        icon: <FaHandshake />,
-      },
-      {
-        title: 'Efektywna komunikacja',
-        icon: <RiMegaphoneFill />
-      },
-    ]
-  }
-  
-}
+  step: [
+    {
+      icon: FaChartLine,
+      title: "Konsultacja",
+      description:
+        "Analiza potrzeb klienta i oczekiwań względem projektu graficznego.",
+      points: ["Rozmowa wstępna", "Określenie celów", "Zarys projektu"],
+    },
+    {
+      icon: FaPencilRuler,
+      title: "Projektowanie",
+      description: "Tworzenie wstępnych szkiców i koncepcji graficznych.",
+      points: [
+        "Szkice koncepcyjne",
+        "Wybór kolorystyki",
+        "Prezentacja klientowi",
+      ],
+    },
+    {
+      icon: FaPaintBrush,
+      title: "Realizacja",
+      description:
+        "Wykonanie finalnych grafik zgodnie z zaakceptowanym projektem.",
+      points: [
+        "Prace graficzne",
+        "Korekta na życzenie klienta",
+        "Dostarczenie finalnych plików",
+      ],
+    },
+  ],
+};
 
 export const logotypy = {
-  slug: 'logotypy',
+  slug: "logotypy",
   hero: {
-    title: 'Twój pierwszy krok w budowaniu twojej marki',
-    text: 'Wyróżnij swoją firmę na tle konkurencji i zainwestuj w profesjonalny wizerunek firmy',
-    img: 'logo.mp4',
+    title: "Twój pierwszy krok w budowaniu twojej marki",
+    text: "Wyróżnij swoją firmę na tle konkurencji i zainwestuj w profesjonalny wizerunek firmy",
     list: [
-      'Profesjonalny wizerunek firmy',
-      'Odzwierciedlenie charakteru i wartości firmy',
-      'Przyciągnięcie uwagi klienta'
-
-    ]
+      "Profesjonalny wizerunek firmy",
+      "Odzwierciedlenie charakteru i wartości firmy",
+      "Przyciągnięcie uwagi klienta",
+    ],
   },
   services: {
-    title: 'Czym charakteryzują się nasze logotypy',
+    title: "Czym charakteryzują się nasze logotypy",
     list: [
       {
         id: 1,
@@ -210,37 +227,34 @@ export const logotypy = {
         description:
           "Jesteśmy otwarci na Twoje sugestie i oferujemy możliwość wprowadzania poprawek, aby finalny logotyp idealnie odzwierciedlał Twoją wizję.",
       },
-      
-    ]
+    ],
   },
-  advanteges: {
-    title: 'Moc dobrego logotypu pozwala na więcej',
-    text: 'Logotyp to nie tylko obrazek - to kluczowy element w budowaniu marki, który wpływa na postrzeganie Twojej firmy przez klientów i partnerów biznesowych. Poznaj, dlaczego warto zainwestować w profesjonalne projektowanie logo i jakie korzyści to za sobą niesie.',
-    list: [
-      {
-        title: 'Wizualna Tożsamość',
-        icon: <FaPalette />,
-      },
-      {
-        title: 'Rozpoznawalność twojej firmy',
-        icon: <FaSearch />,
-      },
-      {
-        title: 'Budowanie Zaufania',
-        icon: <FaHandshake />,
-      },
-      {
-        title: 'Efektywna Komunikacja',
-        icon: <FaComment />
-      },
-      {
-        title: 'Wzmacnianie Marki',
-        icon: <FaRocket />,
-      },
-    ]
-  }
-  
-}
+  step: [
+    {
+      icon: FaSearch,
+      title: "Analiza",
+      description:
+        "Zrozumienie marki, jej wartości i docelowej grupy odbiorców.",
+      points: ["Badanie rynku", "Analiza konkurencji", "Rozmowa z klientem"],
+    },
+    {
+      icon: FaDraftingCompass,
+      title: "Koncepcja",
+      description: "Tworzenie różnych wersji koncepcyjnych logotypu.",
+      points: ["Szkice wstępne", "Wybór stylu", "Prezentacja wersji klientowi"],
+    },
+    {
+      icon: FaCheck,
+      title: "Wykonanie",
+      description:
+        "Tworzenie finalnej wersji logotypu i dostosowanie do różnych mediów.",
+      points: [
+        "Projektowanie w programie graficznym",
+        "Wprowadzanie potrzebnych zmian",
+        "Dostarczenie finalnych plików",
+      ],
+    },
+  ],
+};
 
-
-export const fullOffersData = [stronyInternetowe, grafikaKomputerowa, logotypy]
+export const fullOffersData = [stronyInternetowe, grafikaKomputerowa, logotypy];

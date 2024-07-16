@@ -1,6 +1,0 @@
-
-@media (min-width: 1024px) {
-  .mask {
-  mask-image: linear-gradient(80deg, rgba(255,255,255,0) 15%, rgba(255,255,255,1) 40%);
-}
-}
