@@ -29,13 +29,13 @@ const Services = ({ content }: { content: any }) => {
           <div className="flex gap-2">
             <button
               className="h-fit bg-primary p-4 text-2xl text-white transition-colors hover:bg-neutral-700"
-              onClick={shiftRight}
+              onClick={shiftLeft}
             >
               <FiChevronLeft />
             </button>
             <button
               className="h-fit bg-primary p-4 text-2xl text-white transition-colors hover:bg-neutral-700"
-              onClick={shiftLeft}
+              onClick={shiftRight}
             >
               <FiChevronRight />
             </button>

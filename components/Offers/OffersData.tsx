@@ -13,6 +13,7 @@ import {
 import { IoPhonePortraitOutline } from "react-icons/io5";
 
 import { SiStackblitz } from "react-icons/si";
+import { TbTargetArrow } from "react-icons/tb";
 
 export const stronyInternetowe = {
   slug: "strony-internetowe",
@@ -29,22 +30,25 @@ export const stronyInternetowe = {
     title: "Jakie strony internetowe tworzymy?",
     list: [
       {
+        id: 0,
+        title: "Spełniające oczekiwania",
+        icon: <TbTargetArrow />,
+        description:
+          "Zależy mi na tym, aby produkt, który dostajesz spełniał twoje oczekiwania. Wprowadzam zmiany oraz proponuje zmiany, aby efekt końcowy był taki jak tego oczekujesz!",
+      },
+      {
         id: 1,
         title: "W pełni Responsywne",
         icon: <IoPhonePortraitOutline />,
-        imgSrc:
-          "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:
-          "Nasze strony internetowe są w pełni responsywne, co oznacza, że doskonale wyglądają i działają na wszystkich urządzeniach, od komputerów po smartfony.",
+          "Moje strony internetowe są w pełni responsywne, co oznacza, że doskonale wyglądają i działają na wszystkich urządzeniach, od komputerów po smartfony.",
       },
       {
         id: 2,
         title: "Intuicyjnie Zaprojektowane",
         icon: <FaCompass />,
-        imgSrc:
-          "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:
-          "Kładziemy duży nacisk na intuicyjność naszych projektów, dzięki czemu nawigacja po stronie jest prosta i przyjemna dla każdego użytkownika.",
+          "Kładę duży nacisk na intuicyjność moich projektów, dzięki czemu nawigacja po stronie jest prosta i przyjemna dla każdego użytkownika.",
       },
       {
         id: 3,
@@ -53,16 +57,14 @@ export const stronyInternetowe = {
         imgSrc:
           "https://images.unsplash.com/photo-1507235071172-438ca6950a8e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:
-          "Optymalizujemy strony pod kątem szybkości ładowania, co przekłada się na lepsze doświadczenia użytkowników i wyższą pozycję w wynikach wyszukiwania.",
+          "Optymalizuje strony pod kątem szybkości ładowania, co przekłada się na lepsze doświadczenia użytkowników i wyższą pozycję w wynikach wyszukiwania.",
       },
       {
         id: 4,
         title: "Estetycznie Atrakcyjne",
         icon: <FaPallet />,
-        imgSrc:
-          "https://images.unsplash.com/photo-1481487196290-c152efe083f5?q=80&w=1924&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:
-          "Dbamy o atrakcyjny wygląd stron, tworząc nowoczesne i estetyczne projekty, które przyciągają uwagę i wyróżniają się na tle konkurencji.",
+          "Dbam o atrakcyjny wygląd stron, tworząc nowoczesne i estetyczne projekty, które przyciągają uwagę i wyróżniają się na tle konkurencji.",
       },
     ],
   },
@@ -120,8 +122,6 @@ export const grafikaKomputerowa = {
         id: 1,
         title: "Twoje własne wizytówki",
         icon: <IoPhonePortraitOutline />,
-        imgSrc:
-          "https://images.unsplash.com/photo-1599590984019-98fbd0eb2f2a?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:
           "Wizytówki są nieodzownym narzędziem w świecie biznesu. Ułatwiają nawiązywanie kontaktów, przekazując kluczowe informacje w kompaktowej formie.",
       },
@@ -129,8 +129,6 @@ export const grafikaKomputerowa = {
         id: 2,
         title: "Banery Reklamowe",
         icon: <FaCompass />,
-        imgSrc:
-          "https://images.unsplash.com/photo-1547452912-b43d586aed93?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:
           "Baner reklamowy zwiększa widoczność firmy, przyciągając uwagę wyrazistymi grafikami i hasłami. Promuje produkty lub usługi, przekazując kluczowe informacje. ",
       },
@@ -138,8 +136,6 @@ export const grafikaKomputerowa = {
         id: 3,
         title: "Ulotki Informacyjne",
         icon: <SiStackblitz />,
-        imgSrc:
-          "https://images.unsplash.com/photo-1609951734391-b79a50460c6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:
           "Ulotki wzmacniają wizerunek marki, promują produkty lub usługi, przekazując kluczowe informacje i wspierają kampanie promocyjne, zwiększając zasięg działań marketingowych.",
       },
@@ -147,8 +143,6 @@ export const grafikaKomputerowa = {
         id: 4,
         title: "Inne materiały graficzne",
         icon: <FaPallet />,
-        imgSrc:
-          "https://images.unsplash.com/photo-1562342918-28657524a992?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:
           "Materiały graficzne, które mogą pomóc firmie, to między innymi plakaty, broszury, katalogi, infografiki, reklamy internetowe czy opakowania produktów. ",
       },
@@ -166,11 +160,7 @@ export const grafikaKomputerowa = {
       icon: FaPencilRuler,
       title: "Projektowanie",
       description: "Tworzenie wstępnych szkiców i koncepcji graficznych.",
-      points: [
-        "Szkice koncepcyjne",
-        "Wybór kolorystyki",
-        "Prezentacja klientowi",
-      ],
+      points: ["Szkice koncepcyjne", "Wybór kolorystyki", "Prace graficzne"],
     },
     {
       icon: FaPaintBrush,
@@ -178,7 +168,7 @@ export const grafikaKomputerowa = {
       description:
         "Wykonanie finalnych grafik zgodnie z zaakceptowanym projektem.",
       points: [
-        "Prace graficzne",
+        "Prezentacja projektów",
         "Korekta na życzenie klienta",
         "Dostarczenie finalnych plików",
       ],
@@ -204,8 +194,6 @@ export const logotypy = {
         id: 1,
         title: "Projektowanie od podstaw",
         icon: <IoPhonePortraitOutline />,
-        imgSrc:
-          "https://images.unsplash.com/photo-1510070009289-b5bc34383727?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:
           "Tworzymy unikalne projekty logotypów, uwzględniając zarówno estetykę, jak i czytelność, aby zapewnić, że Twoja marka będzie wyróżniać się na rynku.",
       },
@@ -213,8 +201,6 @@ export const logotypy = {
         id: 2,
         title: "Dostosowanie do różnych mediów",
         icon: <FaCompass />,
-        imgSrc:
-          "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:
           "Projektujemy logotypy, które są skalowalne i wyglądają doskonale zarówno na ekranie komputera, jak i na materiałach drukowanych, zapewniając spójny wizerunek marki.",
       },
@@ -222,8 +208,6 @@ export const logotypy = {
         id: 3,
         title: "Korekty i dopasowania",
         icon: <SiStackblitz />,
-        imgSrc:
-          "https://images.unsplash.com/photo-1484910292437-025e5d13ce87?q=80&w=2114&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:
           "Jesteśmy otwarci na Twoje sugestie i oferujemy możliwość wprowadzania poprawek, aby finalny logotyp idealnie odzwierciedlał Twoją wizję.",
       },

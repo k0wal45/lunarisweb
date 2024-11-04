@@ -1,7 +1,7 @@
 export const data = [
   {
     badge: "Start",
-    cost: "3,500PLN",
+    cost: "4,500PLN",
     title: "Pakiet Na Start",
     strony: [
       "Prosta Strona Wizytówka z szablonu",
@@ -13,7 +13,7 @@ export const data = [
   },
   {
     badge: "Standard",
-    cost: "5,500PLN",
+    cost: "6,500PLN",
     title: "Pakiet Standard",
     strony: [
       "Wszystko co w pakiecie Na Start",
@@ -27,7 +27,7 @@ export const data = [
   },
   {
     badge: "Pro",
-    cost: "10,000PLN",
+    cost: "12,000PLN",
     title: "Pakiet Premium",
     strony: [
       "Wszystko co w Pakiecie Standard",
