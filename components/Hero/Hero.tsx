@@ -6,11 +6,11 @@ import AppearFromLeft from "../Animations/AppearFromLeft";
 
 function Hero() {
   const heroText = [
-    "Tworzymy Strony Internetowe",
+    "Tworzę Strony Internetowe",
     3000,
-    "Tworzymy Logotypy",
+    "Tworzę Logotypy",
     3000,
-    "Tworzymy Banery Reklamowe",
+    "Tworzę Banery Reklamowe",
     3000,
   ];
 
