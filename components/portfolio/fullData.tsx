@@ -1,5 +1,6 @@
 import {
   SiAdobephotoshop,
+  SiElementor,
   SiInkscape,
   SiNextdotjs,
   SiReact,
@@ -198,25 +199,36 @@ export const werva: any = {
 };
 
 export const aiCreate2024: any = {
-  id: 8,
+  id: 9,
   title: "AI Create 2024",
   link: "ai-create-2024",
   techStack: [<SiReact />, <SiTailwindcss />, <SiNextdotjs />, <SiInkscape />],
-  image: "werva/panel.png",
-  className: "col-span-2",
+  image: "aiCreate2024/panel.png",
+  className: "col-span-1",
   slugPage: [
     {
       title: "Strona Internetowa",
       header: "Prosta Strona Wizytówka",
-      text: "Zaprojektowałem prostą, statyczną stronę wizytówkę dla firmy oferującej usługi w zakresie wynajmu pracowników, szkoleń oraz nieruchomości. Strona została podzielona na klarowne sekcje, każda dedykowana jednej z gałęzi działalności firmy. Przejrzysty układ i intuicyjna nawigacja ułatwiają użytkownikom szybkie znalezienie interesujących ich informacji. Każda sekcja zawiera opisy usług, zdjęcia oraz dane kontaktowe, co pozwala na kompleksową prezentację oferty. Strona została zoptymalizowana pod kątem szybkości ładowania, co zapewnia płynne doświadczenie użytkownika i skutecznie buduje profesjonalny wizerunek firmy w internecie.",
+      text: "Na potrzeby konferencji AI stworzyłem statyczną stronę internetową, która dostarczała uczestnikom najważniejszych informacji o wydarzeniu, w tym harmonogram, listę prelegentów oraz szczegóły organizacyjne. W celu usprawnienia obsługi użytkowników wdrożyłem chatbota, który w czasie rzeczywistym odpowiadał na pytania, ułatwiając dostęp do kluczowych treści. Dzięki przejrzystemu układowi i intuicyjnej nawigacji strona była łatwa w użytkowaniu, a optymalizacja SEO zapewniała jej wysoką widoczność w wyszukiwarce. Informacja: Ze względów prawnych strona konferencji AI została wyłączona, jednak jej zmodyfikowana wersja jest dostępna pod tym linkiem.",
       link: "https://ai-create-preview.vercel.app/",
-      image: "/img/werva/thumbnail.png",
+      image: "/img/aiCreate2024/thumbnail.png",
     },
+  ],
+};
+export const activProject: any = {
+  id: 10,
+  title: "Activ Project",
+  link: "activ-project",
+  techStack: [<SiWordpress />, <SiElementor />],
+  image: "activProject/panel.png",
+  className: "col-span-2",
+  slugPage: [
     {
-      title: "Wizytówki i Logotyp",
-      header: "Projekty Wizytówek oraz Logotypu",
-      text: "Stworzyłem prosty i elegancki logotyp oraz projekt wizytówek dla firmy. Logotyp charakteryzuje się minimalistycznym designem, który odzwierciedla profesjonalizm i wielobranżowy charakter firmy, z czytelną typografią i subtelnym akcentem graficznym symbolizującym różnorodność usług. Wizytówki zaprojektowałem z myślą o spójności wizualnej, wykorzystując kolory i motywy z logotypu. Każda wizytówka zawiera nazwę firmy, imię i nazwisko, stanowisko, dane kontaktowe oraz adres strony internetowej, utrzymując przejrzystość i estetykę. Projekt podkreśla profesjonalizm i nowoczesność, skutecznie wspierając działania marketingowe firmy",
-      image: "/img/werva/thumbnail2.png",
+      title: "Strona Internetowa",
+      header: "Strona Firmowa",
+      text: "Stworzyłem statyczną stronę internetową dla ActivProject, która prezentuje ofertę zajęć jogi oraz wyjazdów jogowych. Witryna została podzielona na przejrzyste zakładki, dzięki czemu użytkownicy mogą łatwo znaleźć informacje o zajęciach, planowanych wyjazdach oraz filozofii jogi. Intuicyjna nawigacja i estetyczny, harmonijny design sprawiają, że strona jest przyjazna dla odwiedzających. Dzięki optymalizacji pod kątem SEO oraz szybkiego ładowania, strona skutecznie dociera do osób zainteresowanych jogą, pomagając w budowaniu profesjonalnego wizerunku marki w internecie.",
+      link: "https://activproject.pl/",
+      image: "/img/activProject/thumbnail.png",
     },
   ],
 };
@@ -224,6 +236,7 @@ export const aiCreate2024: any = {
 export const GetFullPortfolioData = () => {
   const data = [
     oktechLaweta,
+    aiCreate2024,
     oktechHds,
     merkuryMedica,
     werva,
@@ -231,6 +244,7 @@ export const GetFullPortfolioData = () => {
     bezpieczniWTeorii,
     oktech,
     bqCars,
+    activProject,
   ];
 
   return data;
