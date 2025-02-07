@@ -28,7 +28,7 @@ function Hero() {
             <p className="text-xl">
               W dzisiejszych czasach strona internetowa i efektywny logotyp
               stanowią kluczowe elementy marketingu, które mają ogromne
-              znaczenie zarówno online, jak i w świecie biznesu poza siecią.
+              znaczenie zarówno online. Zróbmy to razem w przyjaznej atmosferze!
             </p>
           </AppearFromLeft>
           <AppearFromLeft>

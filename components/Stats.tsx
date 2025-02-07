@@ -2,7 +2,7 @@ import Reveal from "./Animations/Reveal";
 
 function Stats() {
   function obliczWiek(dataObecna: any) {
-    const dataUrodzenia: any = new Date("2023-04-21");
+    const dataUrodzenia: any = new Date("2023-02-21");
     const roznicaCzasu = dataObecna - dataUrodzenia;
     const roznicaWiek = new Date(roznicaCzasu).getFullYear() - 1970;
     return roznicaWiek;
@@ -17,7 +17,7 @@ function Stats() {
           Wykonanych Komercyjnych Stron Internetowych
         </h2>
         <Reveal>
-          <p className="text-6xl text-primary font-bold ml-4">9</p>
+          <p className="text-6xl text-primary font-bold ml-4">11</p>
         </Reveal>
       </div>
 
@@ -26,7 +26,7 @@ function Stats() {
       <div className="flex-1 p-4 flex flex-col gap-4 text-center lg:text-start lg:items-start items-center">
         <h2 className="font-bold text-2xl ">Wykonanych Projektów dla firm</h2>
         <Reveal>
-          <p className="text-6xl text-primary font-bold ml-4 pb-2">60+</p>
+          <p className="text-6xl text-primary font-bold ml-4 pb-2">80+</p>
         </Reveal>
       </div>
 
