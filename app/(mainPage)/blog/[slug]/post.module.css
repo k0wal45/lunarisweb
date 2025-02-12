@@ -1,12 +1,12 @@
-.post h1 {
+.post h1, .post h2 {
   @apply text-4xl font-bold mt-12 mb-4;
 }
 
-.post h4, .post h2 {
+.post h3 {
   @apply text-3xl font-bold mt-12 mb-4;
 }
 
-.post h3 {
+.post h4 {
   @apply text-2xl font-bold mt-12 mb-4;
 }
 
@@ -15,21 +15,81 @@
 }
 
 .post a {
-  @apply underline;
+  @apply underline text-blue-600 hover:text-blue-800;
 }
+
 .post code {
-  @apply p-[2px] px-2 rounded-md bg-neutral-200 ;
+  @apply p-[2px] px-2 rounded-md bg-neutral-200 font-mono text-sm;
+}
+
+.post pre {
+  @apply bg-neutral-200 p-4 rounded-md overflow-x-auto my-4;
+}
+
+.post pre code {
+  @apply bg-transparent p-0;
 }
 
 .post blockquote {
-  @apply  ml-4 p-4 border-l-2 border-neutral-400 italic;
+  @apply ml-4 p-4 border-l-2 border-neutral-400 italic text-neutral-600;
 }
+
 .post ul {
-  @apply list-disc ml-8 
+  @apply list-disc ml-8 my-4;
 }
+
 .post ul li {
-  @apply mb-2
+  @apply mb-2;
 }
+
+.post ol {
+  @apply list-decimal ml-8 my-4;
+}
+
+.post ol li {
+  @apply mb-2;
+}
+
 .post p {
-  @apply my-4
+  @apply my-4 leading-relaxed;
+}
+
+.post table {
+  @apply w-full my-6 border-collapse;
+}
+
+.post table th, .post table td {
+  @apply border border-neutral-400 p-2;
+}
+
+.post table th {
+  @apply bg-neutral-100 font-bold text-left;
+}
+
+.post table tr:nth-child(even) {
+  @apply bg-neutral-100;
+}
+
+.post img {
+  @apply my-6 rounded-lg shadow-lg;
+}
+
+.post hr {
+  @apply my-8 border-t border-neutral-300;
+}
+
+.post kbd {
+  @apply bg-neutral-200 border border-neutral-400 rounded px-2 py-1 text-sm font-mono;
+}
+
+.post details {
+  @apply bg-neutral-100 p-4 rounded-lg my-4;
+}
+
+.post summary {
+  @apply font-bold cursor-pointer;
+}
+
+.post details[open] {
+  @apply bg-neutral-200;
 }
