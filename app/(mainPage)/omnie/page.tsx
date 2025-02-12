@@ -25,8 +25,8 @@ const AboutPage = () => {
       />
       <Stats />
       <About />
-      <Programing />
       <WhoAmI />
+      <Programing />
       <Portfolio />
       <WhyUs />
       <BlogSection />
