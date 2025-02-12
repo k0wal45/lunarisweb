@@ -40,8 +40,21 @@ export async function generateMetadata({ params }: any) {
   return {
     title: event.title,
     description: event.excerpt,
-  }
-  
+  authors: [{ name: "Daniel Kowalski", url: "https://daniel-kowalski.com/" }],
+  openGraph: {
+    title: event.title,
+    description: event.excerpt,
+    url: "https://www.lunarisweb.com",
+    type: "website",
+    locale: "pl_PL",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@LunarisWeb",
+    title: event.title,
+    description: event.excerpt,
+  },
+};
 }
 
 const slug = async ({params}: any) => {
