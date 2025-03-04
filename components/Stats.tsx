@@ -17,7 +17,7 @@ function Stats() {
           Wykonanych Komercyjnych Stron Internetowych
         </h2>
         <Reveal>
-          <p className="text-6xl text-primary font-bold ml-4">11</p>
+          <p className="text-6xl text-primary font-bold ml-4">12</p>
         </Reveal>
       </div>
 
