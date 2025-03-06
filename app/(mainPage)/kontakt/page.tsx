@@ -24,7 +24,6 @@ const ContactPage = () => {
       <GrowSection />
       <Offers />
       <BlogSection />
-      //
       <FaqSection />
     </main>
   );
