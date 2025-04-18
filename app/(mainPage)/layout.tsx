@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Head from "next/head";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer/Footer";
@@ -40,6 +41,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
+      <Head>
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key={process.env.NEXT_PUBLIC_AHREFS_DATA_KEY}
+          async
+        ></script>
+      </Head>
       <body className={`${montserrat.className} bg-white text-black`}>
         <Navbar />
         {children}
