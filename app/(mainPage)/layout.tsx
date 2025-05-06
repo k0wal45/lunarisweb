@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       "Profesjonalne Tworzenie Stron Internetowych - Katowice i Śląsk | Lunaris Web",
     description:
       "Lunaris Web oferuje kompleksowe usługi tworzenia nowoczesnych, responsywnych i bezpiecznych stron internetowych. Specjalizujemy się w obsłudze klientów z Katowic i całego Śląska.",
-    url: "https://www.lunarisweb.com",
+    url: "https://www.lunarisweb.pl",
     type: "website",
     locale: "pl_PL",
   },
