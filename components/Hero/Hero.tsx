@@ -19,17 +19,17 @@ function Hero() {
       <div className="text-start flex flex-col lg:flex-row lg:pb-0 pt-32 lg:pt-0 justify-center items-center gap-24">
         <div className="flex flex-col gap-4 max-w-md p-4 lg:p-0">
           <AppearFromLeft>
-            <h1 className="text-5xl font-[800] h-40">
-              <TyperWriter sequence={heroText} />
+            <h1 className="text-5xl font-[800]">
+              Strony internetowe w Katowicach
             </h1>
           </AppearFromLeft>
 
           <AppearFromLeft>
-            <p className="text-xl">
-              W dzisiejszych czasach strona internetowa i efektywny logotyp
-              stanowią kluczowe elementy marketingu, które mają ogromne
-              znaczenie zarówno online. Zróbmy to razem w przyjaznej atmosferze!
-            </p>
+            <h2 className="text-xl">
+              Projektuję nowoczesne i przejrzyste firmowe strony internetowe,
+              które pomagają małym firmom z Katowic skutecznie komunikować się z
+              klientami i zdobywać nowych odbiorców
+            </h2>
           </AppearFromLeft>
           <AppearFromLeft>
             <BtnLink link="/kontakt">Skontaktuj się po darmową wycenę</BtnLink>

@@ -18,7 +18,7 @@ import { TbTargetArrow } from "react-icons/tb";
 export const stronyInternetowe = {
   slug: "strony-internetowe",
   hero: {
-    title: "Najlepsza wizytówka Twojego biznesu",
+    title: "Strona internetowa dla Twojej firmy",
     text: "Stworzymy dla Ciebie stronę internetową, która wyróżni Twoją markę w sieci",
     list: [
       "Zwiększona widoczność i dostępność",
@@ -68,6 +68,38 @@ export const stronyInternetowe = {
       },
     ],
   },
+  offer: [
+    {
+      title: "Nowoczesna strona wizytówka",
+      description: "Strona Wizerunkowa",
+      items: [
+        "Strona z jedną sekcją",
+        "Formularz kontaktowy",
+        "Optymalizacja SEO",
+      ],
+      price: 1500,
+    },
+    {
+      title: "Strona firmowa z podstronami",
+      description: "Strona Firmowa",
+      items: [
+        "3-5 podstron",
+        "Możliwość wprowadzania zmian",
+        "Formularz kontaktowy",
+      ],
+      price: 3000,
+    },
+    {
+      title: "Strona z blogiem",
+      description: "Własny blog",
+      items: [
+        "Własny blog na stronie",
+        "3-7 podstron",
+        "Panel zarządzania treścią",
+      ],
+      price: 4000,
+    },
+  ],
   step: [
     {
       icon: FaChartLine,
@@ -148,6 +180,30 @@ export const grafikaKomputerowa = {
       },
     ],
   },
+  offer: [
+    {
+      title: "Ulotka lub plakat",
+      description: "Prosty i skuteczny projekt reklamowy.",
+      items: ["Projekt w PDF i JPG", "Gotowe do druku", "Projekt jednostronny"],
+      price: 300,
+    },
+    {
+      title: "Wizytówka",
+      description: "Prosta wizytówka firmowa.",
+      items: [
+        "Dopasowany do platformy",
+        "Estetyczny wygląd",
+        "Szybkie wykonanie",
+      ],
+      price: 250,
+    },
+    {
+      title: "Zestaw grafik reklamowych",
+      description: "Pakiet grafik do kampanii lub strony.",
+      items: ["Spójna stylistyka", "Dostosowane do platformy"],
+      price: 700,
+    },
+  ],
   step: [
     {
       icon: FaChartLine,
@@ -213,6 +269,30 @@ export const logotypy = {
       },
     ],
   },
+  offer: [
+    {
+      title: "Logo na start",
+      description: "Logo oparte na typografii (tekstowe)",
+      items: ["2 projekt do wyboru", "2 rundy poprawek", "Szybka realizacja"],
+      price: 500,
+    },
+    {
+      title: "Logo z koncepcją",
+      description: "Przemyślana identyfikacja marki.",
+      items: ["2 propozycje logo", "4 rundy poprawek", "Kolorystyka + fonty"],
+      price: 800,
+    },
+    {
+      title: "Logo z księgą znaku",
+      description: "Dla firm dbających o spójność wizualną.",
+      items: [
+        "Logo + księga znaku",
+        "3 propozycje koncepcyjne",
+        "Wersje na ciemnym tle",
+      ],
+      price: 2000,
+    },
+  ],
   step: [
     {
       icon: FaSearch,

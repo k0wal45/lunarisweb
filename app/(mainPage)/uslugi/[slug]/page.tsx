@@ -5,6 +5,7 @@ import Offers from "@/components/Offers/Offers";
 import { fullOffersData } from "@/components/Offers/OffersData";
 import Hero from "@/components/Offers/OffersSlug/Hero";
 import Packages from "@/components/Offers/OffersSlug/Packages/Packages";
+import OfferPrice from "@/components/Offers/OffersSlug/OfferPrice/OfferPrice";
 import Services from "@/components/Offers/OffersSlug/Services/Services";
 import Step from "@/components/Offers/OffersSlug/Step/Step";
 import Portfolio from "@/components/portfolio/Portfolio";
@@ -113,6 +114,7 @@ const OfferPage = async ({ params }: any) => {
     <main className="overflow-x-hidden">
       <Hero content={pageData.hero} />
       <Services content={pageData.services} />
+      <OfferPrice content={pageData.offer} />
       <Step content={pageData.step} />
       <Packages />
       <GrowSection />
