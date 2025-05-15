@@ -1,8 +1,9 @@
 import BtnLink from "@/components/reusable/btn-link";
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import { OfferPriceProps } from "./OfferPrice";
 
-const OfferPriceCard = ({ data }) => {
+const OfferPriceCard = ({ data }: { data: OfferPriceProps }) => {
   return (
     <div className="flex flex-col gap-2 p-8 w-[22rem] h-[30rem] justify-between bg-white rounded-xl shadow-lg text-center">
       <h4 className="text-3xl font-bold">{data.title}</h4>

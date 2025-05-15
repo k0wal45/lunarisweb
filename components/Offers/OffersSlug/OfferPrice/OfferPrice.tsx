@@ -1,6 +1,13 @@
 import OfferPriceCard from "./OfferPriceCard";
 
-const OfferPrice = ({ content }) => {
+export type OfferPriceProps = {
+  title: string;
+  description: string;
+  items: string[];
+  price: number;
+};
+
+const OfferPrice = ({ content }: { content: OfferPriceProps[] }) => {
   return (
     <section className="flex flex-col gap-8 items-center justify-center p-4 py-24 bg-neutral-100 ">
       <h4 className="text-5xl font-bold lg:max-w-[70vw] text-center">
@@ -13,7 +20,7 @@ const OfferPrice = ({ content }) => {
       </p>
 
       <div className="flex flex-col lg:flex-row justify-center lg:justify-around items-center gap-12">
-        {content.map((offer, index) => (
+        {content.map((offer: OfferPriceProps, index: number) => (
           <OfferPriceCard data={offer} key={index} />
         ))}
       </div>
