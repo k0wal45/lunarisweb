@@ -266,6 +266,7 @@ export const GetFullPortfolioData = () => {
     merkuryMedica,
     werva,
     maliCzarodzieje,
+    coffeRover,
     bezpieczniWTeorii,
     oktech,
     bqCars,
