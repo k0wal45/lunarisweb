@@ -233,6 +233,31 @@ export const activProject: any = {
   ],
 };
 
+
+export const coffeRover: any = {
+  id: 11,
+  title: "Coffe Rover",
+  link: "coffe-rover",
+  techStack: [<SiTailwindcss />, <SiNextdotjs />, <SiInkscape />],
+  image: "coffeRover/panel.png",
+  className: "col-span-2",
+  slugPage: [
+    {
+      title: "Strona Internetowa",
+      header: "Prosta strona typu one-page",
+      text: "Strona Coffee Rover to fikcyjny projekt stworzony jako koncepcja dla mobilnej kawiarni serwującej kawę speciality. Projekt zrealizowałem w celu pokazania, jak może wyglądać nowoczesna, estetyczna i w pełni responsywna strona typu one-page dla małej lokalnej firmy. Zawiera sekcje informacyjne, menu, galerię, formularz kontaktowy oraz autorskie logo, a całość została zbudowana w Next.js z użyciem Tailwind CSS i zoptymalizowana pod kątem szybkości ładowania oraz wygody użytkownika.",
+      link: "https://coffe-rover.vercel.app/",
+      image: "/img/coffeRover/thumbnail.png",
+    },
+    {
+      title: "Logo",
+      header: "Sygnet + Logotyp",
+      text: "Logotyp Coffee Rover to połączenie kawowej pasji z mobilnym stylem życia. Na pierwszy plan wysuwa się ilustracja food trucka z filiżanką aromatycznej kawy na dachu – to proste, ale czytelne nawiązanie do idei kawiarni na kółkach. Całość dopełnia klasyczna typografia z ziarnami kawy po bokach, która nadaje projektowi przyjazny, lekko retro klimat. Logo zostało zaprojektowane tak, by dobrze wyglądało zarówno na stronie internetowej, jak i na kubkach, ulotkach czy oklejeniu auta.",
+      image: "/img/coffeRover/thumbnail2.png",
+    },
+  ],
+};
+
 export const GetFullPortfolioData = () => {
   const data = [
     oktechLaweta,
