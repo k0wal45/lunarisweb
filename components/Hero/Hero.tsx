@@ -1,7 +1,6 @@
 import Image from "next/image";
 import BtnLink from "../reusable/btn-link";
 import classes from "./hero.module.css";
-import TyperWriter from "./TypeWriter/TypeWriter";
 import AppearFromLeft from "../Animations/AppearFromLeft";
 
 function Hero() {
@@ -26,13 +25,12 @@ function Hero() {
 
           <AppearFromLeft>
             <h2 className="text-xl">
-              Projektuję nowoczesne i przejrzyste firmowe strony internetowe,
-              które pomagają małym firmom z Katowic skutecznie komunikować się z
-              klientami i zdobywać nowych odbiorców
+              Skontaktuj się po darmową wycenę i wstępny projekt bez
+              zbobowiązań. Stworzymy razem coś dobrego
             </h2>
           </AppearFromLeft>
           <AppearFromLeft>
-            <BtnLink link="/kontakt">Skontaktuj się po darmową wycenę</BtnLink>
+            <BtnLink link="/kontakt">Darmowy projekt wstępny</BtnLink>
           </AppearFromLeft>
         </div>
         <div className={classes.circleContainer}>

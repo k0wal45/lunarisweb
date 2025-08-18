@@ -321,4 +321,200 @@ export const logotypy = {
   ],
 };
 
-export const fullOffersData = [stronyInternetowe, grafikaKomputerowa, logotypy];
+export const stronyKatowice = {
+  slug: "strony-internetowe-katowice",
+  hero: {
+    title: "Strony internetowe Katowice - nowoczesne i skuteczne",
+    text: "Projektujemy strony internetowe w Katowicach, które pomagają lokalnym firmom zdobywać klientów i wyróżniać się w internecie.",
+    list: [
+      "Dedykowane dla firm z Katowic i okolic",
+      "Optymalizacja pod Google Maps i lokalne SEO",
+      "Strona dopasowana do Twojej branży",
+    ],
+  },
+  services: {
+    title: "Dlaczego warto zamówić stronę w Katowicach?",
+    list: [
+      {
+        id: 0,
+        title: "Dopasowanie do rynku lokalnego",
+        icon: <TbTargetArrow />,
+        description:
+          "Tworzymy strony internetowe Katowice z uwzględnieniem specyfiki rynku lokalnego i oczekiwań Twoich klientów.",
+      },
+      {
+        id: 1,
+        title: "Responsywne i szybkie",
+        icon: <IoPhonePortraitOutline />,
+        description:
+          "Twoja nowa strona będzie działać płynnie na każdym urządzeniu - od komputerów biurowych po smartfony klientów.",
+      },
+      {
+        id: 2,
+        title: "SEO Katowice",
+        icon: <FaCompass />,
+        description:
+          "Optymalizujemy strony internetowe Katowice tak, aby Twoja firma pojawiała się wyżej w wynikach wyszukiwania Google.",
+      },
+      {
+        id: 3,
+        title: "Nowoczesny design",
+        icon: <FaPallet />,
+        description:
+          "Każdy projekt to indywidualny design, dopasowany do wizerunku Twojej marki i branży.",
+      },
+    ],
+  },
+  offer: [
+    {
+      title: "Strona wizytówka Katowice",
+      description: "Idealna dla lokalnych firm",
+      items: [
+        "1-2 sekcje",
+        "Formularz kontaktowy",
+        "Optymalizacja lokalna SEO",
+      ],
+      price: 1500,
+    },
+    {
+      title: "Strona firmowa Katowice",
+      description: "Pełna oferta online",
+      items: ["3-5 podstron", "Mapa Google", "Formularz kontaktowy"],
+      price: 3000,
+    },
+    {
+      title: "Strona z blogiem Katowice",
+      description: "Treści dla klientów z Katowic",
+      items: ["Blog firmowy", "Panel CMS", "Wsparcie SEO"],
+      price: 4000,
+    },
+  ],
+  step: [
+    {
+      icon: FaChartLine,
+      title: "Rozmowa w Katowicach",
+      description:
+        "Spotkanie online lub w Katowicach, aby poznać Twoje potrzeby i oczekiwania.",
+      points: [
+        "Omówienie branży",
+        "Analiza konkurencji w Katowicach",
+        "Plan działań",
+      ],
+    },
+    {
+      icon: FaPencilRuler,
+      title: "Projektowanie",
+      description: "Przygotowujemy makietę strony i plan SEO Katowice.",
+      points: [
+        "Dobór technologii",
+        "Przygotowanie designu",
+        "Akceptacja klienta",
+      ],
+    },
+    {
+      icon: FaCode,
+      title: "Tworzenie strony Katowice",
+      description: "Kodujemy stronę i wdrażamy ją na Twojej domenie.",
+      points: ["Programowanie", "Testy na urządzeniach", "Publikacja strony"],
+    },
+  ],
+};
+
+export const stronySlask = {
+  slug: "strony-internetowe-slask",
+  hero: {
+    title: "Strony internetowe Śląsk - dla firm z całego regionu",
+    text: "Pomagamy firmom ze Śląska zaistnieć w internecie - od Katowic po Gliwice, Zabrze czy Bytom.",
+    list: [
+      "Dedykowane dla firm ze Śląska",
+      "Optymalizacja pod lokalne frazy SEO",
+      "Strona dopasowana do Twojego biznesu",
+    ],
+  },
+  services: {
+    title: "Jak projektujemy strony internetowe Śląsk?",
+    list: [
+      {
+        id: 0,
+        title: "Śląski charakter projektów",
+        icon: <TbTargetArrow />,
+        description:
+          "Tworzymy strony internetowe Śląsk dopasowane do potrzeb przedsiębiorców z regionu.",
+      },
+      {
+        id: 1,
+        title: "Pełna responsywność",
+        icon: <IoPhonePortraitOutline />,
+        description:
+          "Strona działa idealnie na komputerach, tabletach i telefonach - klienci ze Śląska znajdą Cię wszędzie.",
+      },
+      {
+        id: 2,
+        title: "SEO Śląsk",
+        icon: <FaCompass />,
+        description:
+          "Optymalizacja strony pod frazy regionalne, aby wyróżnić Cię wśród firm ze Śląska.",
+      },
+      {
+        id: 3,
+        title: "Szybkość i bezpieczeństwo",
+        icon: <SiStackblitz />,
+        description:
+          "Twoja strona internetowa będzie działać błyskawicznie i bezpiecznie, niezależnie od obciążenia.",
+      },
+    ],
+  },
+  offer: [
+    {
+      title: "Strona wizytówka Śląsk",
+      description: "Dla małych firm i freelancerów",
+      items: ["1 sekcja", "Formularz kontaktowy", "Optymalizacja SEO Śląsk"],
+      price: 1500,
+    },
+    {
+      title: "Strona firmowa Śląsk",
+      description: "Profesjonalna prezentacja firmy",
+      items: ["3-6 podstron", "Mapa Google", "Możliwość zmian treści"],
+      price: 3000,
+    },
+    {
+      title: "Strona z blogiem Śląsk",
+      description: "Stały kontakt z klientami",
+      items: ["Blog firmowy", "Panel CMS", "Wsparcie SEO lokalnego"],
+      price: 4000,
+    },
+  ],
+  step: [
+    {
+      icon: FaChartLine,
+      title: "Analiza rynku Śląsk",
+      description:
+        "Badamy Twoją branżę i konkurencję na terenie całego Śląska, aby przygotować najlepszą ofertę.",
+      points: [
+        "Rozmowa telefoniczna",
+        "Analiza regionu Śląska",
+        "Plan działań",
+      ],
+    },
+    {
+      icon: FaPencilRuler,
+      title: "Planowanie i projekt",
+      description: "Opracowanie projektu graficznego strony i planu SEO.",
+      points: ["Makieta strony", "Konsultacja z klientem", "Wybór technologii"],
+    },
+    {
+      icon: FaCode,
+      title: "Wdrożenie",
+      description: "Tworzenie strony internetowej Śląsk i publikacja online.",
+      points: ["Kodowanie", "Testowanie", "Uruchomienie strony"],
+    },
+  ],
+};
+
+export const fullOffersData = [
+  stronyInternetowe,
+  grafikaKomputerowa,
+  logotypy,
+  stronyKatowice,
+  stronySlask,
+];

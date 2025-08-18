@@ -130,10 +130,7 @@ const OfferPage = async ({ params }: any) => {
 export default OfferPage;
 
 export async function generateStaticParams() {
-  const slugs: string[] = [
-    "strony-internetowe",
-    "logotypy",
-    "grafika-komputerowa",
-  ];
+  const slugs: string[] = fullOffersData.map((item) => item.slug);
+
   return slugs.map((slug) => ({ slug }));
 }
