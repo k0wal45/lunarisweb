@@ -5,7 +5,7 @@ const data = [
   {
     title: "Ile kosztuje strona internetowa?",
     answer:
-      "Za prostą stronę wizytówkę zapłacisz mniej więcej 1500 zł netto. Jeśli zdecydujesz się na bardziej rozbudowaną i unikalną wersję, koszt wyniesie Cię około 2500-6000 zł netto. Natomiast za zaawansowaną, unikalną stronę internetową stworzoną od podstaw, musisz liczyć się z wydatkiem rzędu 3000-10000 zł netto. Musisz jednak pamiętać, że koszt strony w głównej mierze zależy od funkcjonalności i wymagań jakie masz wobec niej",
+      "Za prostą stronę wizytówkę zapłacisz mniej więcej 2000 zł netto. Jeśli zdecydujesz się na bardziej rozbudowaną i unikalną wersję, koszt wyniesie Cię około 2500-6000 zł netto. Natomiast za zaawansowaną, unikalną stronę internetową stworzoną od podstaw, musisz liczyć się z wydatkiem rzędu 3000-10000 zł netto. Musisz jednak pamiętać, że koszt strony w głównej mierze zależy od funkcjonalności i wymagań jakie masz wobec niej",
   },
   {
     title: "Jaka jest cena logotypu?",

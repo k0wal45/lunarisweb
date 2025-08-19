@@ -77,7 +77,7 @@ export const stronyInternetowe = {
         "Formularz kontaktowy",
         "Optymalizacja SEO",
       ],
-      price: 1500,
+      price: 2000,
     },
     {
       title: "Strona firmowa z podstronami",
@@ -87,7 +87,7 @@ export const stronyInternetowe = {
         "Możliwość wprowadzania zmian",
         "Formularz kontaktowy",
       ],
-      price: 3000,
+      price: 3500,
     },
     {
       title: "Strona z blogiem",
@@ -97,7 +97,7 @@ export const stronyInternetowe = {
         "3-7 podstron",
         "Panel zarządzania treścią",
       ],
-      price: 4000,
+      price: 4500,
     },
   ],
   step: [
