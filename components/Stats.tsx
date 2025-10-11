@@ -17,7 +17,7 @@ function Stats() {
           Wykonanych Komercyjnych Stron Internetowych
         </h2>
         <Reveal>
-          <p className="text-6xl text-primary font-bold ml-4">12</p>
+          <p className="text-6xl text-primary font-bold ml-4">14</p>
         </Reveal>
       </div>
 
@@ -26,7 +26,7 @@ function Stats() {
       <div className="flex-1 p-4 flex flex-col gap-4 text-center lg:text-start lg:items-start items-center">
         <h2 className="font-bold text-2xl ">Wykonanych Projektów dla firm</h2>
         <Reveal>
-          <p className="text-6xl text-primary font-bold ml-4 pb-2">80+</p>
+          <p className="text-6xl text-primary font-bold ml-4 pb-2">100+</p>
         </Reveal>
       </div>
 

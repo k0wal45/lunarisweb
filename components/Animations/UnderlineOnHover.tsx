@@ -1,30 +1,35 @@
-'use client'
-import {motion} from 'framer-motion'
+"use client";
+import { motion } from "framer-motion";
 
-const UnderlineOnHover = ({children}: {children: JSX.Element}) => {
+const UnderlineOnHover = ({
+  children,
+  color,
+}: {
+  children: JSX.Element;
+  color?: string;
+}) => {
   return (
     <motion.div
-      whileHover='animate'
-      initial='initial'
+      whileHover="animate"
+      initial="initial"
       animate="initial"
-      className='flex flex-col items-start justify-center p-4'
+      className="flex flex-col items-start justify-center p-4"
     >
       {children}
       <motion.div
         variants={{
           initial: {
-            clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)'
+            clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)",
           },
           animate: {
-            clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 0% 100%)'
-          }
-        }} 
-        transition={{duration: 0.4, ease: 'easeOut'}}
-        className='h-[2px] w-full origin-left roudned-full bg-white z-50'
-      >
-      </motion.div>
+            clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)",
+          },
+        }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+        className={`h-[2px] w-full origin-left roudned-full bg-${color ? color : "white"} z-50`}
+      ></motion.div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default UnderlineOnHover
+export default UnderlineOnHover;
