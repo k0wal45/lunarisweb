@@ -1,6 +1,4 @@
-import { TextParallaxContentExample } from "@/components/portfolio/PortfolioSlug/PortfolioSection";
 import { GetFullPortfolioData } from "@/components/portfolio/fullData";
-import Portfolio from "@/components/portfolio/Portfolio";
 import Offers from "@/components/Offers/Offers";
 import ContactSec from "@/components/ContactForm/ContactSec";
 import FaqSection from "@/components/FAQ/FaqSection";

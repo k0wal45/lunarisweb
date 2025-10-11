@@ -13,14 +13,14 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: "class",
+  safelist: ["bg-yellow-300"],
   theme: {
-    
     extend: {
       colors: {
-        primary: '#0048ff',
+        primary: "#0048ff",
         secondary: "#bd00ff",
-        accent: '#ffde01',
-        base: '#8a8a8a'
+        accent: "#ffde01",
+        base: "#8a8a8a",
       },
     },
   },
