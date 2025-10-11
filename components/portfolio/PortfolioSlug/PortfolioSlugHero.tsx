@@ -49,7 +49,7 @@ export default function PortfolioSlugHero({
       </div>
 
       {/* Zdjęcia z efektem parallax */}
-      <div className="absolute bottom-0 w-full flex justify-center gap-12 lg:translate-y-2/3">
+      <div className="absolute bottom-0 w-full flex justify-center gap-12 lg:translate-y-1/2">
         <motion.img
           src={images[0]}
           alt="Projekt strony 1"

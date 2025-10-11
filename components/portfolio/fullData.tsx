@@ -233,7 +233,6 @@ export const activProject: any = {
   ],
 };
 
-
 export const coffeRover: any = {
   id: 11,
   title: "Coffe Rover",

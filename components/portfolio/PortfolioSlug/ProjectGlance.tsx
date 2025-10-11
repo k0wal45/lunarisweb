@@ -10,7 +10,7 @@ const ProjectGlance = ({
   website,
 }: {
   desc: string;
-  images: [string, string];
+  images: [string, string, string];
   website?: string | undefined;
 }) => {
   return (

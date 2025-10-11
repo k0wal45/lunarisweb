@@ -22,11 +22,12 @@ export interface PortfolioPage {
   title: string;
   name: string;
   color: string;
+  imageGrid: string;
   techstack: JSX.Element[];
-  className: string;
   imagesHero: [string, string, string];
   desc: string;
   imagesGlance: [string, string, string];
+  website?: string;
   data: {
     title: string;
     desc: string;

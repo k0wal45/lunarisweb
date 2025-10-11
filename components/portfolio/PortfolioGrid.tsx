@@ -38,7 +38,7 @@ const PortfolioGrid = () => {
         <div
           key={i}
           className={`
-          ${card.className}
+          ${[0, 3].includes(i) ? "col-span-1" : "col-span-2"}
           ${
             selected?.id === card.id
               ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
@@ -50,7 +50,7 @@ const PortfolioGrid = () => {
         >
           <motion.div
             onClick={() => handleClick(card)}
-            className={`${card.className} relative ${selected?.id === card.id ? "m-4" : ""}`}
+            className={`relative ${[0, 3].includes(i) ? "col-span-1" : "col-span-2"} ${selected?.id === card.id ? "m-4" : ""}`}
             layout
           >
             {selected?.id === card.id && <SelectedCard selected={selected} />}
