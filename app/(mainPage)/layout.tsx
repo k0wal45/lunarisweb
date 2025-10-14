@@ -54,8 +54,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <GoogleAnalytics gaId={"G-LC4SHK59XE"} />
       </body>
-      <GoogleAnalytics gaId={"G-LC4SHK59XE"} />
     </html>
   );
 }
