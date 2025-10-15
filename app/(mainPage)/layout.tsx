@@ -9,17 +9,17 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Strony internetowe Katowice — Lunaris Web | Tworzenie stron",
+  title: "Strony internetowe — Lunaris Web | Tworzenie stron",
   description:
-    "Tworzę nowoczesne strony internetowe w Katowicach. Responsywne, szybkie i zoptymalizowane pod SEO. Darmowa wycena.",
+    "Tworzę nowoczesne strony internetowe. Responsywne, szybkie i zoptymalizowane pod SEO. Darmowa wycena.",
   keywords:
-    "tworzenie stron internetowych, strony internetowe Katowice, strony internetowe Śląsk, responsywne strony, bezpieczne strony, Lunaris Web",
+    "tworzenie stron internetowych, strony internetowe, strony internetowe Śląsk, responsywne strony, bezpieczne strony, Lunaris Web",
   authors: [{ name: "Daniel Kowalski", url: "https://daniel-kowalski.com/" }],
   openGraph: {
     title:
       "Profesjonalne Tworzenie Stron Internetowych - Katowice i Śląsk | Lunaris Web",
     description:
-      "Tworzę nowoczesne strony internetowe w Katowicach. Responsywne, szybkie i zoptymalizowane pod SEO. Darmowa wycena.",
+      "Tworzę nowoczesne strony internetowe. Responsywne, szybkie i zoptymalizowane pod SEO. Darmowa wycena.",
     url: "https://www.lunarisweb.pl",
     type: "website",
     locale: "pl_PL",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title:
       "Profesjonalne Tworzenie Stron Internetowych - Katowice i Śląsk | Lunaris Web",
     description:
-      "Tworzę nowoczesne strony internetowe w Katowicach. Responsywne, szybkie i zoptymalizowane pod SEO. Darmowa wycena.",
+      "Tworzę nowoczesne strony internetowe. Responsywne, szybkie i zoptymalizowane pod SEO. Darmowa wycena.",
   },
 };
 

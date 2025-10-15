@@ -30,6 +30,10 @@ export default function PortfolioSlugHero({
   const y1 = useTransform(scrollYProgress, [0, 1], [0, isMobile ? -40 : -350]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, isMobile ? 80 : -500]);
 
+  const colorValue = parseInt(color.split("-")[1], 10);
+  const isLight = colorValue < 500;
+  const textColor = isLight ? "text-gray-900" : "text-white";
+
   return (
     <header
       ref={ref}
@@ -38,7 +42,7 @@ export default function PortfolioSlugHero({
       {/* Tekst hero */}
       <div className="relative z-10 max-w-5xl px-6 text-center flex items-center flex-col gap-8">
         <p
-          className={`text-lg text-gray-600 px-4 bg-${color} w-fit rounded-full`}
+          className={`text-lg px-4 bg-${color} w-fit rounded-full ${textColor}`}
         >
           {name}
         </p>
@@ -49,7 +53,7 @@ export default function PortfolioSlugHero({
       </div>
 
       {/* Zdjęcia z efektem parallax */}
-      <div className="absolute bottom-0 w-full flex justify-center gap-12 lg:translate-y-1/2">
+      <div className="absolute top-[100vh] w-full flex justify-center gap-12 lg:-translate-y-72">
         <motion.img
           src={images[0]}
           alt="Projekt strony 1"

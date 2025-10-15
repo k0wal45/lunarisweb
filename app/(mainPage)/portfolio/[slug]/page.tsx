@@ -8,8 +8,6 @@ import ProjectInfo from "@/components/portfolio/PortfolioSlug/ProjectInfo";
 import { PortfolioPage } from "@/utils/interface";
 import { GetFullPortfolioData } from "@/components/portfolio/fullData";
 
-export const revalidate = 3600;
-
 function findObjectBySlug(slug: any, array: any) {
   const currentPage = array.find(
     (item: any) => item.name.replaceAll(" ", "-").toLowerCase() == slug
@@ -51,3 +49,13 @@ const page = async ({ params }: any) => {
 };
 
 export default page;
+
+export async function generateStaticParams() {
+  const fullPortfolioData = GetFullPortfolioData();
+
+  const slugs: string[] = fullPortfolioData.map((item) =>
+    item.name.toLowerCase().replace(" ", "-")
+  );
+
+  return slugs.map((slug) => ({ slug }));
+}

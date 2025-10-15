@@ -45,9 +45,9 @@ const ProjectGlance = ({
         <div className="grid place-items-center p-8 rounded-[2rem] bg-neutral-100 w-full h-full row-span-2">
           {/* iphone mockup */}
           {website ? (
-            <div className="relative grid-place-items-center rounded-[3.5em] border-8 border-solid border-neutral-500 w-72 aspect-[9/18] shadow-xl overflow-hidden">
+            <div className="relative grid-place-items-center rounded-[3em] border-[6px] border-solid border-neutral-600 w-72 aspect-[9/18] shadow-xl overflow-hidden">
               {/* island */}
-              <div className="absolute top-4 left-1/2 w-20 py-[10px] bg-neutral-500 rounded-full -translate-x-1/2"></div>
+              <div className="absolute top-4 left-1/2 w-20 py-[10px] bg-neutral-600 rounded-full -translate-x-1/2"></div>
               <Image
                 width={1920}
                 height={1080}
@@ -57,7 +57,13 @@ const ProjectGlance = ({
               />
             </div>
           ) : (
-            <div className=""></div>
+            <Image
+              width={800}
+              height={800}
+              alt=""
+              src={images[0]}
+              className="h-full object-contain"
+            />
           )}
         </div>
 
@@ -65,14 +71,14 @@ const ProjectGlance = ({
           width={1920}
           height={1080}
           alt=""
-          src={images[0]}
+          src={images[1]}
           className="h-full rounded-3xl object-cover object-top"
         />
         <Image
           width={1920}
           height={1080}
           alt=""
-          src={images[0]}
+          src={images[2]}
           className="h-full rounded-3xl object-cover object-top"
         />
       </div>

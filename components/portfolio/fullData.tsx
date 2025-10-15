@@ -18,15 +18,15 @@ export const oktechLaweta: PortfolioPage = {
   techstack: [<SiReact />, <SiTailwindcss />, <SiNextdotjs />],
   imageGrid: "oktechAutolaweta/panel.png",
   imagesHero: [
-    "/img/oktechAutolaweta/thumbnail.png",
-    "/img/oktechAutolaweta/thumbnail.png",
-    "/img/oktechAutolaweta/thumbnail.png",
+    "/img/oktechAutolaweta/oktechLaweta1.png",
+    "/img/oktechAutolaweta/oktechLawetaMobile.png",
+    "/img/oktechAutolaweta/oktechLaweta2.png",
   ],
   desc: "Strona dla Oktechu z wypożyczalnią autolawety została zaprojektowana z myślą o przejrzystości i funkcjonalności. Nasz zespół skupił się na intuicyjnej nawigacji, aby użytkownicy mogli szybko znaleźć potrzebne informacje o usługach holowniczych i transportowych. Strona jest responsywna, co zapewnia doskonałe doświadczenia na wszystkich urządzeniach. Dzięki nowoczesnemu designowi i jasnemu układowi, Autolaweta24 skutecznie przedstawia swoją ofertę, budując zaufanie i profesjonalny wizerunek firmy.",
   imagesGlance: [
-    "/img/oktechAutolaweta/thumbnail.png",
-    "/img/oktechAutolaweta/thumbnail.png",
-    "/img/oktechAutolaweta/thumbnail.png",
+    "/img/oktechAutolaweta/oktechLawetaMobile.png",
+    "/img/oktechAutolaweta/oktechLaweta3.png",
+    "/img/oktechAutolaweta/oktechLaweta4.png",
   ],
   website: "https://www.autolaweta24.com.pl/",
   data: [
@@ -46,15 +46,15 @@ export const oktechHds: PortfolioPage = {
   techstack: [<SiReact />, <SiTailwindcss />, <SiNextdotjs />],
   imageGrid: "oktechHds/panel.png",
   imagesHero: [
-    "/img/oktechHds/thumbnail.png",
-    "/img/oktechHds/thumbnail.png",
-    "/img/oktechHds/thumbnail.png",
+    "/img/oktechHds/oktechHDS1.png",
+    "/img/oktechHds/oktechHDS2.png",
+    "/img/oktechHds/oktechHDS3.png",
   ],
   desc: "Zaprojektowałem stronę typu one-page dla projektu o cyberbezpieczeństwie, w którym brałem udział. Strona jest zwięzła i intuicyjna, z płynnym przewijaniem, które prowadzi użytkowników przez kolejne sekcje. Zawiera informacje o zakupie VR dla szkół, naszych celach, korzyściach płynących z projektu oraz dane kontaktowe. Każda sekcja jest jasno oznaczona i wzbogacona o ikony i grafiki związane z tematyką cyberbezpieczeństwa. Responsywny design strony zapewnia doskonałe wrażenia na różnych urządzeniach, a przemyślany układ treści pozwala na szybkie i łatwe zapoznanie się z kluczowymi informacjami. Strona skutecznie przedstawia nasz projekt, promując edukację i świadomość w zakresie cyberbezpieczeństwa.",
   imagesGlance: [
-    "/img/oktechHds/thumbnail.png",
-    "/img/oktechHds/thumbnail.png",
-    "/img/oktechHds/thumbnail.png",
+    "/img/oktechHds/oktechHDSMobile.png",
+    "/img/oktechHds/oktechHDS4.png",
+    "/img/oktechHds/oktechHDS5.png",
   ],
   website: "https://hds-zwyzka.pl/",
   data: [
@@ -75,13 +75,13 @@ export const merkuryMedica: PortfolioPage = {
   imageGrid: "merkuryMedica/panel.png",
   imagesHero: [
     "/img/merkuryMedica/thumbnail.png",
-    "/img/merkuryMedica/thumbnail2.png",
+    "/img/merkuryMedica/logoMerkury.svg",
     "/img/merkuryMedica/thumbnail4.png",
   ],
   desc: "Zaprojektowałem banery reklamowe dla przychodni, które wyróżniają się nowoczesnym designem i czytelnymi informacjami. Wykorzystują kolory wybrane przez przychodnię, wysokiej jakości zdjęcia oraz krótkie slogany, podkreślając profesjonalizm i zaawansowanie technologiczne przychodni. Banery zawierają kluczowe informacje, takie jak nazwa, zakres usług, godziny otwarcia i dane kontaktowe, skutecznie promując przychodnię i budując jej pozytywny wizerunek.",
   imagesGlance: [
+    "/img/merkuryMedica/logoMerkury.svg",
     "/img/merkuryMedica/thumbnail2.png",
-    "/img/merkuryMedica/thumbnail3.png",
     "/img/merkuryMedica/thumbnail.png",
   ],
   data: [
@@ -122,9 +122,9 @@ export const bqCars: PortfolioPage = {
   ],
   desc: "Stworzyłem zestaw materiałów promocyjnych dla wypożyczalni samochodów, obejmujący banery, ulotki i wizytówki. Banery wyróżniają się dynamicznym designem i wyrazistymi grafikami, prezentując atrakcyjne oferty. Ulotki zawierają kluczowe informacje o usługach i promocjach, zachęcając do skorzystania z oferty. Wizytówki, minimalistyczne i eleganckie, zapewniają szybki dostęp do danych kontaktowych. Wszystkie elementy charakteryzują się spójnym brandingiem i estetyką, skutecznie budując rozpoznawalność marki i wspierając działania marketingowe wypożyczalni.",
   imagesGlance: [
-    "/img/bqcars/thumbnail.png",
-    "/img/bqcars/thumbnail2.png",
     "/img/bqcars/thumbnail1.png",
+    "/img/bqcars/thumbnail2.png",
+    "/img/bqcars/thumbnail.png",
   ],
   website: "",
   data: [
@@ -159,17 +159,17 @@ export const bezpieczniWTeorii: PortfolioPage = {
   ],
   imageGrid: "bezpieczniWTeorii/panel.png",
   imagesHero: [
-    "/img/bezpieczniWTeorii/thumbnail.png",
-    "/img/bezpieczniWTeorii/thumbnail2.png",
-    "/img/bezpieczniWTeorii/thumbnail.png",
+    "/img/bezpieczniWTeorii/bezpieczniWTeorii1.png",
+    "/img/bezpieczniWTeorii/bezpieczniWTeorii2.png",
+    "/img/bezpieczniWTeorii/bezpieczniWTeorii3.png",
   ],
   desc: "Zaprojektowałem stronę typu one-page dla projektu o cyberbezpieczeństwie, w którym brałem udział. Strona jest zwięzła i intuicyjna, z płynnym przewijaniem, które prowadzi użytkowników przez kolejne sekcje. Zawiera informacje o zakupie VR dla szkół, naszych celach, korzyściach płynących z projektu oraz dane kontaktowe. Każda sekcja jest jasno oznaczona i wzbogacona o ikony i grafiki związane z tematyką cyberbezpieczeństwa. Responsywny design strony zapewnia doskonałe wrażenia na różnych urządzeniach, a przemyślany układ treści pozwala na szybkie i łatwe zapoznanie się z kluczowymi informacjami. Strona skutecznie przedstawia nasz projekt, promując edukację i świadomość w zakresie cyberbezpieczeństwa.",
   imagesGlance: [
-    "/img/bezpieczniWTeorii/thumbnail.png",
+    "/img/bezpieczniWTeorii/bezpieczniWTeoriiMobile.png",
     "/img/bezpieczniWTeorii/thumbnail2.png",
-    "/img/bezpieczniWTeorii/thumbnail2.png",
+    "/img/bezpieczniWTeorii/bezpieczniWTeorii2.png",
   ],
-  website: "https://bezpieczniwteorii.pl/",
+  website: "https://bezpieczniwteorii.netlify.app/",
   data: [
     {
       title: "Strona Internetowa",
@@ -183,6 +183,8 @@ export const bezpieczniWTeorii: PortfolioPage = {
     },
   ],
 };
+
+// tu skonczylem
 
 export const werva: PortfolioPage = {
   id: 985641,
