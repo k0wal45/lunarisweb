@@ -1,3 +1,4 @@
+"use client";
 import Reveal from "./Animations/Reveal";
 
 function Stats() {

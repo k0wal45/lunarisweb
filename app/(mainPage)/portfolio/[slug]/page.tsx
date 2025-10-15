@@ -6,42 +6,32 @@ import PortfolioSlugHero from "@/components/portfolio/PortfolioSlug/PortfolioSlu
 import ProjectGlance from "@/components/portfolio/PortfolioSlug/ProjectGlance";
 import ProjectInfo from "@/components/portfolio/PortfolioSlug/ProjectInfo";
 import { PortfolioPage } from "@/utils/interface";
-import {
-  fullPortfolioData,
-  oktechLaweta,
-} from "@/components/portfolio/fullData_converted";
+import { GetFullPortfolioData } from "@/components/portfolio/fullData";
 
 export const revalidate = 3600;
 
 function findObjectBySlug(slug: any, array: any) {
-  console.log(
-    array.find(
-      (item: any) => item.name.replaceAll(" ", "-").toLowerCase() === slug
-    )
-  );
-
   const currentPage = array.find(
-    (item: any) => item.name.replaceAll(" ", "-").toLowerCase() === slug
+    (item: any) => item.name.replaceAll(" ", "-").toLowerCase() == slug
   );
 
-  if (!currentPage || !currentPage.slugPage) {
+  if (!currentPage) {
     return false;
   }
 
-  return currentPage.slugPage;
+  return currentPage;
 }
 
-const page = ({ params }: any) => {
+const page = async ({ params }: any) => {
   type pageData = PortfolioPage;
 
-  const pageData = findObjectBySlug(params.slug, fullPortfolioData);
+  const pageData = await findObjectBySlug(params.slug, GetFullPortfolioData());
 
-  // !pageData ? (
-  //   redirect("/not-found")
-  // ) :
-  return (
+  return !pageData ? (
+    redirect("/not-found")
+  ) : (
     <main className="max-w-screen">
-      {/* <PortfolioSlugHero
+      <PortfolioSlugHero
         title={pageData.title}
         name={pageData.name}
         images={pageData.imagesHero}
@@ -50,9 +40,9 @@ const page = ({ params }: any) => {
       <ProjectGlance
         desc={pageData.desc}
         images={pageData.imagesGlance}
-        website={"https://www.lunarisweb.pl/"}
+        website={pageData.website ? pageData.website : undefined}
       />
-      <ProjectInfo data={pageData.data} /> */}
+      <ProjectInfo data={pageData.data} />
       <Offers />
       <ContactSec />
       <FaqSection />

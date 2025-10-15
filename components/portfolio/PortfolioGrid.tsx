@@ -11,11 +11,9 @@ const cards = [aiCreate2024, werva, oktechLaweta, merkuryMedica];
 type Card = {
   id: number;
   title: string;
-  text: string;
-  link: string;
-  className: string;
-  image: string;
-  slugPage: any;
+  desc: string;
+  imageGrid: string;
+  data: any;
 };
 
 const PortfolioGrid = () => {
@@ -85,7 +83,7 @@ const Placeholder = ({
     <Image
       width={1300}
       height={1000}
-      src={"/img/" + card.image}
+      src={"/img/" + card.imageGrid}
       alt="Strony internetowe Katowice"
       className={`${classname} top-0 left-0 w-full h-72 rounded-xl object-cover object-right-top bg-white`}
     />
@@ -125,7 +123,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
           <Image
             width={800}
             height={700}
-            src={selected?.slugPage[0].image}
+            src={selected?.data[0].image}
             alt="Strony internetowe Katowice"
             className="absolute top-0 left-0 w-full h-full z-[-2] object-cover rounded-lg"
           />
