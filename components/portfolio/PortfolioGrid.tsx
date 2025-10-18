@@ -3,19 +3,22 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
-import { aiCreate2024, merkuryMedica, oktechLaweta, werva } from "./fullData";
+import {
+  aiCreate2024,
+  bielikSummit,
+  merkuryMedica,
+  oktechLaweta,
+} from "./fullData";
 import OnClickCard from "./OnClickCard";
 
-const cards = [aiCreate2024, werva, oktechLaweta, merkuryMedica];
+const cards = [bielikSummit, aiCreate2024, oktechLaweta, merkuryMedica];
 
 type Card = {
   id: number;
   title: string;
-  text: string;
-  link: string;
-  className: string;
-  image: string;
-  slugPage: any;
+  desc: string;
+  imageGrid: string;
+  data: any;
 };
 
 const PortfolioGrid = () => {
@@ -38,7 +41,7 @@ const PortfolioGrid = () => {
         <div
           key={i}
           className={`
-          ${card.className}
+          ${[0, 3].includes(i) ? "col-span-1" : "col-span-2"}
           ${
             selected?.id === card.id
               ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
@@ -50,7 +53,7 @@ const PortfolioGrid = () => {
         >
           <motion.div
             onClick={() => handleClick(card)}
-            className={`${card.className} relative ${selected?.id === card.id ? "m-4" : ""}`}
+            className={`relative ${[0, 3].includes(i) ? "col-span-1" : "col-span-2"} ${selected?.id === card.id ? "m-4" : ""}`}
             layout
           >
             {selected?.id === card.id && <SelectedCard selected={selected} />}
@@ -85,7 +88,7 @@ const Placeholder = ({
     <Image
       width={1300}
       height={1000}
-      src={"/img/" + card.image}
+      src={"/img/" + card.imageGrid}
       alt="Strony internetowe Katowice"
       className={`${classname} top-0 left-0 w-full h-72 rounded-xl object-cover object-right-top bg-white`}
     />
@@ -125,7 +128,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
           <Image
             width={800}
             height={700}
-            src={selected?.slugPage[0].image}
+            src={selected?.data[0].image}
             alt="Strony internetowe Katowice"
             className="absolute top-0 left-0 w-full h-full z-[-2] object-cover rounded-lg"
           />

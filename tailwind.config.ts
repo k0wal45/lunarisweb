@@ -13,14 +13,23 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: "class",
+  safelist: [
+    "bg-yellow-300",
+    "bg-blue-950",
+    "bg-orange-500",
+    "bg-blue-700",
+    "bg-neutral-800",
+    "bg-red-500",
+    "bg-sky-400",
+    "bg-red-400",
+  ],
   theme: {
-    
     extend: {
       colors: {
-        primary: '#0048ff',
+        primary: "#0048ff",
         secondary: "#bd00ff",
-        accent: '#ffde01',
-        base: '#8a8a8a'
+        accent: "#ffde01",
+        base: "#8a8a8a",
       },
     },
   },

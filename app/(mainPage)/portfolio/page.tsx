@@ -9,6 +9,7 @@ import Reviews from "@/components/reviews/Reviews";
 import { GetFullPortfolioData } from "@/components/portfolio/fullData";
 import BlogSection from "@/components/Blog/BlogSection";
 import { TransitionLink } from "@/utils/TransitionLink";
+import { PortfolioPage } from "@/utils/interface";
 
 export const metadata: Metadata = {
   title: "Portfolio - Lunaris Web",
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     "Sprawdź nasze wcześniejsze realizacje, może właśnie to przekona cie do współpracy z nami. Przychodnia medyczna czy wypożyczalnia samochodów, Strony Internetowe",
 };
 
-const PortfolioPage = () => {
+const Page = () => {
   const data = GetFullPortfolioData();
 
   return (
@@ -33,13 +34,13 @@ const PortfolioPage = () => {
             do współpracy z nami
           </p>
         </div>
-        {data.map((item, index) => (
+        {data.map((item: PortfolioPage, index: number) => (
           <PortfolioItem
             id={item.id}
-            title={item.title}
-            link={item.link}
-            techStack={item.techStack}
-            image={item.image}
+            title={item.name}
+            link={item.name.toLowerCase().replaceAll(" ", "-")}
+            techStack={item.techstack}
+            image={item.imageGrid}
             key={index}
           />
         ))}
@@ -61,4 +62,4 @@ const PortfolioPage = () => {
   );
 };
 
-export default PortfolioPage;
+export default Page;
