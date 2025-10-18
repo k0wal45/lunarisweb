@@ -3,10 +3,15 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
-import { aiCreate2024, merkuryMedica, oktechLaweta, werva } from "./fullData";
+import {
+  aiCreate2024,
+  bielikSummit,
+  merkuryMedica,
+  oktechLaweta,
+} from "./fullData";
 import OnClickCard from "./OnClickCard";
 
-const cards = [aiCreate2024, werva, oktechLaweta, merkuryMedica];
+const cards = [bielikSummit, aiCreate2024, oktechLaweta, merkuryMedica];
 
 type Card = {
   id: number;

@@ -22,7 +22,7 @@ export const oktechLaweta: PortfolioPage = {
     "/img/oktechAutolaweta/oktechLawetaMobile.png",
     "/img/oktechAutolaweta/oktechLaweta2.png",
   ],
-  desc: "Strona dla Oktechu z wypożyczalnią autolawety została zaprojektowana z myślą o przejrzystości i funkcjonalności. Nasz zespół skupił się na intuicyjnej nawigacji, aby użytkownicy mogli szybko znaleźć potrzebne informacje o usługach holowniczych i transportowych. Strona jest responsywna, co zapewnia doskonałe doświadczenia na wszystkich urządzeniach. Dzięki nowoczesnemu designowi i jasnemu układowi, Autolaweta24 skutecznie przedstawia swoją ofertę, budując zaufanie i profesjonalny wizerunek firmy.",
+  desc: "Projekt strony internetowej dla firmy Oktech, promującej usługę wypożyczalni autolawet pod marką Autolaweta24, został zaprojektowany z naciskiem na maksymalną przejrzystość, funkcjonalność i profesjonalizm. Głównym celem zespołu projektowego było stworzenie intuicyjnej nawigacji, która pozwala użytkownikom szybko i bez problemów znaleźć wszelkie niezbędne informacje dotyczące usług holowniczych i transportowych, w tym cennika i warunków wynajmu. Kluczowym elementem technicznym jest responsywność strony, gwarantująca doskonałe i spójne doświadczenia użytkownika niezależnie od urządzenia - komputera, tabletu czy smartfona.",
   imagesGlance: [
     "/img/oktechAutolaweta/oktechLawetaMobile.png",
     "/img/oktechAutolaweta/oktechLaweta3.png",
@@ -50,7 +50,7 @@ export const oktechHds: PortfolioPage = {
     "/img/oktechHds/oktechHDS2.png",
     "/img/oktechHds/oktechHDS3.png",
   ],
-  desc: "Zaprojektowałem stronę typu one-page dla projektu o cyberbezpieczeństwie, w którym brałem udział. Strona jest zwięzła i intuicyjna, z płynnym przewijaniem, które prowadzi użytkowników przez kolejne sekcje. Zawiera informacje o zakupie VR dla szkół, naszych celach, korzyściach płynących z projektu oraz dane kontaktowe. Każda sekcja jest jasno oznaczona i wzbogacona o ikony i grafiki związane z tematyką cyberbezpieczeństwa. Responsywny design strony zapewnia doskonałe wrażenia na różnych urządzeniach, a przemyślany układ treści pozwala na szybkie i łatwe zapoznanie się z kluczowymi informacjami. Strona skutecznie przedstawia nasz projekt, promując edukację i świadomość w zakresie cyberbezpieczeństwa.",
+  desc: "Oktech to mała firma ze Śląska, dla której miałem przyjemność tworzyć projekt strony internetowej dla odnogi ich działalności zajmującej się usługami HDS. Moim celem było stworzenie platformy, która w jasny i profesjonalny sposób odzwierciedli szeroki wachlarz świadczonych przez nich usług transportowych i dźwigowych. Efektem jest strona hds-zwyzka.pl, która - w formie nowoczesnego, intuicyjnego serwisu - szczegółowo prezentuje możliwości firmy w zakresie transportu ładunków wielkogabarytowych, relokacji maszyn oraz wynajmu podnośników koszowych (zwyżek).",
   imagesGlance: [
     "/img/oktechHds/oktechHDSMobile.png",
     "/img/oktechHds/oktechHDS4.png",
@@ -60,7 +60,7 @@ export const oktechHds: PortfolioPage = {
   data: [
     {
       title: "Strona Internetowa",
-      desc: "Zaprojektowałem stronę typu one-page dla projektu o cyberbezpieczeństwie, w którym brałem udział. Strona jest zwięzła i intuicyjna, z płynnym przewijaniem, które prowadzi użytkowników przez kolejne sekcje. Zawiera informacje o zakupie VR dla szkół, naszych celach, korzyściach płynących z projektu oraz dane kontaktowe. Każda sekcja jest jasno oznaczona i wzbogacona o ikony i grafiki związane z tematyką cyberbezpieczeństwa. Responsywny design strony zapewnia doskonałe wrażenia na różnych urządzeniach, a przemyślany układ treści pozwala na szybkie i łatwe zapoznanie się z kluczowymi informacjami. Strona skutecznie przedstawia nasz projekt, promując edukację i świadomość w zakresie cyberbezpieczeństwa.",
+      desc: "Strona internetowa hds-zwyzka.pl to profesjonalna wizytówka firmy Oktech Dariusz Kowalski, która skupia się na świadczeniu usług transportu HDS (hydrauliczny dźwig samochodowy) oraz wynajmie zwyżek na terenie Katowic, Śląska i okolic. Firma z wieloletnim, czternastoletnim doświadczeniem w branży, oferuje kompleksowy zakres usług obejmujący transport i załadunek kontenerów, bezpieczny przewóz materiałów budowlanych (stal, drewno), relokację ciężkich maszyn przemysłowych oraz elementów infrastruktury (słupy energetyczne, rurociągi). Dodatkowo, pojazdy HDS wykorzystywane są do precyzyjnych prac dźwigowych i montażowych, takich jak ustawianie instalacji reklamowych czy billboardów.",
       image: "/img/oktechHds/thumbnail.png",
     },
   ],
@@ -78,7 +78,7 @@ export const merkuryMedica: PortfolioPage = {
     "/img/merkuryMedica/logoMerkury.svg",
     "/img/merkuryMedica/thumbnail4.png",
   ],
-  desc: "Zaprojektowałem banery reklamowe dla przychodni, które wyróżniają się nowoczesnym designem i czytelnymi informacjami. Wykorzystują kolory wybrane przez przychodnię, wysokiej jakości zdjęcia oraz krótkie slogany, podkreślając profesjonalizm i zaawansowanie technologiczne przychodni. Banery zawierają kluczowe informacje, takie jak nazwa, zakres usług, godziny otwarcia i dane kontaktowe, skutecznie promując przychodnię i budując jej pozytywny wizerunek.",
+  desc: "W ramach współpracy z Merkury Medica, siecią prywatnych przychodni, moim zadaniem było opracowanie kompleksowych materiałów identyfikacji wizualnej i reklamowej, mających na celu wzmocnienie wizerunku marki w segmencie medycznym. Kluczowym elementem pracy było zaprojektowanie banerów reklamowych, które wyróżniają się nowoczesnym designem i maksymalną czytelnością przekazu. Wykorzystując firmowe barwy i wysokiej jakości, profesjonalne zdjęcia, a także zwięzłe slogany, banery skutecznie komunikują profesjonalizm i zaawansowanie technologiczne placówek",
   imagesGlance: [
     "/img/merkuryMedica/logoMerkury.svg",
     "/img/merkuryMedica/thumbnail2.png",
@@ -108,44 +108,6 @@ export const merkuryMedica: PortfolioPage = {
   ],
 };
 
-export const bqCars: PortfolioPage = {
-  id: 1238123,
-  title: "Banery reklamowe i strona internetowa dla wypożyczalni samochodów",
-  name: "BQ Cars Katowice",
-  color: "red-500",
-  techstack: [<SiTailwindcss />, <SiInkscape />, <SiAdobephotoshop />],
-  imageGrid: "bqcars/panel.png",
-  imagesHero: [
-    "/img/bqcars/thumbnail1.png",
-    "/img/bqcars/thumbnail.png",
-    "/img/bqcars/thumbnail2.png",
-  ],
-  desc: "Stworzyłem zestaw materiałów promocyjnych dla wypożyczalni samochodów, obejmujący banery, ulotki i wizytówki. Banery wyróżniają się dynamicznym designem i wyrazistymi grafikami, prezentując atrakcyjne oferty. Ulotki zawierają kluczowe informacje o usługach i promocjach, zachęcając do skorzystania z oferty. Wizytówki, minimalistyczne i eleganckie, zapewniają szybki dostęp do danych kontaktowych. Wszystkie elementy charakteryzują się spójnym brandingiem i estetyką, skutecznie budując rozpoznawalność marki i wspierając działania marketingowe wypożyczalni.",
-  imagesGlance: [
-    "/img/bqcars/thumbnail1.png",
-    "/img/bqcars/thumbnail2.png",
-    "/img/bqcars/thumbnail.png",
-  ],
-  website: "",
-  data: [
-    {
-      title: "Logotyp",
-      desc: "Logotyp używany w wielu odnogach firmy jest wyjątkowy i unikalny. Głowa byka jest centralnym elementem logotypu. To odważny wybór, ponieważ byk symbolizuje siłę, wytrzymałość i determinację. W kontekście wypożyczalni samochodów może oznaczać dynamiczność i pewność siebie, a w przypadku firmy remontowej - solidność i profesjonalizm. Głowa byka jest przedstawiona w różnych sceneriach, dostosowanych do specyfiki branży. To połączenie tworzy unikalny znak, który będzie łatwo rozpoznawalny i zapadnie w pamięć klientów",
-      image: "/img/bqcars/thumbnail1.png",
-    },
-    {
-      title: "Strona Internetowa",
-      desc: "Stworzyłem nowoczesną i intuicyjną stronę internetową dla wypożyczalni samochodów, która zapewnia użytkownikom łatwy dostęp do szerokiej oferty pojazdów. Strona charakteryzuje się przejrzystym designem, responsywnością. Dzięki zastosowaniu najnowszych technologii i najlepszych praktyk UX, strona nie tylko przyciąga nowych klientów, ale także zwiększa efektywność operacyjną wypożyczalni. Niestety Wypożyczalnia przestała funkcjonować i strona jest już nie dostępna",
-      image: "/img/bqcars/thumbnail.png",
-    },
-    {
-      title: "Projekty Graficzne",
-      desc: "Stworzyłem zestaw materiałów promocyjnych dla wypożyczalni samochodów, obejmujący banery, ulotki i wizytówki. Banery wyróżniają się dynamicznym designem i wyrazistymi grafikami, prezentując atrakcyjne oferty. Ulotki zawierają kluczowe informacje o usługach i promocjach, zachęcając do skorzystania z oferty. Wizytówki, minimalistyczne i eleganckie, zapewniają szybki dostęp do danych kontaktowych. Wszystkie elementy charakteryzują się spójnym brandingiem i estetyką, skutecznie budując rozpoznawalność marki i wspierając działania marketingowe wypożyczalni.",
-      image: "/img/bqcars/thumbnail2.png",
-    },
-  ],
-};
-
 export const bezpieczniWTeorii: PortfolioPage = {
   id: 4514327,
   title: "Pełen branding i prowadzenie projektu o cyberbezpieczeństwie",
@@ -163,7 +125,7 @@ export const bezpieczniWTeorii: PortfolioPage = {
     "/img/bezpieczniWTeorii/bezpieczniWTeorii2.png",
     "/img/bezpieczniWTeorii/bezpieczniWTeorii3.png",
   ],
-  desc: "Zaprojektowałem stronę typu one-page dla projektu o cyberbezpieczeństwie, w którym brałem udział. Strona jest zwięzła i intuicyjna, z płynnym przewijaniem, które prowadzi użytkowników przez kolejne sekcje. Zawiera informacje o zakupie VR dla szkół, naszych celach, korzyściach płynących z projektu oraz dane kontaktowe. Każda sekcja jest jasno oznaczona i wzbogacona o ikony i grafiki związane z tematyką cyberbezpieczeństwa. Responsywny design strony zapewnia doskonałe wrażenia na różnych urządzeniach, a przemyślany układ treści pozwala na szybkie i łatwe zapoznanie się z kluczowymi informacjami. Strona skutecznie przedstawia nasz projekt, promując edukację i świadomość w zakresie cyberbezpieczeństwa.",
+  desc: "Dla projektu społecznej inicjatywy edukacyjnej, skierowanej do uczniów i nauczycieli w Katowicach, mającej na celu kompleksowe poszerzanie umiejętności z zakresu cyberbezpieczeństwa - od ochrony przed cyberatakami po analizę zagrożeń - zaprojektowałem nowoczesną stronę internetową typu one-page. Kluczowym celem było stworzenie zwięzłej i intuicyjnej platformy cyfrowej, która efektywnie wspiera rekrutację i promocję projektu (obejmującego m.in. zakup technologii VR dla szkół).",
   imagesGlance: [
     "/img/bezpieczniWTeorii/bezpieczniWTeoriiMobile.png",
     "/img/bezpieczniWTeorii/thumbnail2.png",
@@ -184,41 +146,6 @@ export const bezpieczniWTeorii: PortfolioPage = {
   ],
 };
 
-// tu skonczylem
-
-export const werva: PortfolioPage = {
-  id: 985641,
-  title:
-    "Wizytówki, ulotki, tablice informacyjne i strona internetowa dla spółki",
-  name: "Werva Solutions",
-  color: "neutral-800",
-  techstack: [<SiWordpress />, <SiInkscape />, <SiAdobephotoshop />],
-  imageGrid: "werva/panel.png",
-  imagesHero: [
-    "/img/werva/thumbnail.png",
-    "/img/werva/thumbnail.png",
-    "/img/werva/thumbnail.png",
-  ],
-  desc: "",
-  imagesGlance: [
-    "/img/werva/thumbnail.png",
-    "/img/werva/thumbnail.png",
-    "/img/werva/thumbnail.png",
-  ],
-  data: [
-    {
-      title: "Strona Internetowa",
-      desc: "Zaprojektowałem prostą, statyczną stronę wizytówkę dla firmy oferującej usługi w zakresie wynajmu pracowników, szkoleń oraz nieruchomości. Strona została podzielona na klarowne sekcje, każda dedykowana jednej z gałęzi działalności firmy. Przejrzysty układ i intuicyjna nawigacja ułatwiają użytkownikom szybkie znalezienie interesujących ich informacji. Każda sekcja zawiera opisy usług, zdjęcia oraz dane kontaktowe, co pozwala na kompleksową prezentację oferty. Strona została zoptymalizowana pod kątem szybkości ładowania, co zapewnia płynne doświadczenie użytkownika i skutecznie buduje profesjonalny wizerunek firmy w internecie.",
-      image: "/img/werva/thumbnail.png",
-    },
-    {
-      title: "Wizytówki i Logotyp",
-      desc: "Stworzyłem prosty i elegancki logotyp oraz projekt wizytówek dla firmy. Logotyp charakteryzuje się minimalistycznym designem, który odzwierciedla profesjonalizm i wielobranżowy charakter firmy, z czytelną typografią i subtelnym akcentem graficznym symbolizującym różnorodność usług. Wizytówki zaprojektowałem z myślą o spójności wizualnej, wykorzystując kolory i motywy z logotypu. Każda wizytówka zawiera nazwę firmy, imię i nazwisko, stanowisko, dane kontaktowe oraz adres strony internetowej, utrzymując przejrzystość i estetykę. Projekt podkreśla profesjonalizm i nowoczesność, skutecznie wspierając działania marketingowe firmy",
-      image: "/img/werva/thumbnail2.png",
-    },
-  ],
-};
-
 export const aiCreate2024: PortfolioPage = {
   id: 3534761,
   title: "Strona internetowa dla konferencji w Warszawie",
@@ -227,21 +154,21 @@ export const aiCreate2024: PortfolioPage = {
   techstack: [<SiReact />, <SiTailwindcss />, <SiNextdotjs />, <SiInkscape />],
   imageGrid: "aiCreate2024/panel.png",
   imagesHero: [
-    "/img/aiCreate2024/thumbnail.png",
-    "/img/aiCreate2024/thumbnail.png",
-    "/img/aiCreate2024/thumbnail.png",
+    "/img/aiCreate2024/aicreate1.png",
+    "/img/aiCreate2024/aicreate2.png",
+    "/img/aiCreate2024/aicreateMobile.png",
   ],
-  desc: "Na potrzeby konferencji AI stworzyłem statyczną stronę internetową, która dostarczała uczestnikom najważniejszych informacji o wydarzeniu, w tym harmonogram, listę prelegentów oraz szczegóły organizacyjne. W celu usprawnienia obsługi użytkowników wdrożyłem chatbota, który w czasie rzeczywistym odpowiadał na pytania, ułatwiając dostęp do kluczowych treści. Dzięki przejrzystemu układowi i intuicyjnej nawigacji strona była łatwa w użytkowaniu, a optymalizacja SEO zapewniała jej wysoką widoczność w wyszukiwarce. Informacja: Ze względów prawnych strona konferencji AI została wyłączona, jednak jej zmodyfikowana wersja jest dostępna pod tym linkiem.",
+  desc: "Konferencja AI Create była wydarzeniem skierowanym do szerokiej publiczności profesjonalistów i entuzjastów - w tym firm i osób pracujących w branży kreatywnej i mediowej, specjalistów od marketingu i reklamy. by zapewnić uczestnikom przejrzyste centrum informacji o harmonogramie i prelegentach, stworzona została przeze mnie strona internetowa, wzbogacona o chatbota dla natychmiastowej obsługi zapytań.",
   imagesGlance: [
-    "/img/aiCreate2024/thumbnail.png",
-    "/img/aiCreate2024/thumbnail.png",
-    "/img/aiCreate2024/thumbnail.png",
+    "/img/aiCreate2024/aicreateMobile.png",
+    "/img/aiCreate2024/aicreate3.png",
+    "/img/aiCreate2024/aicreate4.png",
   ],
   website: "https://ai-create-preview.vercel.app/",
   data: [
     {
       title: "Strona Internetowa",
-      desc: "Na potrzeby konferencji AI stworzyłem statyczną stronę internetową, która dostarczała uczestnikom najważniejszych informacji o wydarzeniu, w tym harmonogram, listę prelegentów oraz szczegóły organizacyjne. W celu usprawnienia obsługi użytkowników wdrożyłem chatbota, który w czasie rzeczywistym odpowiadał na pytania, ułatwiając dostęp do kluczowych treści. Dzięki przejrzystemu układowi i intuicyjnej nawigacji strona była łatwa w użytkowaniu, a optymalizacja SEO zapewniała jej wysoką widoczność w wyszukiwarce. Informacja: Ze względów prawnych strona konferencji AI została wyłączona, jednak jej zmodyfikowana wersja jest dostępna pod tym linkiem.",
+      desc: "Na potrzeby konferencji AI stworzyłem stronę internetową, która dostarczała uczestnikom najważniejszych informacji o wydarzeniu, w tym harmonogram, listę prelegentów oraz szczegóły organizacyjne. W celu usprawnienia obsługi użytkowników wdrożyłem chatbota, który w czasie rzeczywistym odpowiadał na pytania, ułatwiając dostęp do kluczowych treści. Dzięki przejrzystemu układowi i intuicyjnej nawigacji strona była łatwa w użytkowaniu, a optymalizacja SEO zapewniała jej wysoką widoczność w wyszukiwarce. Informacja: Ze względów prawnych strona konferencji AI została wyłączona, jednak jej zmodyfikowana wersja jest dostępna pod tym linkiem.",
       image: "/img/aiCreate2024/thumbnail.png",
     },
   ],
@@ -255,22 +182,50 @@ export const activProject: PortfolioPage = {
   techstack: [<SiWordpress />, <SiElementor />],
   imageGrid: "activProject/panel.png",
   imagesHero: [
-    "/img/activProject/thumbnail.png",
-    "/img/activProject/thumbnail.png",
-    "/img/activProject/thumbnail.png",
+    "/img/activProject/activproject1.png",
+    "/img/activProject/activproject2.png",
+    "/img/activProject/activproject4.png",
   ],
-  desc: "Stworzyłem statyczną stronę internetową dla ActivProject, która prezentuje ofertę zajęć jogi oraz wyjazdów jogowych. Witryna została podzielona na przejrzyste zakładki, dzięki czemu użytkownicy mogą łatwo znaleźć informacje o zajęciach, planowanych wyjazdach oraz filozofii jogi. Intuicyjna nawigacja i estetyczny, harmonijny design sprawiają, że strona jest przyjazna dla odwiedzających. Dzięki optymalizacji pod kątem SEO oraz szybkiego ładowania, strona skutecznie dociera do osób zainteresowanych jogą, pomagając w budowaniu profesjonalnego wizerunku marki w internecie.",
+  desc: "ActivProject to aktywne studio jogi z Chorzowa, które z powodzeniem łączy regularne zajęcia na miejscu z organizacją inspirujących, tematycznych wyjazdów jogowych (retreatów), a także prowadzi bloga poświęconego filozofii i praktyce jogi, budując tym samym zaangażowaną społeczność. celu cyfrowego wsparcia tej zróżnicowanej oferty, stworzyłem dla ActivProject stronę internetową, której intuicyjna nawigacja, estetyczny design oraz podział na przejrzyste zakładki umożliwiły skuteczne prezentowanie harmonogramu zajęć, wyjazdów i bloga, znacząco przyczyniając się do budowania jej profesjonalnego wizerunku w sieci.",
   imagesGlance: [
-    "/img/activProject/thumbnail.png",
-    "/img/activProject/thumbnail.png",
-    "/img/activProject/thumbnail.png",
+    "/img/activProject/activprojectMobile.png",
+    "/img/activProject/activproject3.png",
+    "/img/activProject/activproject4.png",
   ],
   website: "https://activproject.pl/",
   data: [
     {
       title: "Strona Internetowa",
-      desc: "Stworzyłem statyczną stronę internetową dla ActivProject, która prezentuje ofertę zajęć jogi oraz wyjazdów jogowych. Witryna została podzielona na przejrzyste zakładki, dzięki czemu użytkownicy mogą łatwo znaleźć informacje o zajęciach, planowanych wyjazdach oraz filozofii jogi. Intuicyjna nawigacja i estetyczny, harmonijny design sprawiają, że strona jest przyjazna dla odwiedzających. Dzięki optymalizacji pod kątem SEO oraz szybkiego ładowania, strona skutecznie dociera do osób zainteresowanych jogą, pomagając w budowaniu profesjonalnego wizerunku marki w internecie.",
+      desc: "Stworzyłem stronę internetową dla ActivProject, która prezentuje ofertę zajęć jogi oraz wyjazdów jogowych. Witryna została podzielona na przejrzyste zakładki, dzięki czemu użytkownicy mogą łatwo znaleźć informacje o zajęciach, planowanych wyjazdach oraz filozofii jogi. Intuicyjna nawigacja i estetyczny, harmonijny design sprawiają, że strona jest przyjazna dla odwiedzających. Dzięki optymalizacji pod kątem SEO oraz szybkiego ładowania, strona skutecznie dociera do osób zainteresowanych jogą, pomagając w budowaniu profesjonalnego wizerunku marki w internecie.",
       image: "/img/activProject/thumbnail.png",
+    },
+  ],
+};
+
+export const bielikSummit: PortfolioPage = {
+  id: 52348679,
+  title: "Strona internetowa dla największej konferencji AI w Polsce",
+  name: "Bielik Summit",
+  color: "red-400",
+  techstack: [<SiWordpress />, <SiElementor />, <SiAdobephotoshop />],
+  imageGrid: "bielikSummit/panel.png",
+  imagesHero: [
+    "/img/bielikSummit/bielikSummit1.png",
+    "/img/bielikSummit/bielikSummit2.png",
+    "/img/bielikSummit/bielikSummit3.png",
+  ],
+  desc: "Bielik Summit 2025 to unikalne w Polsce, praktyczne wydarzenie skupiające twórców lokalnego modelu językowego Bielik.AI, jego użytkowników oraz liderów biznesu, którego celem jest zamiana pomysłów w działające rozwiązania i przyspieszenie wdrożeń AI w polskich organizacjach. Konferencja, która odbędzie się w Warszawie, wyróżnia się rezygnacją z akademickich wykładów na rzecz demonstracji na żywo i realistycznych case studies, prezentowanych w duetach: problem biznesowy kontra techniczne rozwiązanie - od prototypu, przez pilotaż, aż po mierzalne wyniki. Program jest skierowany do szerokiego grona decydentów i praktyków, w tym CTO, liderów biznesu, specjalistów HR, prawa, mediów i branży kreatywnej, oferując dodatkowo sesje 'od kuchni' z inżynierami Bielik.AI, promując tym samym niezależność cyfrową i bezpieczne, lokalne rozwiązania AI w Polsce.",
+  imagesGlance: [
+    "/img/bielikSummit/bielikSummitMobile.png",
+    "/img/bielikSummit/bielikSummit4.png",
+    "/img/bielikSummit/bielikSummit5.png",
+  ],
+  website: "https://bieliksummit.ai/",
+  data: [
+    {
+      title: "Strona internetowa",
+      desc: "Strona internetowa bieliksummit.ai stanowi przejrzyste i profesjonalne centrum informacyjne dla tej wyjątkowej konferencji, której celem jest praktyczne wdrożenie sztucznej inteligencji w biznesie. Zaprojektowana tak, aby zapewnić intuicyjną nawigację, witryna od razu eksponuje kluczowe elementy: datę wydarzenia (27 Listopada 2025), lokalizację w Warszawie oraz główne sekcje, w tym Agendę, Prelegentów i możliwość zakupu biletów (on-site oraz online). Witryna skutecznie komunikuje unikalny charakter spotkania, podkreślając jego cel - łączenie biznesu z technologią Bielik.AI - i segmentuje publiczność docelową (od liderów po architektów systemów). Całość jest estetycznie spójna, wsparta informacjami o organizatorach i partnerach ekosystemowych, a jej struktura pozwala użytkownikom na szybkie przyswojenie informacji o tym, jak Bielik Summit transformuje pomysły AI w konkretne rezultaty.",
+      image: "/img/bielikSummit/thumbnail.png",
     },
   ],
 };
@@ -297,13 +252,12 @@ export const activProject: PortfolioPage = {
 
 export const GetFullPortfolioData = () => {
   const data = [
+    bielikSummit,
     oktechLaweta,
     aiCreate2024,
     oktechHds,
     merkuryMedica,
-    werva,
     bezpieczniWTeorii,
-    bqCars,
     activProject,
   ];
 

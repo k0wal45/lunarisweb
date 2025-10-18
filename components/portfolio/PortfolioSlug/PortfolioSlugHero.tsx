@@ -58,19 +58,19 @@ export default function PortfolioSlugHero({
           src={images[0]}
           alt="Projekt strony 1"
           style={{ y: y1 }}
-          className="w-1/2 lg:w-1/3 object-cover rounded-2xl shadow-lg "
+          className="w-1/2 lg:w-1/3 object-contain object-top rounded-2xl shadow-lg "
         />
         <motion.img
           src={images[1]}
           alt="Projekt strony 2"
           style={{ y: y2 }}
-          className="w-1/2 lg:w-1/3 object-cover rounded-2xl shadow-lg"
+          className="w-1/2 lg:w-1/3 object-contain object-top rounded-2xl shadow-lg"
         />
         <motion.img
           src={images[2]}
           alt="Projekt strony 3"
           style={{ y: y1 }}
-          className="w-1/3 lg:w-1/3 hidden lg:block object-cover rounded-2xl shadow-lg"
+          className="w-1/3 lg:w-1/3 hidden lg:block object-contain object-top rounded-2xl shadow-lg"
         />
       </div>
     </header>
