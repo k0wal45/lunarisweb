@@ -9,9 +9,9 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Strony internetowe — Lunaris Web | Tworzenie stron",
+  title: "Strony Internetowe Katowice | Unikalne Projekty | Lunaris Web",
   description:
-    "Tworzę nowoczesne strony internetowe. Responsywne, szybkie i zoptymalizowane pod SEO. Darmowa wycena.",
+    "Tworzę szybkie strony internetowe w Katowicach. Autorskie rozwiązania zamiast gotowców. Wysoka jakość, nowoczesny design i uczciwe ceny. Wyprzedź konkurencję!",
   keywords:
     "tworzenie stron internetowych, strony internetowe, strony internetowe Śląsk, responsywne strony, bezpieczne strony, Lunaris Web",
   authors: [{ name: "Daniel Kowalski", url: "https://daniel-kowalski.com/" }],
