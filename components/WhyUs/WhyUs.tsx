@@ -7,7 +7,7 @@ function WhyUs() {
   return (
     <section className="my-0 mx-auto flex flex-col items-center text-center gap-8 w-full bg-primary bg-opacity-20  p-4 pt-12  lg:py-24 ">
       <h2 className="font-bold text-4xl lg:text-6xl">
-        Czemu Powinieneś nas wybrać
+        Czemu Powinieneś mnie wybrać
       </h2>
       <p className="opacity-70 text-xl">
         Wybierz nas dla skutecznych strategii marketingowych oraz elastyczności

@@ -13,9 +13,10 @@ const AboutDescription = () => {
       <p className="text-lg">
         Od pierwszego kontaktu z klientem po finalną realizację projektu, jestem
         z Tobą na każdym etapie. Lunaris Web to jedna osoba, która specjalizuje
-        się w kompleksowym tworzeniu stron internetowych, logotypów i innych
-        materiałów reklamowych. Nazywam się Daniel Kowalski i chce pomóc ci w
-        rozrastaniu Twojego biznesu
+        się w kompleksowym tworzeniu stron internetowych dla klientów w
+        Katowicach i na całym Śląsku, logotypów i innych materiałów reklamowych.
+        Nazywam się Daniel Kowalski i chce pomóc ci w rozrastaniu Twojego
+        biznesu
       </p>
       <div className="flex flex-wrap gap-4 items-center justify-start w-full">
         <div className="flex-1">

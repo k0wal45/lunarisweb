@@ -40,6 +40,7 @@ function Hero() {
             width={700}
             height={900}
             className="h-[30rem] lg:h-[90vh] lg:w-auto block z-30 object-contain object-bottom"
+            priority
           />
         </div>
       </div>

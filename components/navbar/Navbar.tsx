@@ -52,13 +52,13 @@ const Navbar = () => {
           width={70}
           height={70}
         />
-        <h2
+        <div
           className={`whitespace-nowrap text-2xl md:text-4xl font-[800] mt-[5px] transition-color duration-150 ${
             visible ? "text-white" : "text-black"
           }`}
         >
           Lunaris Web
-        </h2>
+        </div>
       </TransitionLink>
       <label className="flex lg:hidden z-50">
         <input
