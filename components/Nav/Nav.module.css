@@ -1,0 +1,51 @@
+/* Menu pełnoekranowe (klasa .menu z lunaris.css): górny pasek, linki, kontakt na dole. */
+
+.menuTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  /* .menu ma 24 px paddingu u góry; razem z paskiem daje to wysokość nawigacji */
+  height: calc(var(--nav-h) - 48px);
+  margin-bottom: 24px;
+}
+
+.menuLinks {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--color-edge);
+}
+
+.menuLinks a[aria-current='page'] {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.menuContact {
+  margin-top: auto;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: var(--text-body);
+}
+
+.menuContact a {
+  /* cel dotyku co najmniej 44 px */
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  align-self: flex-start;
+}
+
+/* niski ekran (telefon w poziomie): menu przewija się w środku */
+.menuLinks,
+.menuContact {
+  flex-shrink: 0;
+}
+
+.menu {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
