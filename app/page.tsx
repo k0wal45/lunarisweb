@@ -1,12 +1,20 @@
-import Hero, { type HeroVariant } from '@/components/Hero/Hero';
-
-// Która wersja idzie na start, jest jeszcze do decyzji (design.md, sekcja 22).
-const HOME_HERO: HeroVariant = 'marka';
+import AboutHomePage from "@/components/About/AboutHomePage";
+import Hero from "@/components/Hero/Hero";
+import Process from "@/components/Process/Process";
+import Results from "@/components/Results/Results";
+import Services from "@/components/Services/Services";
+import Stats from "@/components/Stats";
 
 export default function Home() {
   return (
     <main id="tresc">
-      <Hero variant={HOME_HERO} />
+      <Hero />
+      <Stats />
+      <Results />
+      <Services />
+      <Process />
+      <AboutHomePage />
+      <div className="h-[400vh]"></div>
     </main>
   );
 }

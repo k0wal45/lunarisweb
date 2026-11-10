@@ -1,2 +1,294 @@
-@import "./styles/tokens.css";
-@import "./styles/lunaris.css";
+/* Lunaris web — Tailwind v4 + tokeny marki (źródło: brand/design.md v1.0).
+   Paleta, kroje, promienie i cienie są zawężone do marki: domyślne wartości Tailwinda
+   są wyłączone (`initial`), więc klasa spoza palety po prostu nie istnieje. */
+
+@import "tailwindcss";
+
+@theme {
+  /* kolor (sekcja 4) */
+  --color-night: #0e1320; /* Noc */
+  --color-mare: #1b2232; /* Morze */
+  --color-edge: #2c3548; /* Krawędź: tylko linie */
+  --color-ash: #8a94a8; /* Popiół */
+  --color-ash-deep: #4a5468; /* Popiół ciemny: jasne plansze */
+  --color-moon: #e6e8ec; /* Księżyc */
+  --color-full: #ffffff; /* Pełnia: tylko blask */
+  --color-error: #ff8a7a;
+  --color-success: #7fd1a8;
+  --color-plate: #d9dce2; /* powierzchnia na jasnej planszy */
+  --color-plate-line: #c3c8d1; /* linie na jasnej planszy */
+  /* rampa księżyca: tylko logo i grafika */
+  --color-moon-100: #cdd2db;
+  --color-moon-200: #a3aaba;
+  --color-moon-300: #7a8396;
+  --color-moon-400: #545d70;
+  --color-moon-500: #262d3d;
+
+  /* skala pisma (sekcja 5): rozmiar + interlinia */
+  --text-display: clamp(3.5rem, 1.5rem + 8vw, 9rem);
+  --text-display--line-height: 1;
+  --text-sales: clamp(2.75rem, 1.6rem + 4.2vw, 5.5rem);
+  --text-sales--line-height: 1.02;
+  --text-h1: clamp(2.75rem, 1.9rem + 3.6vw, 4.5rem);
+  --text-h1--line-height: 1.05;
+  --text-h2: clamp(2.25rem, 1.8rem + 1.9vw, 3rem);
+  --text-h2--line-height: 1.1;
+  --text-item: clamp(1.75rem, 1.4rem + 1vw, 2.25rem);
+  --text-item--line-height: 1.1;
+  --text-h3: 1.5rem;
+  --text-h3--line-height: 1.25;
+  --text-stat: clamp(1.75rem, 1.3rem + 1.4vw, 2.25rem);
+  --text-stat--line-height: 1;
+  --text-menu: 3rem;
+  --text-menu--line-height: 1.2;
+  --text-lead: 1.3125rem;
+  --text-lead--line-height: 1.5;
+  --text-body: 1.125rem;
+  --text-body--line-height: 1.6;
+  --text-ui: 1rem;
+  --text-ui--line-height: 1.5;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.5;
+
+  /* kształt (sekcja 7): tylko tarcza i plansza, bez cieni */
+  --radius-disc: 999px;
+  --shadow-*: initial;
+  --inset-shadow-*: initial;
+  --drop-shadow-*: initial;
+  --text-shadow-*: initial;
+  --blur-*: initial;
+
+  /* punkty przełamania (sekcja 6): 640, 960, 1280; md = od 961 px, bo menu działa „poniżej 960” */
+  --breakpoint-*: initial;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 60.0625rem;
+  --breakpoint-lg: 80rem;
+
+  /* ruch (sekcja 9) */
+  --ease-*: initial;
+  --ease-terminator: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* kroje z next/font (zmienne ustawione na <html> w app/layout.tsx) */
+@theme inline {
+  --font-*: initial;
+  --font-display:
+    var(--font-brygada), "Brygada 1918", Georgia, "Times New Roman", serif;
+  --font-text:
+    var(--font-hanken), "Hanken Grotesk", system-ui, -apple-system, "Segoe UI",
+    sans-serif;
+}
+
+/* tokeny układu i ruchu używane przez klasy typu px-(--page-margin), duration-(--dur-phase) */
+:root {
+  --page-max: 90rem;
+  --page-margin: clamp(1.25rem, 5vw, 5rem);
+  --gutter: 1.5rem;
+  --section: 12rem;
+  --nav-h: 96px;
+  --dur-micro: 160ms;
+  --dur-phase: 480ms;
+  --dur-rise: 1200ms;
+  color-scheme: dark;
+}
+@media (max-width: 640px) {
+  :root {
+    --gutter: 1rem;
+    --section: 6rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-micro: 0ms;
+    --dur-phase: 0ms;
+    --dur-rise: 0ms;
+  }
+}
+
+@layer base {
+  /* body przezroczyste: kolor Noc ma html, inaczej body zakryje poświatę (sekcja 8) */
+  html {
+    background: linear-gradient(120deg, var(--color-night), var(--color-mare));
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  body {
+    background: transparent;
+    color: var(--color-moon);
+    font-family: var(--font-text);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    -webkit-font-smoothing: antialiased;
+  }
+  a {
+    color: inherit;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+  :focus-visible {
+    outline: 2px solid var(--focus, var(--color-moon));
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  /* TŁO: poświata nocnego nieba (sekcja 8). Dwie plamy, animowany tylko transform,
+     tylko desktop z myszą; telefon i reduced motion dostają tło statyczne. */
+  .sky-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+    contain: strict;
+  }
+  .sky-bg::before,
+  .sky-bg::after {
+    content: "";
+    position: absolute;
+    width: 90vmax;
+    height: 90vmax;
+    border-radius: 50%;
+  }
+  .sky-bg::before {
+    top: -42vmax;
+    right: -32vmax;
+    background: radial-gradient(
+      closest-side,
+      rgba(205, 210, 219, 0.085),
+      rgba(122, 131, 150, 0.04) 50%,
+      rgba(14, 19, 32, 0) 100%
+    );
+  }
+  .sky-bg::after {
+    bottom: -48vmax;
+    left: -36vmax;
+    background: radial-gradient(
+      closest-side,
+      rgba(38, 45, 61, 0.85),
+      rgba(27, 34, 50, 0.45) 55%,
+      rgba(14, 19, 32, 0) 100%
+    );
+  }
+  @media (min-width: 961px) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    .sky-bg::before {
+      will-change: transform;
+      animation: sky-a 60s var(--ease-terminator) infinite alternate;
+    }
+    .sky-bg::after {
+      will-change: transform;
+      animation: sky-b 80s var(--ease-terminator) infinite alternate;
+    }
+  }
+  @media (forced-colors: active) {
+    .sky-bg {
+      display: none;
+    }
+  }
+}
+
+/* Rozwijany wiersz usługi (components/Services, design.md sekcja 12). Najechanie zalewa Morzem
+   (utility terminator), rozwinięty wiersz zostaje zalany i łączy się z planszą zakresu poniżej.
+   Wysokość rozwija się płynnie tam, gdzie przeglądarka zna ::details-content; gdzie indziej od razu. */
+.service-row > summary {
+  --terminator-fill: var(--color-mare);
+}
+.service-row[open] > summary::before {
+  clip-path: ellipse(160% 160% at 0% 50%);
+}
+@supports selector(::details-content) {
+  .service-row {
+    interpolate-size: allow-keywords;
+  }
+  .service-row::details-content {
+    block-size: 0;
+    overflow: hidden;
+    transition:
+      block-size var(--dur-phase) var(--ease-terminator),
+      content-visibility var(--dur-phase) allow-discrete;
+  }
+  .service-row[open]::details-content {
+    block-size: auto;
+  }
+}
+
+/* <Reveal> (components/animation): stan przed wejściem w widok. Tylko z JS i bez reduced motion,
+   więc bez skryptów albo z ograniczonym ruchem treść jest zawsze widoczna. Sam ruch robi WAAPI. */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  [data-reveal]:not([data-revealed]) {
+    opacity: 0;
+  }
+}
+
+/* odliczanie etapu w sekcji procesu (components/Process) */
+@keyframes step-progress {
+  from {
+    scale: 0 1;
+  }
+  to {
+    scale: 1 1;
+  }
+}
+
+@keyframes sky-a {
+  to {
+    transform: translate3d(-16vmax, 12vmax, 0);
+  }
+}
+@keyframes sky-b {
+  to {
+    transform: translate3d(14vmax, -10vmax, 0);
+  }
+}
+
+/* Zalanie terminatorem (sekcja 9): ::before wchodzi łukiem elipsy od lewej.
+   Kolor zalania ustawia wariant przez --terminator-fill. Element musi być pozycjonowany. */
+@utility terminator {
+  isolation: isolate;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--terminator-fill, transparent);
+    clip-path: ellipse(0% 120% at 0% 50%);
+    transition: clip-path var(--dur-phase) var(--ease-terminator);
+  }
+  &:hover::before,
+  &:focus-visible::before {
+    clip-path: ellipse(160% 160% at 0% 50%);
+  }
+}
+
+/* Nagłówek oświetlony (sekcja 18): spadek światła od Pełni do Popiołu, źródło z --light-x/--light-y. */
+@utility headline-lit {
+  background: radial-gradient(
+    70vmax circle at var(--light-x, 85%) var(--light-y, 35%),
+    var(--color-full),
+    var(--color-moon) 35%,
+    var(--color-ash) 85%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* telefon i tablet: brak kursora, który przesuwa źródło światła, więc nagłówek świeci pełną bielą */
+  @media (width < 60.0625rem) {
+    background: none;
+    color: var(--color-full);
+  }
+  @media (forced-colors: active) {
+    background: none;
+    color: CanvasText;
+  }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 54.61 27.3">
+  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #7a8396;
+      }
+
+      .st1 {
+        fill: #ced2dc;
+      }
+
+      .st2 {
+        fill: #1b2232;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="st1" cx="13.65" cy="13.65" r="13.65"/>
+    <circle class="st2" cx="13.65" cy="13.65" r="12.76"/>
+    <path class="st1" d="M26.59,13.65c0,7.1-5.84,12.94-12.94,12.94-5.41,0-9.54-5.84-9.54-12.94S7.46.7,13.65.7c7.1,0,12.94,5.84,12.94,12.94Z"/>
+    <g>
+      <circle class="st0" cx="17.07" cy="7.22" r="2.83"/>
+      <circle class="st0" cx="21.68" cy="14.1" r="1.84"/>
+      <circle class="st0" cx="16.17" cy="19.4" r="1.29"/>
+    </g>
+  </g>
+  <g>
+    <rect class="st1" x="29.89" y="6.76" width="15.02" height="1.98" rx=".99" ry=".99"/>
+    <rect class="st1" x="33.28" y="12.66" width="21.33" height="1.98" rx=".99" ry=".99"/>
+    <rect class="st1" x="29.89" y="19.7" width="11.13" height="1.98" rx=".99" ry=".99"/>
+    <rect class="st1" x="43.45" y="19.7" width="3.84" height="1.98" rx=".99" ry=".99"/>
+  </g>
+</svg>

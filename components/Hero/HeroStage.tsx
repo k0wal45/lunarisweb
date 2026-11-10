@@ -1,44 +1,55 @@
-'use client';
+"use client";
 
 // Kliencka część hero: nagłówek oświetlony i księżyc.
 // Ref nagłówka idzie do <Moon />, który ustawia --light-x / --light-y za kursorem.
-// Lead, przyciski i dowody przychodzą jako children i zostają wyrenderowane na serwerze.
+// Lead i przyciski przychodzą jako children i zostają wyrenderowane na serwerze.
 
-import { useRef, type ReactNode } from 'react';
-import Moon from '@/components/Moon';
-import type { HeroVariant } from './Hero';
-import styles from './Hero.module.css';
+import { useRef, type ReactNode } from "react";
+import Moon from "@/components/Moon";
+import { Container, Grid, Typography } from "@/components/ui";
+
+// Telefon i tablet: księżyc za tekstem, w tle hasła. Wyciszony (opacity + wygaszenie ku dołowi),
+// bez reakcji na dotyk, żeby nie blokował przewijania (Moon ma touch-action: none).
+// Desktop: absolutny, środek w pionie, wychodzi poza prawą krawędź o clamp(80px, 12vw, 220px).
+const MOON_BOX = [
+  "pointer-events-none absolute -top-10 -right-[28vw] z-0 aspect-square w-[100vw] opacity-30",
+  "[mask-image:linear-gradient(to_bottom,black_45%,transparent_95%)]",
+  "sm:-right-[20vw] sm:w-[80vw]",
+  "md:pointer-events-auto md:top-1/2 md:right-[calc(-1*clamp(80px,12vw,220px))] md:-translate-y-1/2",
+  "md:w-[min(54vw,860px)] md:opacity-100 md:[mask-image:none]",
+].join(" ");
 
 type Props = {
   title: string;
-  variant: HeroVariant;
   children: ReactNode;
 };
 
-export default function HeroStage({ title, variant, children }: Props) {
+export default function HeroStage({ title, children }: Props) {
   const headlineRef = useRef<HTMLHeadingElement>(null);
 
   return (
     <>
-      {/* w kodzie przed tekstem: na telefonie księżyc stoi nad hasłem, na desktopie jest absolutny */}
-      <div className={styles.moonBox}>
-        <Moon className={styles.moon} lightTarget={headlineRef} />
+      {/* tło hero: na telefonie wyciszony za tekstem, na desktopie po prawej */}
+      <div className={MOON_BOX}>
+        <Moon className="block h-auto w-full" lightTarget={headlineRef} />
       </div>
 
-      <div className={`wrap ${styles.inner}`}>
-        <div className="grid">
-          <div className={styles.text}>
-            <h1
-              id="hero-title"
+      <Container className="relative z-10 flex flex-1 flex-col justify-center pt-4 pb-6">
+        <Grid>
+          {/* tekst w kolumnach 1–6, wyrównany do lewej */}
+          <div className="col-span-12 min-w-0 md:col-span-6">
+            <Typography
               ref={headlineRef}
-              className={`headline-lit ${variant === 'sprzedaz' ? styles.titleSales : styles.titleBrand}`}
+              id="hero-title"
+              variant="display"
+              tone="lit"
             >
               {title}
-            </h1>
+            </Typography>
             {children}
           </div>
-        </div>
-      </div>
+        </Grid>
+      </Container>
     </>
   );
 }

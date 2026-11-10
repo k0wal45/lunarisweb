@@ -449,7 +449,7 @@ Ruch, który nie odpowiada na działanie użytkownika, występuje w trzech miejs
 2. **Fazy w sekcji procesu** — sterowane przewijaniem (na kanwasie: najechaniem i kliknięciem), bo treść jest sekwencją.
 3. **Poświata nieba** — bardzo wolny dryf tła, tylko desktop.
 
-Wszystko inne odpowiada na akcję: najechanie, fokus, rozwinięcie, wysłanie. Sekcje nie wjeżdżają z dołu przy przewijaniu. Nie ma preloadera, karuzel ani przesuwanych pasków logotypów.
+Wszystko inne odpowiada na akcję: najechanie, fokus, rozwinięcie, wysłanie. Sekcje nie wjeżdżają z dołu przy przewijaniu. Dozwolone jest subtelne wejście z boku lub wygaszeniem (`<Reveal>` w `components/animation`). Nie ma preloadera, karuzel ani przesuwanych pasków logotypów.
 
 ### Tokeny
 

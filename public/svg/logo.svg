@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 28" width="56" height="28">
+  <title>Lunaris web</title>
+  <circle cx="14" cy="14" r="14" fill="#ced2dc"/>
+  <circle cx="14" cy="14" r="13" fill="#1b2232"/>
+  <path d="M14 1A13 13 0 0 1 14 27A10 13 0 0 1 14 1Z" fill="#ced2dc"/>
+  <g fill="#7a8396">
+    <circle cx="17" cy="7" r="3"/>
+    <circle cx="22" cy="14" r="2"/>
+    <circle cx="16" cy="20" r="1.25"/>
+  </g>
+  <g fill="#ced2dc">
+    <rect x="31" y="7" width="15" height="2" rx="1"/>
+    <rect x="34" y="13" width="22" height="2" rx="1"/>
+    <rect x="31" y="19" width="10" height="2" rx="1"/>
+    <rect x="43" y="19" width="4" height="2" rx="1"/>
+  </g>
+</svg>
