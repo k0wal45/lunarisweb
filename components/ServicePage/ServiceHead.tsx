@@ -1,7 +1,9 @@
 // Nagłówek strony usługi: okruszki, przełącznik usług (chipy-linki), tytuł, lead,
 // przycisk rozmowy z linkiem do cen i ramka z ceną „od” po prawej.
 
+import JsonLd from "@/components/JsonLd";
 import PageHead from "@/components/PageHead";
+import { serviceLd } from "@/lib/seo";
 import { Button, Chip, ChipGroup, TextLink } from "@/components/ui";
 import { SERVICE_LIST, SERVICE_PAGE, type Service } from "@/lib/uslugi";
 
@@ -25,6 +27,14 @@ export default function ServiceHead({ service }: { service: Service }) {
         </ChipGroup>
       }
     >
+      <JsonLd
+        data={serviceLd({
+          name: service.label,
+          description: service.lead,
+          path: service.href,
+          price: service.price,
+        })}
+      />
       <div className="mt-12 flex flex-wrap items-end justify-between gap-x-(--gutter) gap-y-12">
         <div className="flex flex-wrap items-center gap-x-8 gap-y-6">
           <Button href="/kontakt">{SERVICE_PAGE.cta}</Button>

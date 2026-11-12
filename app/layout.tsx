@@ -1,10 +1,15 @@
 import type { Metadata, Viewport } from "next";
 import { Brygada_1918, Hanken_Grotesk } from "next/font/google";
 import PlausibleProvider from "next-plausible";
+import GoogleAnalytics from "@/components/Analytics/GoogleAnalytics";
+import CookieBanner from "@/components/Consent/CookieBanner";
 import Footer from "@/components/Footer/Footer";
 import Nav from "@/components/Nav/Nav";
 import { buttonVariants } from "@/components/ui";
+import JsonLd from "@/components/JsonLd";
 import { cn } from "@/lib/cn";
+import { organizationLd, SITE_DEFAULT, SITE_LOCALE, SITE_NAME, SITE_URL } from "@/lib/seo";
+import { WEBSITE_PRICE } from "@/lib/uslugi";
 import "./globals.css";
 
 const brygada = Brygada_1918({
@@ -23,18 +28,18 @@ const hanken = Hanken_Grotesk({
   preload: false,
 });
 
+// Domyślne metadane; każda strona nadpisuje je przez pageMeta() z lib/seo.ts (tytuł, opis, adres,
+// własny og:url). Tu nie ma `openGraph.url` ani `canonical`: podstrony dziedziczyłyby adres strony głównej.
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lunarisweb.pl"),
-  title: "Lunaris web — strony internetowe dla firm",
-  description:
-    "Projektuję i koduję strony oraz identyfikacje dla firm. Przyjmuję 1-2 nowe projekty miesięcznie.",
-  alternates: { canonical: "/" },
+  metadataBase: new URL(SITE_URL),
+  title: { default: SITE_DEFAULT.title, template: `%s — ${SITE_NAME}` },
+  description: SITE_DEFAULT.description,
   openGraph: {
     type: "website",
-    locale: "pl_PL",
-    siteName: "Lunaris web",
-    url: "/",
+    locale: SITE_LOCALE,
+    siteName: SITE_NAME,
   },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {
@@ -53,6 +58,7 @@ export default function RootLayout({
     <html lang="pl" className={`${brygada.variable} ${hanken.variable}`}>
       <body>
         <div className="sky-bg" aria-hidden="true" />
+        <JsonLd data={organizationLd(WEBSITE_PRICE)} />
         <a
           href="#tresc"
           className={cn(
@@ -65,6 +71,8 @@ export default function RootLayout({
         <Nav />
         {children}
         <Footer />
+        <CookieBanner />
+        <GoogleAnalytics />
         {plausibleSrc && (
           <PlausibleProvider
             src={plausibleSrc}

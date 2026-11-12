@@ -1,18 +1,18 @@
 // Realizacje (kanwas: „Realizacje /realizacje”): nagłówek, lista z filtrem, pasek CTA.
 // Treść w lib/realizacje.ts.
 
-import type { Metadata } from "next";
 import CtaBand from "@/components/CtaBand";
 import PageHead from "@/components/PageHead";
 import WorksList from "@/components/Works/WorksList";
 import { Container } from "@/components/ui";
 import { WORKS, WORKS_PAGE } from "@/lib/realizacje";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Realizacje — Lunaris web",
+export const metadata = pageMeta({
+  title: WORKS_PAGE.title,
   description: WORKS_PAGE.lead,
-  alternates: { canonical: "/realizacje" },
-};
+  path: "/realizacje",
+});
 
 export default function WorksPage() {
   return (

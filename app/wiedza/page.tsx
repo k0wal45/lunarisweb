@@ -1,17 +1,14 @@
 // Wiedza (kanwas: „Wiedza (blog) /wiedza”): nagłówek, wpisy z filtrem, pasek CTA.
 // Treść w lib/wiedza.ts.
 
-import type { Metadata } from "next";
 import CtaBand from "@/components/CtaBand";
 import PageHead from "@/components/PageHead";
 import PostsList from "@/components/Posts/PostsList";
 import { Container } from "@/components/ui";
 import { KNOWLEDGE_PAGE, POSTS, postMeta } from "@/lib/wiedza";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  ...KNOWLEDGE_PAGE.meta,
-  alternates: { canonical: "/wiedza" },
-};
+export const metadata = pageMeta({ ...KNOWLEDGE_PAGE.meta, path: "/wiedza" });
 
 // lista po stronie klienta dostaje tylko dane (bez komponentu treści wpisu)
 const SUMMARIES = POSTS.map((p) => ({

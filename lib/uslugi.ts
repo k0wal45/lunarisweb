@@ -146,7 +146,7 @@ const CONTENT: Record<string, ServiceContent> = {
   "front-end-development": {
     card: {
       name: "Front-end development",
-      summary: "Zróbmy razem aplikacje lub zatrudnij mnie jako pracownika w twojej firmie",
+      summary: "Zróbmy razem aplikację albo zatrudnij mnie w zespole Twojej firmy.",
       scope: [
         "Next.js, React i TypeScript",
         "Praca w zespole jak i pojedynczo",

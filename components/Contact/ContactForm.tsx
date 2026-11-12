@@ -11,6 +11,7 @@ import {
   type ContactState,
 } from "@/app/kontakt/actions";
 import { Button, TextLink, Typography } from "@/components/ui";
+import { track } from "@/lib/analytics";
 import { cn } from "@/lib/cn";
 import { BUDGETS, PROJECT_TYPES, REPLY_TIME } from "@/lib/site";
 import { sierotki } from "@/lib/sierotki";
@@ -58,6 +59,12 @@ export default function ContactForm() {
   const v = state.values ?? {};
   const e = state.errors ?? {};
 
+  // rodzaj projektu i budżet z ostatniej wysyłki: po sukcesie serwer nie odsyła wartości
+  const sentRef = useRef<{ project_type?: string; budget?: string }>({});
+  useEffect(() => {
+    if (state.status === "sent") track("generate_lead", { form_name: "kontakt", ...sentRef.current });
+  }, [state.status]);
+
   useEffect(() => {
     if (state.status !== "error") return;
     const first = ORDER.find((k) => state.errors?.[k]);
@@ -84,6 +91,13 @@ export default function ContactForm() {
     <form
       ref={formRef}
       action={action}
+      onSubmit={(ev) => {
+        const fd = new FormData(ev.currentTarget);
+        sentRef.current = {
+          project_type: String(fd.get("rodzaj") || "") || undefined,
+          budget: String(fd.get("budzet") || "") || undefined,
+        };
+      }}
       noValidate
       aria-label="Formularz zapytania"
       className="grid grid-cols-1 gap-x-(--gutter) gap-y-8 sm:grid-cols-2"

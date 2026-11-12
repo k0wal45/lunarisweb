@@ -44,12 +44,24 @@ export const PHONE = {
 } as const;
 
 // TODO: uzupełnić prawdziwe dane z CEIDG (NIP, REGON, adres) i adres profilu na Instagramie.
+// Adres w częściach: stopka i kontakt pokazują `address`, dane strukturalne (lib/seo.ts) używają części.
+// Musi być zgodny z Profilem Firmy w Google (lokalne SEO).
+const STREET = "ul. Przykładowa 1";
+const POSTAL_CODE = "40-000";
+const CITY = "Katowice";
+
 export const COMPANY = {
   name: "Lunaris Daniel Kowalski",
   nip: "000-000-00-00",
   regon: "000000000",
-  address: "ul. Przykładowa 1, 40-000 Katowice",
+  street: STREET,
+  postalCode: POSTAL_CODE,
+  city: CITY,
+  region: "śląskie",
+  address: `${STREET}, ${POSTAL_CODE} ${CITY}`,
   area: "Katowice, Śląsk i cała Polska",
+  /** obszar działania w danych strukturalnych */
+  areaServed: ["Katowice", "Śląsk", "Polska"],
 } as const;
 
 export const SOCIAL = [

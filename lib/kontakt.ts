@@ -5,7 +5,7 @@ import type { TextItem } from "@/lib/types";
 
 export const CONTACT_PAGE = {
   meta: {
-    title: "Kontakt — Lunaris web",
+    title: "Kontakt",
     description: `Napisz albo umów rozmowę. Odpowiadam sam, zwykle w ciągu ${REPLY_TIME}.`,
   },
   crumb: "Kontakt",

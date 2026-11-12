@@ -1,7 +1,10 @@
 // Nagłówek wpisu: okruszki do Wiedzy, tytuł, lead i podpis autora ze zdjęciem, datą i czasem czytania.
 
 import Image from "next/image";
+import JsonLd from "@/components/JsonLd";
 import PageHead from "@/components/PageHead";
+import { articleLd } from "@/lib/seo";
+import { postHref } from "@/lib/wiedza-kinds";
 import { KNOWLEDGE_PAGE, POST_PAGE, postMeta, type Post } from "@/lib/wiedza";
 import portrait from "@/public/img/daniel-kowalski-portret.jpg";
 
@@ -17,6 +20,14 @@ export default function PostHead({ post }: { post: Post }) {
       titleClassName="max-w-[20ch]"
       leadClassName="max-w-[52ch]"
     >
+      <JsonLd
+        data={articleLd({
+          title: post.title,
+          description: post.desc,
+          path: postHref(post.slug),
+          date: post.date,
+        })}
+      />
       <div className="mt-12 flex items-center gap-4">
         <Image src={portrait} alt="" sizes="48px" className="block h-15 w-12 object-cover" />
         <p className="text-small font-medium">

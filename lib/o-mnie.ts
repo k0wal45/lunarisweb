@@ -5,7 +5,7 @@ import type { Fact, TextItem } from "@/lib/types";
 
 export const ABOUT_PAGE = {
   meta: {
-    title: "O mnie — Lunaris web",
+    title: "O mnie",
     description:
       "Daniel Kowalski: projektuję i koduję strony oraz identyfikacje dla firm usługowych. Jedna osoba od rozmowy do publikacji.",
   },

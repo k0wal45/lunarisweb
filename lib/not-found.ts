@@ -2,7 +2,7 @@
 
 export const NOT_FOUND = {
   meta: {
-    title: "Nie ma takiej strony — Lunaris web",
+    title: "Nie ma takiej strony",
     description: "Ta strona nie istnieje albo zmieniła adres.",
   },
   label: "Błąd 404",

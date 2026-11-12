@@ -1,6 +1,7 @@
 // Stopka: logo z opisem, mapa strony, usługi i kontakt; pod linią dane firmy i linki prawne.
 
 import Link from "next/link";
+import CookieSettingsButton from "@/components/Consent/CookieSettingsButton";
 import Logo, { Wordmark } from "@/components/Logo";
 import { Container, TextLink, Typography, textLinkVariants } from "@/components/ui";
 import { cn } from "@/lib/cn";
@@ -129,6 +130,9 @@ export default function Footer() {
                 </TextLink>
               </li>
             ))}
+            <li>
+              <CookieSettingsButton className={cn(LINK, "cursor-pointer text-small")} />
+            </li>
           </ul>
         </div>
       </Container>

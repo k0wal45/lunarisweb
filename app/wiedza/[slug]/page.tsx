@@ -7,6 +7,7 @@ import CtaBand from "@/components/CtaBand";
 import PostBody from "@/components/Posts/PostBody";
 import PostHead from "@/components/Posts/PostHead";
 import RelatedPosts from "@/components/Posts/RelatedPosts";
+import { pageMeta } from "@/lib/seo";
 import { getPost, POST_PAGE, POSTS } from "@/lib/wiedza";
 import { postHref } from "@/lib/wiedza-kinds";
 
@@ -19,12 +20,14 @@ export function generateStaticParams(): Params[] {
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const post = getPost((await params).slug);
   if (!post) return {};
-  return {
-    title: `${post.title} — Wiedza — Lunaris web`,
+  return pageMeta({
+    ownImage: true,
+    title: `${post.title} — Wiedza`,
     description: post.desc,
-    alternates: { canonical: postHref(post.slug) },
-    openGraph: { type: "article", ...(post.date && { publishedTime: post.date }) },
-  };
+    path: postHref(post.slug),
+    type: "article",
+    publishedTime: post.date,
+  });
 }
 
 // Wszystkie adresy są znane z generateStaticParams i prerenderowane przy buildzie. `params` czytamy

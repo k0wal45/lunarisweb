@@ -77,7 +77,7 @@ export const getPost = (slug: string) => POSTS.find((p) => p.slug === slug);
 /** teksty stron /wiedza i /wiedza/[slug] */
 export const KNOWLEDGE_PAGE = {
   meta: {
-    title: "Wiedza — Lunaris web",
+    title: "Wiedza",
     description:
       "Teksty o stronach dla firm: szybkość, koszty i technologia bez żargonu. W dziale Lab eksperymenty z kodem.",
   },

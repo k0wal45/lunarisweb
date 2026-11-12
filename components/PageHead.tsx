@@ -6,7 +6,9 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { Container, Typography } from "@/components/ui";
+import JsonLd from "@/components/JsonLd";
 import { cn } from "@/lib/cn";
+import { breadcrumbLd } from "@/lib/seo";
 
 export type Crumb = { label: string; href?: string };
 
@@ -28,6 +30,8 @@ type Props = {
   as?: "section" | "header";
 };
 
+const HOME_CRUMB = "Strona główna";
+
 const CRUMB_LINK = "no-underline underline-offset-[0.2em] hover:underline";
 
 export default function PageHead({
@@ -44,11 +48,19 @@ export default function PageHead({
 }: Props) {
   return (
     <Container as={as} aria-labelledby={as === "section" ? id : undefined} className="pt-30">
+      {/* te same okruszki dla wyszukiwarek; pozycje bez adresu są pomijane, ostatnia = ta strona */}
+      <JsonLd
+        data={breadcrumbLd([
+          { label: HOME_CRUMB, href: "/" },
+          ...trail.filter((t) => t.href),
+          { label: crumb ?? title },
+        ])}
+      />
       <nav aria-label="Okruszki">
         <ol className="flex flex-wrap gap-2 text-small font-medium text-ash">
           <li>
             <Link href="/" className={CRUMB_LINK}>
-              Strona główna
+              {HOME_CRUMB}
             </Link>
           </li>
           {trail.map((t) => (

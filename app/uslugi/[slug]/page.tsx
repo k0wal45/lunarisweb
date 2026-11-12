@@ -10,6 +10,7 @@ import ServicePaths from "@/components/ServicePage/ServicePaths";
 import ServiceProcess from "@/components/ServicePage/ServiceProcess";
 import ServiceTerms from "@/components/ServicePage/ServiceTerms";
 import ServiceWorks from "@/components/ServicePage/ServiceWorks";
+import { pageMeta } from "@/lib/seo";
 import { getService, SERVICE_LIST, SERVICE_PAGE } from "@/lib/uslugi";
 
 type Params = { slug: string };
@@ -21,11 +22,12 @@ export function generateStaticParams(): Params[] {
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const s = getService((await params).slug);
   if (!s) return {};
-  return {
-    title: `${s.label} — usługi — Lunaris web`,
+  return pageMeta({
+    title: `${s.label} — usługi`,
     description: s.lead,
-    alternates: { canonical: s.href },
-  };
+    path: s.href,
+    ownImage: true,
+  });
 }
 
 // Wszystkie adresy są znane z generateStaticParams i prerenderowane przy buildzie. `params` czytamy

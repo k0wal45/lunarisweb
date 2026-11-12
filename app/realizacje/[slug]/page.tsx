@@ -11,6 +11,7 @@ import WorkQuote from "@/components/Works/WorkQuote";
 import WorkResults from "@/components/Works/WorkResults";
 import WorkSolution from "@/components/Works/WorkSolution";
 import { getWork, nextWork, WORK_PAGE, workHref, WORKS } from "@/lib/realizacje";
+import { pageMeta } from "@/lib/seo";
 
 type Params = { slug: string };
 
@@ -21,11 +22,12 @@ export function generateStaticParams(): Params[] {
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const work = getWork((await params).slug);
   if (!work) return {};
-  return {
-    title: `${work.name} — realizacja — Lunaris web`,
+  return pageMeta({
+    ownImage: true,
+    title: `${work.name} — realizacja`,
     description: work.lead ?? [work.name, work.scope, work.sector].filter(Boolean).join(" · "),
-    alternates: { canonical: workHref(work.slug) },
-  };
+    path: workHref(work.slug),
+  });
 }
 
 // Wszystkie adresy są znane z generateStaticParams i prerenderowane przy buildzie. `params` czytamy
