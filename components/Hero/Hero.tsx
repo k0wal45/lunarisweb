@@ -1,10 +1,6 @@
 import { Button, TextLink, Typography } from "@/components/ui";
+import { HERO } from "@/lib/home";
 import HeroStage from "./HeroStage";
-
-const CONTENT = {
-  title: "Pokażmy Twoją firmę w pełni.",
-  lead: "Projektuję i koduję strony oraz identyfikacje dla firm.",
-} as const;
 
 export default function Hero() {
   return (
@@ -12,21 +8,21 @@ export default function Hero() {
       aria-labelledby="hero-title"
       className="relative mt-30 flex lg:min-h-[calc(100svh-var(--nav-h))] flex-col overflow-x-clip"
     >
-      <HeroStage title={CONTENT.title}>
+      <HeroStage title={HERO.title}>
         <Typography variant="lead" className="mt-6">
-          {CONTENT.lead}
+          {HERO.lead}
         </Typography>
 
         <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
-          <Button href="/kontakt">Umów rozmowę</Button>
+          <Button href={HERO.cta.href}>{HERO.cta.label}</Button>
 
           <TextLink
-            href="/realizacje"
+            href={HERO.more.href}
             weight="strong"
             target="touch"
             className="text-ui"
           >
-            Zobacz realizacje
+            {HERO.more.label}
           </TextLink>
         </div>
       </HeroStage>

@@ -1,83 +1,50 @@
-import React from "react";
-import { Button, Container, Typography } from "../ui";
+// „Wyniki, nie obietnice”: wybrane realizacje z liczbą. Lista w lib/home.ts (RESULTS.items, po slugu),
+// nazwy i adresy z lib/realizacje.ts, więc zmiana realizacji działa tu od razu.
+
 import Link from "next/link";
+import SectionHead from "@/components/SectionHead";
+import { Button, Container, Typography } from "@/components/ui";
+import { RESULTS } from "@/lib/home";
+import { getWork, workHref } from "@/lib/realizacje";
 
-type ResultType = {
-  id: number;
-  name: string;
-  tag: string;
-  stat?: string;
-  statInfo: string;
-  href: string;
-};
+const ITEMS = RESULTS.items.flatMap((item) => {
+  const work = getWork(item.slug);
+  return work ? [{ ...item, name: work.name, href: workHref(work.slug) }] : [];
+});
 
-const RESULTS_DATA = [
-  {
-    id: 1,
-    name: "Bielik Summit",
-    tag: "wydarzenie AI",
-    stat: "450+",
-    statInfo: "uczestników",
-    href: "/realizacje/bielik-summit-2025",
-  },
-  {
-    id: 2,
-    name: "Stan Floty",
-    tag: "aplikacja internetowa",
-    stat: "",
-    statInfo: "aplikacja do zarządania wypożyczalnia",
-    href: "/realizacje/bielik-summit-2025",
-  },
-  {
-    id: 3,
-    name: "Oktech Śląsk",
-    tag: "indentyfikacja wizualna",
-    stat: "1",
-    statInfo: "styl w całej firmie",
-    href: "/realizacje/bielik-summit-2025",
-  },
-];
-
-const Results = () => {
+export default function Results() {
   return (
-    <Container size="base" className="flex-col">
-      <div className="flex flex-wrap justify-between items-center gap-4 p-8">
-        <Typography variant="h2">Wyniki, nie obietnice</Typography>
-        <Button variant="secondary" href="/realizacje">
-          Zobacz realizacje
+    <Container as="section" size="base" aria-labelledby="wyniki-title" className="flex-col">
+      <SectionHead id="wyniki-title" title={RESULTS.title} className="mb-0 items-center gap-4 p-8">
+        <Button variant="secondary" href={RESULTS.more.href}>
+          {RESULTS.more.label}
         </Button>
-      </div>
-      {RESULTS_DATA.map((result: ResultType) => (
+      </SectionHead>
+      {ITEMS.map((r) => (
         <Link
-          href={result.href}
-          className="grid grid-cols-1 sm:grid-cols-3 gap-4 last:items-end border-y border-edge hover:border-white p-8 bg-transparent duration-200 group"
-          key={result.id}
+          key={r.slug}
+          href={r.href}
+          className="group grid grid-cols-1 gap-4 border-y border-edge bg-transparent p-8 duration-200 last:items-end hover:border-white sm:grid-cols-3"
         >
-          <Typography variant="h2" className="relative w-fit">
-            {result.name}
-            <span className="absolute block top-0 w-full h-full border-b border-white scale-x-0 group-hover:scale-x-100 duration-100 origin-left"></span>
+          <Typography as="span" variant="h2" className="relative w-fit">
+            {r.name}
+            <span className="absolute top-0 block h-full w-full origin-left scale-x-0 border-b border-white duration-100 group-hover:scale-x-100" />
           </Typography>
-          <Typography
-            variant="body"
-            tone="muted"
-            className="sm:text-center self-center"
-          >
-            {result.tag}
+          <Typography as="span" tone="muted" className="self-center sm:text-center">
+            {r.tag}
           </Typography>
-          <div className="flex items-end sm:justify-end gap-2 self-center">
-            {result.stat && (
-              <Typography as="p" variant="stat">
-                {result.stat}
+          <span className="flex items-end gap-2 self-center sm:justify-end">
+            {r.stat && (
+              <Typography as="span" variant="stat">
+                {r.stat}
               </Typography>
             )}
-            <Typography as="p" variant="body" tone="muted">
-              {result.statInfo}
+            <Typography as="span" tone="muted">
+              {r.statLabel}
             </Typography>
-          </div>
+          </span>
         </Link>
       ))}
     </Container>
   );
-};
-
-export default Results;
+}

@@ -56,6 +56,26 @@ export const SOCIAL = [
   { href: "https://www.instagram.com/lunarisweb", label: "Instagram" },
 ] as const satisfies readonly SiteLink[];
 
+// TODO: potwierdzić czas odpowiedzi i długość rozmowy (w projekcie oznaczone jako [X]).
+export const REPLY_TIME = "2 dni roboczych";
+export const CALL_LENGTH = "30 minut";
+
+// Formularz zapytania (design.md, sekcja 12: formularze). Wartości trafiają do maila.
+export const PROJECT_TYPES = [
+  { value: "strona", label: "Strona internetowa" },
+  { value: "identyfikacja", label: "Identyfikacja wizualna" },
+  { value: "agencja", label: "Front-end dla agencji" },
+  { value: "opieka", label: "Opieka nad istniejącą stroną" },
+  { value: "inne", label: "Coś innego" },
+] as const;
+
+export const BUDGETS = [
+  { value: "do-3000", label: "do 3 000 zł" },
+  { value: "3000-6000", label: "3 000–6 000 zł" },
+  { value: "6000-10000", label: "6 000–10 000 zł" },
+  { value: "od-10000", label: "powyżej 10 000 zł" },
+] as const;
+
 // Podstrony jeszcze nie istnieją, więc nie pobieramy ich z wyprzedzeniem (unikamy 404 w konsoli).
 // TODO: usunąć, gdy powstaną podstrony.
 export const PREFETCH = false;

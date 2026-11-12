@@ -18,50 +18,12 @@ import {
   type FocusEvent,
 } from "react";
 import { Button, Container, Grid, Typography } from "@/components/ui";
-import { litShape, sunForPhase } from "@/lib/moon";
 import { cn } from "@/lib/cn";
+import { PROCESS, PROCESS_STEPS as STEPS } from "@/lib/proces";
+import PhaseGlyph from "./PhaseGlyph";
 import PhaseMoon from "./PhaseMoon";
 
-type Step = {
-  title: string;
-  text: string;
-  /** faza księżyca: 0 nów, 0,5 pełnia */
-  fraction: number;
-  phase: string;
-};
-
-// TODO: potwierdzić terminy i zakres etapów (wzorzec sprzedażowy 7: tylko sprawdzalne obietnice).
-// faza, przy której oświetlona jest dana część tarczy (0–1): odwrotność illumination z lib/moon
-const lit = (part: number) => Math.acos(1 - 2 * part) / (2 * Math.PI);
-
-const STEPS: Step[] = [
-  {
-    title: "Rozmowa i wycena",
-    text: "Rozmawiamy o firmie, celu strony i budżecie. Po rozmowie wysyłam wycenę z zakresem i terminem.",
-    fraction: lit(0.25),
-    phase: "sierp przybywający",
-  },
-  {
-    title: "Projekt i prototyp",
-    text: "Projektuję układ i wygląd. Klikasz w prototyp i zgłaszasz poprawki, zanim powstanie kod.",
-    fraction: lit(0.5),
-    phase: "pierwsza kwadra",
-  },
-  {
-    title: "Wdrożenie i publikacja",
-    text: "Koduję stronę, podpinam domenę i analitykę. Przed publikacją sprawdzam Lighthouse i dostępność.",
-    fraction: lit(0.75),
-    phase: "garb przybywający",
-  },
-  {
-    title: "Opieka i rozwój",
-    text: "Po publikacji dbam o aktualizacje i kopie zapasowe. Stronę rozwijamy razem z firmą.",
-    fraction: lit(1),
-    phase: "pełnia",
-  },
-];
-
-const INTERVAL = 5000;
+const INTERVAL = PROCESS.autoplayInterval;
 
 const illumination = (f: number) =>
   Math.round(((1 - Math.cos(2 * Math.PI * f)) / 2) * 100);
@@ -79,42 +41,6 @@ const useReducedMotion = () =>
     () => window.matchMedia(RM).matches,
     () => false,
   );
-
-/** Glif fazy 44 px (design.md, sekcja 11): obrys tarczy w Popiele + oświetlona część w kolorze Księżyc. */
-function PhaseGlyph({
-  fraction,
-  active,
-}: {
-  fraction: number;
-  active: boolean;
-}) {
-  const { d, angle } = litShape(sunForPhase(fraction));
-  return (
-    <svg
-      viewBox="0 0 100 100"
-      className="size-11 shrink-0"
-      aria-hidden="true"
-      focusable="false"
-    >
-      <path
-        d={d}
-        transform={`rotate(${angle.toFixed(1)} 50 50)`}
-        className={cn(
-          "transition-[fill] duration-(--dur-phase) ease-terminator",
-          active ? "fill-moon" : "fill-ash",
-        )}
-      />
-      <circle
-        cx="50"
-        cy="50"
-        r="48"
-        fill="none"
-        strokeWidth="4"
-        className="stroke-ash"
-      />
-    </svg>
-  );
-}
 
 function PauseIcon() {
   return (
@@ -206,15 +132,14 @@ export default function Process() {
         <Grid rows="md" className="items-center">
           <div className="col-span-12 md:col-span-6">
             <Typography id="proces-title" variant="h2">
-              Od nowiu do pełni.
+              {PROCESS.title}.
             </Typography>
             <Typography
               variant="body"
               tone="muted"
               className="mt-6 max-w-[44ch]"
             >
-              Cztery etapy, w których strona nabiera światła. Na każdym wiesz,
-              co się dzieje i co będzie dalej.
+              {PROCESS.lead}
             </Typography>
           </div>
 

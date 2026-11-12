@@ -15,7 +15,7 @@ import {
   type MouseEvent,
   type PointerEvent,
 } from "react";
-import { TextLink, textLinkVariants } from "@/components/ui";
+import { PlusDisc, TextLink, textLinkVariants } from "@/components/ui";
 import { cn } from "@/lib/cn";
 
 export type ServiceLink = { href: string; label: string };
@@ -153,31 +153,6 @@ export function ServicesDropdown({ label, items, pathname, prefetch }: Props) {
         </ul>
       </div>
     </div>
-  );
-}
-
-function PlusDisc({ open }: { open: boolean }) {
-  return (
-    <span
-      aria-hidden="true"
-      className="flex size-11 shrink-0 items-center justify-center rounded-disc border border-ash"
-    >
-      <svg
-        width="16"
-        height="16"
-        viewBox="0 0 16 16"
-        focusable="false"
-        className={cn(TURN, open && "rotate-45")}
-      >
-        <path
-          d="M8 2.5v11M2.5 8h11"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          fill="none"
-        />
-      </svg>
-    </span>
   );
 }
 

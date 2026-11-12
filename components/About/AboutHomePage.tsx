@@ -1,13 +1,7 @@
 import Image from "next/image";
-import { Container, TextLink, Typography } from "../ui";
+import { Container, TextLink, Typography } from "@/components/ui";
+import { ABOUT_HOME } from "@/lib/home";
 import portrait from "@/public/img/daniel-kowalski.jpg";
-
-// TODO: uzupełnić treść — wiersze 2 i 3 są kopią pierwszego
-const FACTS = [
-  { label: "Projekt i kod", value: "w jednych rękach" },
-  { label: "Projekt i kod", value: "w jednych rękach" },
-  { label: "Projekt i kod", value: "w jednych rękach" },
-];
 
 const AboutHomePage = () => {
   return (
@@ -25,21 +19,17 @@ const AboutHomePage = () => {
       />
       <div className="flex flex-col gap-8 max-w-2xl">
         <Typography variant="h2">
-          Rozmawiasz z osobą, która robi pracę.
+          {ABOUT_HOME.title}
         </Typography>
         <Typography variant="body" className="lg:max-w-2/3">
-          Nazywam się Daniel Kowalski. Projektuję i koduję sam, więc od
-          pierwszej rozmowy do publikacji masz jedną osobę i jeden numer
-          telefonu.
+          {ABOUT_HOME.text}
         </Typography>
         <Typography variant="ui" tone="muted" className="lg:max-w-2/3">
-          Mam komercyjne doświadczenie jako front-end developer i studiuję
-          informatykę na Politechnice Śląskiej. Dlatego biorę mniej projektów
-          naraz i każdy prowadzę do końca.
+          {ABOUT_HOME.more}
         </Typography>
 
         <dl className="flex flex-col w-full">
-          {FACTS.map(({ label, value }, i) => (
+          {ABOUT_HOME.facts.map(({ label, value }, i) => (
             <div
               key={i}
               className="border-y border-edge flex flex-col sm:flex-row justify-between p-4"
@@ -54,12 +44,12 @@ const AboutHomePage = () => {
           ))}
         </dl>
         <TextLink
-          href="/o-mnie"
+          href={ABOUT_HOME.link.href}
           weight="strong"
           target="touch"
           className="text-ui"
         >
-          Więcej o mnie
+          {ABOUT_HOME.link.label}
         </TextLink>
       </div>
     </Container>
